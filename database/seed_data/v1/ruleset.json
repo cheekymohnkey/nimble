@@ -1,0 +1,10 @@
+{
+  "name": "Nimble 5e",
+  "version": "v1",
+  "source_book": [
+    "Core Rules",
+    "Heroes Core Book",
+    "Gamemaster Guide"
+  ],
+  "source_page_ref": null
+}

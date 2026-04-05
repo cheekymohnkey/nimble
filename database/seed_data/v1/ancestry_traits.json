@@ -1,0 +1,290 @@
+[
+  {
+    "ancestry_name": "Human",
+    "name": "Adaptable",
+    "description": "Signature ancestry trait for Human.",
+    "effects": [
+      {
+        "type": "ancestry_trait",
+        "ancestry": "Human",
+        "trait": "Adaptable"
+      }
+    ]
+  },
+  {
+    "ancestry_name": "Dwarf",
+    "name": "Stonecunning",
+    "description": "Signature ancestry trait for Dwarf.",
+    "effects": [
+      {
+        "type": "ancestry_trait",
+        "ancestry": "Dwarf",
+        "trait": "Stonecunning"
+      }
+    ]
+  },
+  {
+    "ancestry_name": "Elf",
+    "name": "Fey Grace",
+    "description": "Signature ancestry trait for Elf.",
+    "effects": [
+      {
+        "type": "ancestry_trait",
+        "ancestry": "Elf",
+        "trait": "Fey Grace"
+      }
+    ]
+  },
+  {
+    "ancestry_name": "Halfling",
+    "name": "Lucky Footing",
+    "description": "Signature ancestry trait for Halfling.",
+    "effects": [
+      {
+        "type": "ancestry_trait",
+        "ancestry": "Halfling",
+        "trait": "Lucky Footing"
+      }
+    ]
+  },
+  {
+    "ancestry_name": "Gnome",
+    "name": "Spark of Curiosity",
+    "description": "Signature ancestry trait for Gnome.",
+    "effects": [
+      {
+        "type": "ancestry_trait",
+        "ancestry": "Gnome",
+        "trait": "Spark of Curiosity"
+      }
+    ]
+  },
+  {
+    "ancestry_name": "Bunbun",
+    "name": "Quick Hop",
+    "description": "Signature ancestry trait for Bunbun.",
+    "effects": [
+      {
+        "type": "ancestry_trait",
+        "ancestry": "Bunbun",
+        "trait": "Quick Hop"
+      }
+    ]
+  },
+  {
+    "ancestry_name": "Dragonborn",
+    "name": "Draconic Presence",
+    "description": "Signature ancestry trait for Dragonborn.",
+    "effects": [
+      {
+        "type": "ancestry_trait",
+        "ancestry": "Dragonborn",
+        "trait": "Draconic Presence"
+      }
+    ]
+  },
+  {
+    "ancestry_name": "Fiendkin",
+    "name": "Hellbound Resilience",
+    "description": "Signature ancestry trait for Fiendkin.",
+    "effects": [
+      {
+        "type": "ancestry_trait",
+        "ancestry": "Fiendkin",
+        "trait": "Hellbound Resilience"
+      }
+    ]
+  },
+  {
+    "ancestry_name": "Goblin",
+    "name": "Scavenger Instinct",
+    "description": "Signature ancestry trait for Goblin.",
+    "effects": [
+      {
+        "type": "ancestry_trait",
+        "ancestry": "Goblin",
+        "trait": "Scavenger Instinct"
+      }
+    ]
+  },
+  {
+    "ancestry_name": "Kobold",
+    "name": "Pack Tactics",
+    "description": "Signature ancestry trait for Kobold.",
+    "effects": [
+      {
+        "type": "ancestry_trait",
+        "ancestry": "Kobold",
+        "trait": "Pack Tactics"
+      }
+    ]
+  },
+  {
+    "ancestry_name": "Orc",
+    "name": "Relentless Charge",
+    "description": "Signature ancestry trait for Orc.",
+    "effects": [
+      {
+        "type": "ancestry_trait",
+        "ancestry": "Orc",
+        "trait": "Relentless Charge"
+      }
+    ]
+  },
+  {
+    "ancestry_name": "Birdfolk",
+    "name": "Sky Glide",
+    "description": "Signature ancestry trait for Birdfolk.",
+    "effects": [
+      {
+        "type": "ancestry_trait",
+        "ancestry": "Birdfolk",
+        "trait": "Sky Glide"
+      }
+    ]
+  },
+  {
+    "ancestry_name": "Celestial",
+    "name": "Radiant Bearing",
+    "description": "Signature ancestry trait for Celestial.",
+    "effects": [
+      {
+        "type": "ancestry_trait",
+        "ancestry": "Celestial",
+        "trait": "Radiant Bearing"
+      }
+    ]
+  },
+  {
+    "ancestry_name": "Changeling",
+    "name": "Mutable Form",
+    "description": "Signature ancestry trait for Changeling.",
+    "effects": [
+      {
+        "type": "ancestry_trait",
+        "ancestry": "Changeling",
+        "trait": "Mutable Form"
+      }
+    ]
+  },
+  {
+    "ancestry_name": "Crystalborn",
+    "name": "Facet Skin",
+    "description": "Signature ancestry trait for Crystalborn.",
+    "effects": [
+      {
+        "type": "ancestry_trait",
+        "ancestry": "Crystalborn",
+        "trait": "Facet Skin"
+      }
+    ]
+  },
+  {
+    "ancestry_name": "Dryad/Shroomling",
+    "name": "Rooted Renewal",
+    "description": "Signature ancestry trait for Dryad/Shroomling.",
+    "effects": [
+      {
+        "type": "ancestry_trait",
+        "ancestry": "Dryad/Shroomling",
+        "trait": "Rooted Renewal"
+      }
+    ]
+  },
+  {
+    "ancestry_name": "Half-Giant",
+    "name": "Massive Build",
+    "description": "Signature ancestry trait for Half-Giant.",
+    "effects": [
+      {
+        "type": "ancestry_trait",
+        "ancestry": "Half-Giant",
+        "trait": "Massive Build"
+      }
+    ]
+  },
+  {
+    "ancestry_name": "Minotaur/Beastfolk",
+    "name": "Predatory Rush",
+    "description": "Signature ancestry trait for Minotaur/Beastfolk.",
+    "effects": [
+      {
+        "type": "ancestry_trait",
+        "ancestry": "Minotaur/Beastfolk",
+        "trait": "Predatory Rush"
+      }
+    ]
+  },
+  {
+    "ancestry_name": "Oozeling/Construct",
+    "name": "Amorphous Body",
+    "description": "Signature ancestry trait for Oozeling/Construct.",
+    "effects": [
+      {
+        "type": "ancestry_trait",
+        "ancestry": "Oozeling/Construct",
+        "trait": "Amorphous Body"
+      }
+    ]
+  },
+  {
+    "ancestry_name": "Planarbeing",
+    "name": "Planar Echo",
+    "description": "Signature ancestry trait for Planarbeing.",
+    "effects": [
+      {
+        "type": "ancestry_trait",
+        "ancestry": "Planarbeing",
+        "trait": "Planar Echo"
+      }
+    ]
+  },
+  {
+    "ancestry_name": "Ratfolk",
+    "name": "Tunnel Sense",
+    "description": "Signature ancestry trait for Ratfolk.",
+    "effects": [
+      {
+        "type": "ancestry_trait",
+        "ancestry": "Ratfolk",
+        "trait": "Tunnel Sense"
+      }
+    ]
+  },
+  {
+    "ancestry_name": "Stoatling",
+    "name": "Nimble Pounce",
+    "description": "Signature ancestry trait for Stoatling.",
+    "effects": [
+      {
+        "type": "ancestry_trait",
+        "ancestry": "Stoatling",
+        "trait": "Nimble Pounce"
+      }
+    ]
+  },
+  {
+    "ancestry_name": "Turtlefolk",
+    "name": "Shell Guard",
+    "description": "Signature ancestry trait for Turtlefolk.",
+    "effects": [
+      {
+        "type": "ancestry_trait",
+        "ancestry": "Turtlefolk",
+        "trait": "Shell Guard"
+      }
+    ]
+  },
+  {
+    "ancestry_name": "Wyrdling",
+    "name": "Arcane Spark",
+    "description": "Signature ancestry trait for Wyrdling.",
+    "effects": [
+      {
+        "type": "ancestry_trait",
+        "ancestry": "Wyrdling",
+        "trait": "Arcane Spark"
+      }
+    ]
+  }
+]

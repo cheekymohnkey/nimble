@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Human",
+    "size_category": "medium"
+  },
+  {
+    "name": "Dwarf",
+    "size_category": "medium"
+  },
+  {
+    "name": "Elf",
+    "size_category": "medium"
+  },
+  {
+    "name": "Halfling",
+    "size_category": "small"
+  },
+  {
+    "name": "Gnome",
+    "size_category": "small"
+  },
+  {
+    "name": "Bunbun",
+    "size_category": "small"
+  },
+  {
+    "name": "Dragonborn",
+    "size_category": "medium"
+  },
+  {
+    "name": "Fiendkin",
+    "size_category": "medium"
+  },
+  {
+    "name": "Goblin",
+    "size_category": "small"
+  },
+  {
+    "name": "Kobold",
+    "size_category": "small"
+  },
+  {
+    "name": "Orc",
+    "size_category": "medium"
+  },
+  {
+    "name": "Birdfolk",
+    "size_category": "medium"
+  },
+  {
+    "name": "Celestial",
+    "size_category": "medium"
+  },
+  {
+    "name": "Changeling",
+    "size_category": "medium"
+  },
+  {
+    "name": "Crystalborn",
+    "size_category": "medium"
+  },
+  {
+    "name": "Dryad/Shroomling",
+    "size_category": "varies"
+  },
+  {
+    "name": "Half-Giant",
+    "size_category": "large"
+  },
+  {
+    "name": "Minotaur/Beastfolk",
+    "size_category": "varies"
+  },
+  {
+    "name": "Oozeling/Construct",
+    "size_category": "varies"
+  },
+  {
+    "name": "Planarbeing",
+    "size_category": "medium"
+  },
+  {
+    "name": "Ratfolk",
+    "size_category": "small"
+  },
+  {
+    "name": "Stoatling",
+    "size_category": "small"
+  },
+  {
+    "name": "Turtlefolk",
+    "size_category": "medium"
+  },
+  {
+    "name": "Wyrdling",
+    "size_category": "small"
+  }
+]

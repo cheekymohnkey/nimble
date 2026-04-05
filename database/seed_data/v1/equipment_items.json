@@ -1,0 +1,117 @@
+[
+  {
+    "name": "Longsword",
+    "category": "weapon",
+    "slot_cost": 1.0,
+    "armor_value": null,
+    "properties": [
+      "martial",
+      "melee"
+    ]
+  },
+  {
+    "name": "Greataxe",
+    "category": "weapon",
+    "slot_cost": 2.0,
+    "armor_value": null,
+    "properties": [
+      "martial",
+      "heavy"
+    ]
+  },
+  {
+    "name": "Dagger",
+    "category": "weapon",
+    "slot_cost": 0.5,
+    "armor_value": null,
+    "properties": [
+      "simple",
+      "finesse",
+      "thrown"
+    ]
+  },
+  {
+    "name": "Longbow",
+    "category": "weapon",
+    "slot_cost": 2.0,
+    "armor_value": null,
+    "properties": [
+      "martial",
+      "ranged"
+    ]
+  },
+  {
+    "name": "Light Armor",
+    "category": "armor",
+    "slot_cost": 1.0,
+    "armor_value": 1,
+    "properties": [
+      "light"
+    ]
+  },
+  {
+    "name": "Medium Armor",
+    "category": "armor",
+    "slot_cost": 2.0,
+    "armor_value": 2,
+    "properties": [
+      "medium"
+    ]
+  },
+  {
+    "name": "Heavy Armor",
+    "category": "armor",
+    "slot_cost": 3.0,
+    "armor_value": 3,
+    "properties": [
+      "heavy"
+    ]
+  },
+  {
+    "name": "Shield",
+    "category": "armor",
+    "slot_cost": 1.0,
+    "armor_value": 1,
+    "properties": [
+      "shield"
+    ]
+  },
+  {
+    "name": "Arcane Focus",
+    "category": "focus",
+    "slot_cost": 0.5,
+    "armor_value": null,
+    "properties": [
+      "spellcasting"
+    ]
+  },
+  {
+    "name": "Healer Kit",
+    "category": "adventuring",
+    "slot_cost": 1.0,
+    "armor_value": null,
+    "properties": [
+      "consumable",
+      "utility"
+    ]
+  },
+  {
+    "name": "Rations (5)",
+    "category": "adventuring",
+    "slot_cost": 1.0,
+    "armor_value": null,
+    "properties": [
+      "consumable",
+      "bundle"
+    ]
+  },
+  {
+    "name": "Rope (50 ft)",
+    "category": "adventuring",
+    "slot_cost": 1.0,
+    "armor_value": null,
+    "properties": [
+      "utility"
+    ]
+  }
+]

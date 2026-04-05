@@ -1,0 +1,132 @@
+[
+  {
+    "class_name": "Berserker",
+    "name": "Path of the Mountainheart",
+    "is_story_based": 0
+  },
+  {
+    "class_name": "Berserker",
+    "name": "Path of the Red Mist",
+    "is_story_based": 0
+  },
+  {
+    "class_name": "The Cheat",
+    "name": "Tools of the Silent Blade",
+    "is_story_based": 0
+  },
+  {
+    "class_name": "The Cheat",
+    "name": "Tools of the Scoundrel",
+    "is_story_based": 0
+  },
+  {
+    "class_name": "Commander",
+    "name": "Champion of the Bulwark",
+    "is_story_based": 0
+  },
+  {
+    "class_name": "Commander",
+    "name": "Champion of the Vanguard",
+    "is_story_based": 0
+  },
+  {
+    "class_name": "Hunter",
+    "name": "Keeper of the Shadowpath",
+    "is_story_based": 0
+  },
+  {
+    "class_name": "Hunter",
+    "name": "Keeper of the Wild Heart",
+    "is_story_based": 0
+  },
+  {
+    "class_name": "Mage",
+    "name": "Invoker of Control",
+    "is_story_based": 0
+  },
+  {
+    "class_name": "Mage",
+    "name": "Invoker of Chaos",
+    "is_story_based": 0
+  },
+  {
+    "class_name": "Oathsworn",
+    "name": "Oath of Vengeance",
+    "is_story_based": 0
+  },
+  {
+    "class_name": "Oathsworn",
+    "name": "Oath of Refuge",
+    "is_story_based": 0
+  },
+  {
+    "class_name": "Shadowmancer",
+    "name": "Pact of the Red Dragon",
+    "is_story_based": 0
+  },
+  {
+    "class_name": "Shadowmancer",
+    "name": "Pact of the Abyssal Depths",
+    "is_story_based": 0
+  },
+  {
+    "class_name": "Shepherd",
+    "name": "Luminary of Mercy",
+    "is_story_based": 0
+  },
+  {
+    "class_name": "Shepherd",
+    "name": "Luminary of Malice",
+    "is_story_based": 0
+  },
+  {
+    "class_name": "Songweaver",
+    "name": "Herald of Snark",
+    "is_story_based": 0
+  },
+  {
+    "class_name": "Songweaver",
+    "name": "Herald of Courage",
+    "is_story_based": 0
+  },
+  {
+    "class_name": "Stormshifter",
+    "name": "Circle of Sky & Storm",
+    "is_story_based": 0
+  },
+  {
+    "class_name": "Stormshifter",
+    "name": "Circle of Fang & Claw",
+    "is_story_based": 0
+  },
+  {
+    "class_name": "Zephyr",
+    "name": "Way of Pain",
+    "is_story_based": 0
+  },
+  {
+    "class_name": "Zephyr",
+    "name": "Way of Flame",
+    "is_story_based": 0
+  },
+  {
+    "class_name": "Oathsworn",
+    "name": "Oathbreaker",
+    "is_story_based": 1
+  },
+  {
+    "class_name": "Commander",
+    "name": "Spellblade",
+    "is_story_based": 1
+  },
+  {
+    "class_name": "Shadowmancer",
+    "name": "Reaver",
+    "is_story_based": 1
+  },
+  {
+    "class_name": "Hunter",
+    "name": "Beastmaster",
+    "is_story_based": 1
+  }
+]
