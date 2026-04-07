@@ -1,0 +1,865 @@
+{
+  "source": {
+    "pdf": "official_books/Nimble 5e TTRPG Heroes Core Book -- Evan Diaz -- 41845a084350bb7daa48eb313815b1f9 -- Anna’s Archive.pdf",
+    "pages": [
+      20,
+      21,
+      22,
+      23,
+      24
+    ]
+  },
+  "ruleset": {
+    "name": "Nimble 5e 2nd Edition",
+    "version": "v1",
+    "sourceBook": "Core Rules",
+    "sourcePageRef": "All"
+  },
+  "class": {
+    "name": "Commander",
+    "description": "Soldier... Warrior... Fearless Leader. Among the most skilled soldiers in the world, Commanders are masters of every weapon and form of close combat.",
+    "hitDie": 10,
+    "startingHp": 17,
+    "keyStat1": "STR",
+    "keyStat2": "INT",
+    "saveAdvStat": "STR",
+    "saveDisadvStat": "DEX",
+    "armorProficiencies": [
+      "Mail Armor",
+      "Shields"
+    ],
+    "weaponProficiencies": [
+      "All Martial Weapons"
+    ],
+    "startingGear": [
+      "Short Sword",
+      "Javelins",
+      "Rusty Mail"
+    ]
+  },
+  "subclasses": [
+    {
+      "name": "BULW ARK",
+      "isStoryBased": false,
+      "description": null
+    },
+    {
+      "name": "VA NG UA R D",
+      "isStoryBased": false,
+      "description": null
+    }
+  ],
+  "progression": [
+    {
+      "level": 1,
+      "scopeSubclass": null,
+      "name": "Coordinated Strike!",
+      "featureType": "other",
+      "displayOrder": 0,
+      "description": "Gain the Coordinated Strike! Commander's Order.",
+      "combatUsageNotes": "Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
+    },
+    {
+      "level": 2,
+      "scopeSubclass": null,
+      "name": "Commander's Orders",
+      "featureType": "choice_grant",
+      "displayOrder": 0,
+      "description": "Choose 2 Commander's Orders.",
+      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+    },
+    {
+      "level": 2,
+      "scopeSubclass": null,
+      "name": "Field Medic",
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "Roll 1 additional die for any health potion you administer; allies may add your Examination bonus to HP recovered after treatment.",
+      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value."
+    },
+    {
+      "level": 3,
+      "scopeSubclass": null,
+      "name": "Subclass",
+      "featureType": "choice_grant",
+      "displayOrder": 0,
+      "description": "Choose a Commander subclass.",
+      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+    },
+    {
+      "level": 4,
+      "scopeSubclass": null,
+      "name": "Fit for Any Battlefield",
+      "featureType": "choice_grant",
+      "displayOrder": 0,
+      "description": "Choose a Combat Tactic. Gain STR Combat Dice (d6) on initiative; spend 1/attack for maneuvers.",
+      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+    },
+    {
+      "level": 4,
+      "scopeSubclass": null,
+      "name": "Key Stat Increase",
+      "featureType": "stat_increase",
+      "displayOrder": 1,
+      "description": "+1 STR or INT.",
+      "combatUsageNotes": "Take the stat that supports your core combat loop and your most frequent checks/attack scaling."
+    },
+    {
+      "level": 4,
+      "scopeSubclass": null,
+      "name": "Rigorous Training",
+      "featureType": "passive",
+      "displayOrder": 2,
+      "description": "During Safe Rest training, you may choose different Commander options available to you.",
+      "combatUsageNotes": "Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
+    },
+    {
+      "level": 5,
+      "scopeSubclass": null,
+      "name": "Master Commander",
+      "featureType": "resource_change",
+      "displayOrder": 0,
+      "description": "On initiative, regain 1 spent use of Coordinated Strike for that encounter; Coordinated Strikes ignore disadvantage.",
+      "combatUsageNotes": "Track this resource every turn and spend it proactively instead of ending encounters with unused value."
+    },
+    {
+      "level": 5,
+      "scopeSubclass": null,
+      "name": "Combat Tactics",
+      "featureType": "resource_change",
+      "displayOrder": 1,
+      "description": "Combat Dice become d8s.",
+      "combatUsageNotes": "Track this resource every turn and spend it proactively instead of ending encounters with unused value."
+    },
+    {
+      "level": 5,
+      "scopeSubclass": null,
+      "name": "Secondary Stat Increase",
+      "featureType": "stat_increase",
+      "displayOrder": 2,
+      "description": "+1 DEX or WIL.",
+      "combatUsageNotes": "Take the stat that supports your core combat loop and your most frequent checks/attack scaling."
+    },
+    {
+      "level": 6,
+      "scopeSubclass": null,
+      "name": "Fit for Any Battlefield (2)",
+      "featureType": "choice_grant",
+      "displayOrder": 0,
+      "description": "Choose another Combat Ability or gain +1 max Combat Dice.",
+      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+    },
+    {
+      "level": 6,
+      "scopeSubclass": null,
+      "name": "Weapon Mastery",
+      "featureType": "choice_grant",
+      "displayOrder": 1,
+      "description": "Choose a weapon type to specialize in.",
+      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+    },
+    {
+      "level": 7,
+      "scopeSubclass": null,
+      "name": "Subclass",
+      "featureType": "choice_grant",
+      "displayOrder": 0,
+      "description": "Gain your Commander subclass feature.",
+      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+    },
+    {
+      "level": 8,
+      "scopeSubclass": null,
+      "name": "Fit for Any Battlefield (3)",
+      "featureType": "choice_grant",
+      "displayOrder": 0,
+      "description": "Choose another Combat Ability or gain +1 max Combat Dice.",
+      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+    },
+    {
+      "level": 8,
+      "scopeSubclass": null,
+      "name": "Key Stat Increase",
+      "featureType": "stat_increase",
+      "displayOrder": 1,
+      "description": "+1 STR or INT.",
+      "combatUsageNotes": "Take the stat that supports your core combat loop and your most frequent checks/attack scaling."
+    },
+    {
+      "level": 9,
+      "scopeSubclass": null,
+      "name": "Master Commander (2)",
+      "featureType": "resource_change",
+      "displayOrder": 0,
+      "description": "+1 use of Coordinated Strike/Safe Rest.",
+      "combatUsageNotes": "Track this resource every turn and spend it proactively instead of ending encounters with unused value."
+    },
+    {
+      "level": 9,
+      "scopeSubclass": null,
+      "name": "Combat Tactics (2)",
+      "featureType": "resource_change",
+      "displayOrder": 1,
+      "description": "Combat Dice become d10s.",
+      "combatUsageNotes": "Track this resource every turn and spend it proactively instead of ending encounters with unused value."
+    },
+    {
+      "level": 9,
+      "scopeSubclass": null,
+      "name": "Secondary Stat Increase",
+      "featureType": "stat_increase",
+      "displayOrder": 2,
+      "description": "+1 DEX or WIL.",
+      "combatUsageNotes": "Take the stat that supports your core combat loop and your most frequent checks/attack scaling."
+    },
+    {
+      "level": 10,
+      "scopeSubclass": null,
+      "name": "Fit for Any Battlefield (4)",
+      "featureType": "choice_grant",
+      "displayOrder": 0,
+      "description": "Choose another Combat Ability or gain +1 max Combat Dice.",
+      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+    },
+    {
+      "level": 10,
+      "scopeSubclass": null,
+      "name": "Weapon Mastery (2)",
+      "featureType": "choice_grant",
+      "displayOrder": 1,
+      "description": "Choose a 2nd weapon type to specialize in.",
+      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+    },
+    {
+      "level": 11,
+      "scopeSubclass": null,
+      "name": "Subclass",
+      "featureType": "choice_grant",
+      "displayOrder": 0,
+      "description": "Gain your Commander subclass feature.",
+      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+    },
+    {
+      "level": 12,
+      "scopeSubclass": null,
+      "name": "Fit for Any Battlefield (5)",
+      "featureType": "choice_grant",
+      "displayOrder": 0,
+      "description": "Choose another Combat Ability or gain +1 max Combat Dice.",
+      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+    },
+    {
+      "level": 12,
+      "scopeSubclass": null,
+      "name": "Key Stat Increase",
+      "featureType": "stat_increase",
+      "displayOrder": 1,
+      "description": "+1 STR or INT.",
+      "combatUsageNotes": "Take the stat that supports your core combat loop and your most frequent checks/attack scaling."
+    },
+    {
+      "level": 13,
+      "scopeSubclass": null,
+      "name": "Master Commander (3)",
+      "featureType": "resource_change",
+      "displayOrder": 0,
+      "description": "+1 use of Coordinated Strike/Safe Rest.",
+      "combatUsageNotes": "Track this resource every turn and spend it proactively instead of ending encounters with unused value."
+    },
+    {
+      "level": 13,
+      "scopeSubclass": null,
+      "name": "Combat Tactics (3)",
+      "featureType": "resource_change",
+      "displayOrder": 1,
+      "description": "Combat Dice become d12s.",
+      "combatUsageNotes": "Track this resource every turn and spend it proactively instead of ending encounters with unused value."
+    },
+    {
+      "level": 13,
+      "scopeSubclass": null,
+      "name": "Secondary Stat Increase",
+      "featureType": "stat_increase",
+      "displayOrder": 2,
+      "description": "+1 DEX or WIL.",
+      "combatUsageNotes": "Take the stat that supports your core combat loop and your most frequent checks/attack scaling."
+    },
+    {
+      "level": 14,
+      "scopeSubclass": null,
+      "name": "Weapon Mastery (3)",
+      "featureType": "choice_grant",
+      "displayOrder": 0,
+      "description": "You have complete mastery of all weapon types.",
+      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+    },
+    {
+      "level": 15,
+      "scopeSubclass": null,
+      "name": "Subclass",
+      "featureType": "choice_grant",
+      "displayOrder": 0,
+      "description": "Gain your Commander subclass feature.",
+      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+    },
+    {
+      "level": 16,
+      "scopeSubclass": null,
+      "name": "Fit for Any Battlefield (6)",
+      "featureType": "choice_grant",
+      "displayOrder": 0,
+      "description": "Choose another Combat Ability or gain +1 max Combat Dice.",
+      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+    },
+    {
+      "level": 16,
+      "scopeSubclass": null,
+      "name": "Key Stat Increase",
+      "featureType": "stat_increase",
+      "displayOrder": 1,
+      "description": "+1 STR or INT.",
+      "combatUsageNotes": "Take the stat that supports your core combat loop and your most frequent checks/attack scaling."
+    },
+    {
+      "level": 17,
+      "scopeSubclass": null,
+      "name": "Master Commander (4)",
+      "featureType": "resource_change",
+      "displayOrder": 0,
+      "description": "+1 use of Coordinated Strike/Safe Rest.",
+      "combatUsageNotes": "Track this resource every turn and spend it proactively instead of ending encounters with unused value."
+    },
+    {
+      "level": 17,
+      "scopeSubclass": null,
+      "name": "Combat Tactics (4)",
+      "featureType": "resource_change",
+      "displayOrder": 1,
+      "description": "Combat Dice become d20s.",
+      "combatUsageNotes": "Track this resource every turn and spend it proactively instead of ending encounters with unused value."
+    },
+    {
+      "level": 17,
+      "scopeSubclass": null,
+      "name": "Secondary Stat Increase",
+      "featureType": "stat_increase",
+      "displayOrder": 2,
+      "description": "+1 DEX or WIL.",
+      "combatUsageNotes": "Take the stat that supports your core combat loop and your most frequent checks/attack scaling."
+    },
+    {
+      "level": 18,
+      "scopeSubclass": null,
+      "name": "Unparalleled Tactics",
+      "featureType": "other",
+      "displayOrder": 0,
+      "description": "First time each encounter you use Coordinated Strike, an ally who can hear you gains 1 action on their next turn.",
+      "combatUsageNotes": "Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
+    },
+    {
+      "level": 19,
+      "scopeSubclass": null,
+      "name": "Epic Boon",
+      "featureType": "choice_grant",
+      "displayOrder": 0,
+      "description": "Choose an Epic Boon (see pg. 23 of the GM's Guide).",
+      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+    },
+    {
+      "level": 20,
+      "scopeSubclass": null,
+      "name": "Captain of Legions",
+      "featureType": "other",
+      "displayOrder": 0,
+      "description": "+1 to any 2 stats; first Coordinated Strike each encounter gives every ally within 12 spaces +1 action (replaces Unparalleled Tactics).",
+      "combatUsageNotes": "Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
+    },
+    {
+      "level": 3,
+      "scopeSubclass": "BULW ARK",
+      "name": "Armor Master",
+      "featureType": "passive",
+      "displayOrder": 0,
+      "description": "You are proficient with plate armor.",
+      "combatUsageNotes": "Save this for enemy spike turns; it is strongest when it prevents a big tempo or survivability loss."
+    },
+    {
+      "level": 3,
+      "scopeSubclass": "BULW ARK",
+      "name": "Shield Expert",
+      "featureType": "other",
+      "displayOrder": 1,
+      "description": "While wearing a shield, Defend 2x each round; after fully blocking damage first time each round, make an opportunity attack for free.",
+      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value."
+    },
+    {
+      "level": 7,
+      "scopeSubclass": "BULW ARK",
+      "name": "Juggernaut",
+      "featureType": "other",
+      "displayOrder": 0,
+      "description": "When you use Coordinated Strike, deal extra damage equal to armor and add 1 to your primary die.",
+      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value."
+    },
+    {
+      "level": 11,
+      "scopeSubclass": "BULW ARK",
+      "name": "Taunting Strike",
+      "featureType": "other",
+      "displayOrder": 0,
+      "description": "(1/turn) You may Taunt a creature you hit until the end of their next turn.",
+      "combatUsageNotes": "Use this to control enemy behavior and create safer turns for your team focus-fire. Budget around its 1/TURN limit so it lands in the highest-impact window."
+    },
+    {
+      "level": 15,
+      "scopeSubclass": "BULW ARK",
+      "name": "Shield Wall",
+      "featureType": "passive",
+      "displayOrder": 0,
+      "description": "Allies within 2 spaces gain all benefits of the shield you have equipped.",
+      "combatUsageNotes": "Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
+    },
+    {
+      "level": 3,
+      "scopeSubclass": "VA NG UA R D",
+      "name": "Advance!",
+      "featureType": "other",
+      "displayOrder": 0,
+      "description": "(1/round) After moving toward an enemy, gain advantage on first melee attack against it; Coordinated Strike lets allies within 12 spaces move up to half speed for free first.",
+      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value. Budget around its 1/ROUND limit so it lands in the highest-impact window."
+    },
+    {
+      "level": 7,
+      "scopeSubclass": "VA NG UA R D",
+      "name": "Experienced Commander",
+      "featureType": "resource_change",
+      "displayOrder": 0,
+      "description": "Your Coordinated Strike may target 1 additional ally; gain +1 use of Coordinated Strike/Safe Rest.",
+      "combatUsageNotes": "Track this resource every turn and spend it proactively instead of ending encounters with unused value."
+    },
+    {
+      "level": 11,
+      "scopeSubclass": "VA NG UA R D",
+      "name": "Survey the Battlefield",
+      "featureType": "resource_change",
+      "displayOrder": 0,
+      "description": "When you roll initiative, regain 1 use of Coordinated Strike; +1 max Combat Dice.",
+      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value."
+    },
+    {
+      "level": 15,
+      "scopeSubclass": "VA NG UA R D",
+      "name": "As One!",
+      "featureType": "other",
+      "displayOrder": 0,
+      "description": "Coordinated Strike attacks also grant advantage and ignore all disadvantage; chosen allies gain 1 additional action next turn.",
+      "combatUsageNotes": "Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
+    }
+  ],
+  "choiceGroups": [
+    {
+      "scopeSubclass": null,
+      "name": "Commander's Orders",
+      "maxChoices": 5,
+      "respecRule": "anytime",
+      "description": "Commander order options refreshed by Rigorous Training."
+    },
+    {
+      "scopeSubclass": null,
+      "name": "Combat Abilities",
+      "maxChoices": 6,
+      "respecRule": "anytime",
+      "description": "Fit for Any Battlefield selectable maneuvers."
+    },
+    {
+      "scopeSubclass": null,
+      "name": "Weapon Mastery",
+      "maxChoices": 3,
+      "respecRule": "anytime",
+      "description": "Weapon specialization options."
+    },
+    {
+      "scopeSubclass": "BULW ARK",
+      "name": "BULW ARK",
+      "maxChoices": 5,
+      "respecRule": "never",
+      "description": null
+    },
+    {
+      "scopeSubclass": "VA NG UA R D",
+      "name": "VA NG UA R D",
+      "maxChoices": 4,
+      "respecRule": "never",
+      "description": null
+    }
+  ],
+  "choiceOptions": [
+    {
+      "groupName": "Commander's Orders",
+      "scopeSubclass": null,
+      "name": "Face Me!",
+      "displayOrder": 0,
+      "description": "Reaction (after an ally is crit within 12 spaces): Taunt that enemy until you drop to 0 HP.",
+      "prereq": null,
+      "effects": [
+        {
+          "type": "commander_order",
+          "slug": "face_me",
+          "trigger": "on_ally_crit_within_12",
+          "result": "taunt_until_drop_0hp"
+        }
+      ],
+      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value."
+    },
+    {
+      "groupName": "Commander's Orders",
+      "scopeSubclass": null,
+      "name": "Hold the Line!",
+      "displayOrder": 1,
+      "description": "(1/encounter) Reaction (when an ally drops to 0 HP): set their HP to 3x your LVL.",
+      "prereq": null,
+      "effects": [
+        {
+          "type": "commander_order",
+          "slug": "hold_the_line",
+          "usage_limit": "1/encounter",
+          "trigger": "on_ally_drop_0hp",
+          "set_hp_formula": "3 * LVL"
+        }
+      ],
+      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value. Budget around its 1/ENCOUNTER limit so it lands in the highest-impact window."
+    },
+    {
+      "groupName": "Commander's Orders",
+      "scopeSubclass": null,
+      "name": "I Can Do This ALL DAY!",
+      "displayOrder": 2,
+      "description": "(1/encounter) Reaction (when you would drop to 0 HP): expend any number of Hit Dice and set HP to sum rolled.",
+      "prereq": null,
+      "effects": [
+        {
+          "type": "commander_order",
+          "slug": "all_day",
+          "usage_limit": "1/encounter",
+          "trigger": "on_would_drop_0hp",
+          "set_hp": "sum(expended_hit_dice)"
+        }
+      ],
+      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value. Budget around its 1/ENCOUNTER limit so it lands in the highest-impact window."
+    },
+    {
+      "groupName": "Commander's Orders",
+      "scopeSubclass": null,
+      "name": "Move it! Move it!",
+      "displayOrder": 3,
+      "description": "On initiative, give yourself and an ally advantage on initiative and +3 speed for 1 round.",
+      "prereq": null,
+      "effects": [
+        {
+          "type": "commander_order",
+          "slug": "move_it",
+          "trigger": "on_initiative",
+          "initiative_advantage_targets": 2,
+          "speed_bonus": 3,
+          "duration": "1_round"
+        }
+      ],
+      "combatUsageNotes": "Use this for positioning: engage priority targets, escape danger, or set up advantage before attacking."
+    },
+    {
+      "groupName": "Commander's Orders",
+      "scopeSubclass": null,
+      "name": "Reposition!",
+      "displayOrder": 4,
+      "description": "Action/Reaction (on ally turn): command 1 ally to move up to speed or 2 allies up to half speed for free.",
+      "prereq": null,
+      "effects": [
+        {
+          "type": "commander_order",
+          "slug": "reposition",
+          "move_option_a": "1 ally full speed",
+          "move_option_b": "2 allies half speed"
+        }
+      ],
+      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value."
+    },
+    {
+      "groupName": "Combat Abilities",
+      "scopeSubclass": null,
+      "name": "Commanding Presence",
+      "displayOrder": 0,
+      "description": "Action: 2-word command; on failed WIL save (DC 10+STR), target obeys next turn and is then immune for 1 day.",
+      "prereq": null,
+      "effects": [
+        {
+          "type": "combat_ability",
+          "slug": "commanding_presence",
+          "save": {
+            "stat": "WIL",
+            "dc_formula": "10 + STR"
+          }
+        }
+      ],
+      "combatUsageNotes": "Plan your action economy around this; use it on turns where its payoff beats a standard attack."
+    },
+    {
+      "groupName": "Combat Abilities",
+      "scopeSubclass": null,
+      "name": "Heavy Strike",
+      "displayOrder": 1,
+      "description": "On hit, push target (size-scaled) and deal extra damage equal to Combat Die roll.",
+      "prereq": null,
+      "effects": [
+        {
+          "type": "combat_ability",
+          "slug": "heavy_strike"
+        }
+      ],
+      "combatUsageNotes": "Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
+    },
+    {
+      "groupName": "Combat Abilities",
+      "scopeSubclass": null,
+      "name": "Inerrant Strike",
+      "displayOrder": 2,
+      "description": "Reroll a miss, add +1 to Primary Die, and deal extra Combat Die damage.",
+      "prereq": null,
+      "effects": [
+        {
+          "type": "combat_ability",
+          "slug": "inerrant_strike"
+        }
+      ],
+      "combatUsageNotes": "Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
+    },
+    {
+      "groupName": "Combat Abilities",
+      "scopeSubclass": null,
+      "name": "Lunging Strike",
+      "displayOrder": 3,
+      "description": "Gain +1 Reach and deal extra damage equal to 2x Combat Die roll.",
+      "prereq": null,
+      "effects": [
+        {
+          "type": "combat_ability",
+          "slug": "lunging_strike"
+        }
+      ],
+      "combatUsageNotes": "Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
+    },
+    {
+      "groupName": "Combat Abilities",
+      "scopeSubclass": null,
+      "name": "Sweeping Strike",
+      "displayOrder": 4,
+      "description": "2 actions: attack contiguous area in reach and damage all targets; does not miss on 1.",
+      "prereq": null,
+      "effects": [
+        {
+          "type": "combat_ability",
+          "slug": "sweeping_strike",
+          "action_cost": 2
+        }
+      ],
+      "combatUsageNotes": "Plan your action economy around this; use it on turns where its payoff beats a standard attack."
+    },
+    {
+      "groupName": "Weapon Mastery",
+      "scopeSubclass": null,
+      "name": "Slashing",
+      "displayOrder": 0,
+      "description": "Attacks with slashing weapons cannot miss unarmored enemies.",
+      "prereq": null,
+      "effects": [
+        {
+          "type": "weapon_mastery",
+          "slug": "slashing"
+        }
+      ],
+      "combatUsageNotes": "Save this for enemy spike turns; it is strongest when it prevents a big tempo or survivability loss."
+    },
+    {
+      "groupName": "Weapon Mastery",
+      "scopeSubclass": null,
+      "name": "Bludgeoning",
+      "displayOrder": 1,
+      "description": "On primary die 7+ with bludgeoning weapon, ignore Heavy Armor.",
+      "prereq": null,
+      "effects": [
+        {
+          "type": "weapon_mastery",
+          "slug": "bludgeoning"
+        }
+      ],
+      "combatUsageNotes": "Save this for enemy spike turns; it is strongest when it prevents a big tempo or survivability loss."
+    },
+    {
+      "groupName": "Weapon Mastery",
+      "scopeSubclass": null,
+      "name": "Piercing",
+      "displayOrder": 2,
+      "description": "Attacks with piercing weapons ignore Medium Armor.",
+      "prereq": null,
+      "effects": [
+        {
+          "type": "weapon_mastery",
+          "slug": "piercing"
+        }
+      ],
+      "combatUsageNotes": "Save this for enemy spike turns; it is strongest when it prevents a big tempo or survivability loss."
+    },
+    {
+      "groupName": "BULW ARK",
+      "scopeSubclass": "BULW ARK",
+      "name": "Armor Master",
+      "displayOrder": 0,
+      "description": "You are proficient with plate armor.",
+      "prereq": {
+        "level": 3
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "armor_master"
+        }
+      ],
+      "combatUsageNotes": "Unlocks at level 3. Save this for enemy spike turns; it is strongest when it prevents a big tempo or survivability loss."
+    },
+    {
+      "groupName": "BULW ARK",
+      "scopeSubclass": "BULW ARK",
+      "name": "Shield Expert",
+      "displayOrder": 1,
+      "description": "While wearing a shield, Defend 2x each round and may counter after full block.",
+      "prereq": {
+        "level": 3
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "shield_expert"
+        }
+      ],
+      "combatUsageNotes": "Unlocks at level 3. Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value."
+    },
+    {
+      "groupName": "BULW ARK",
+      "scopeSubclass": "BULW ARK",
+      "name": "Juggernaut",
+      "displayOrder": 2,
+      "description": "Coordinated Strike adds armor-based damage and +1 primary die.",
+      "prereq": {
+        "level": 7
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "juggernaut"
+        }
+      ],
+      "combatUsageNotes": "Unlocks at level 7. Save this for enemy spike turns; it is strongest when it prevents a big tempo or survivability loss."
+    },
+    {
+      "groupName": "BULW ARK",
+      "scopeSubclass": "BULW ARK",
+      "name": "Taunting Strike",
+      "displayOrder": 3,
+      "description": "(1/turn) Taunt hit creature until end of its next turn.",
+      "prereq": {
+        "level": 11
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "taunting_strike"
+        }
+      ],
+      "combatUsageNotes": "Unlocks at level 11. Use this to control enemy behavior and create safer turns for your team focus-fire. Budget around its 1/TURN limit so it lands in the highest-impact window."
+    },
+    {
+      "groupName": "BULW ARK",
+      "scopeSubclass": "BULW ARK",
+      "name": "Shield Wall",
+      "displayOrder": 4,
+      "description": "Allies within 2 spaces gain shield benefits.",
+      "prereq": {
+        "level": 15
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "shield_wall"
+        }
+      ],
+      "combatUsageNotes": "Unlocks at level 15. Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
+    },
+    {
+      "groupName": "VA NG UA R D",
+      "scopeSubclass": "VA NG UA R D",
+      "name": "Advance!",
+      "displayOrder": 0,
+      "description": "(1/round) Move-toward bonus attack advantage and allied half-speed move on Coordinated Strike.",
+      "prereq": {
+        "level": 3
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "advance"
+        }
+      ],
+      "combatUsageNotes": "Unlocks at level 3. Use this for positioning: engage priority targets, escape danger, or set up advantage before attacking. Budget around its 1/ROUND limit so it lands in the highest-impact window."
+    },
+    {
+      "groupName": "VA NG UA R D",
+      "scopeSubclass": "VA NG UA R D",
+      "name": "Experienced Commander",
+      "displayOrder": 1,
+      "description": "Coordinated Strike targets +1 ally; +1 use/Safe Rest.",
+      "prereq": {
+        "level": 7
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "experienced_commander"
+        }
+      ],
+      "combatUsageNotes": "Unlocks at level 7. Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
+    },
+    {
+      "groupName": "VA NG UA R D",
+      "scopeSubclass": "VA NG UA R D",
+      "name": "Survey the Battlefield",
+      "displayOrder": 2,
+      "description": "On initiative, regain 1 Coordinated Strike use; +1 max Combat Dice.",
+      "prereq": {
+        "level": 11
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "survey_the_battlefield"
+        }
+      ],
+      "combatUsageNotes": "Unlocks at level 11. Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
+    },
+    {
+      "groupName": "VA NG UA R D",
+      "scopeSubclass": "VA NG UA R D",
+      "name": "As One!",
+      "displayOrder": 3,
+      "description": "Coordinated Strike attacks grant advantage, ignore disadvantage, and allies gain +1 action next turn.",
+      "prereq": {
+        "level": 15
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "as_one"
+        }
+      ],
+      "combatUsageNotes": "Unlocks at level 15. Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
+    }
+  ]
+}

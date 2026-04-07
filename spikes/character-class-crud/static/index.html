@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Character Class CRUD Spike</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-shape bg-shape-a"></div>
+    <div class="bg-shape bg-shape-b"></div>
+
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Nimble Admin Spike</p>
+        <h1>Character Class CRUD</h1>
+        <p class="subtitle">
+          Human-readable editor for class records with select lists for stats and ruleset linkage.
+        </p>
+      </div>
+      <button id="newClassBtn" class="btn btn-primary">New Class</button>
+    </header>
+
+    <main class="layout">
+      <section class="panel list-panel">
+        <div class="panel-head">
+          <h2>Classes</h2>
+          <span id="classCount" class="pill">0 records</span>
+        </div>
+
+        <label class="field">
+          <span>Search by class name</span>
+          <input id="searchInput" type="search" placeholder="e.g. Ranger" />
+        </label>
+
+        <div class="table-wrap" id="classTableWrap">
+          <table class="class-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Ruleset</th>
+                <th>Hit Die</th>
+                <th>HP</th>
+              </tr>
+            </thead>
+            <tbody id="classRows"></tbody>
+          </table>
+        </div>
+
+        <p id="listHint" class="muted">No classes yet. Add one with New Class.</p>
+      </section>
+
+      <section class="panel edit-panel">
+        <div class="panel-head">
+          <h2 id="formTitle">Create Character Class</h2>
+          <span id="selectedBadge" class="pill hidden">Editing</span>
+        </div>
+
+        <form id="classForm" novalidate>
+          <div class="form-grid two-col">
+            <label class="field">
+              <span>Ruleset</span>
+              <div class="ruleset-picker">
+                <select id="rulesetId" required></select>
+                <button type="button" id="addRulesetBtn" class="btn btn-ghost">Add Ruleset</button>
+              </div>
+            </label>
+
+            <label class="field">
+              <span>Class Name</span>
+              <input id="name" type="text" maxlength="120" required placeholder="e.g. Warrior" />
+            </label>
+          </div>
+
+          <label class="field">
+            <span>Description</span>
+            <textarea
+              id="description"
+              rows="3"
+              placeholder="Summarize role, fantasy, and play style."
+            ></textarea>
+          </label>
+
+          <div class="form-grid four-col">
+            <label class="field">
+              <span>Hit Die</span>
+              <input id="hitDie" type="number" min="1" step="1" required />
+            </label>
+
+            <label class="field">
+              <span>Starting HP</span>
+              <input id="startingHp" type="number" min="1" step="1" required />
+            </label>
+
+            <label class="field">
+              <span>Primary Key Stat</span>
+              <select id="keyStat1" required></select>
+            </label>
+
+            <label class="field">
+              <span>Secondary Key Stat</span>
+              <select id="keyStat2" required></select>
+            </label>
+          </div>
+
+          <div class="form-grid two-col">
+            <label class="field">
+              <span>Save Advantage Stat</span>
+              <select id="saveAdvStat" required></select>
+            </label>
+
+            <label class="field">
+              <span>Save Disadvantage Stat</span>
+              <select id="saveDisadvStat" required></select>
+            </label>
+          </div>
+
+          <div class="form-grid three-col">
+            <label class="field">
+              <span>Armor Proficiencies</span>
+              <textarea
+                id="armorProficiencies"
+                rows="6"
+                placeholder="One item per line&#10;Light Armor&#10;Medium Armor"
+              ></textarea>
+            </label>
+
+            <label class="field">
+              <span>Weapon Proficiencies</span>
+              <textarea
+                id="weaponProficiencies"
+                rows="6"
+                placeholder="One item per line&#10;Simple Weapons&#10;Martial Weapons"
+              ></textarea>
+            </label>
+
+            <label class="field">
+              <span>Starting Gear</span>
+              <textarea
+                id="startingGear"
+                rows="6"
+                placeholder="One item per line&#10;Longsword&#10;Shield"
+              ></textarea>
+            </label>
+          </div>
+
+          <div class="actions">
+            <button type="submit" class="btn btn-primary" id="saveBtn">Save Class</button>
+            <button type="button" class="btn btn-danger" id="deleteBtn" disabled>Delete Class</button>
+            <button type="button" class="btn btn-ghost" id="resetBtn">Reset Form</button>
+          </div>
+
+          <p class="muted">
+            IDs are managed automatically. Ruleset relationships are selected by name and version.
+          </p>
+        </form>
+
+        <div class="section-divider"></div>
+
+        <section class="subclass-section">
+          <div class="panel-head">
+            <h2>Subclasses</h2>
+            <span id="subclassCount" class="pill">0 subclasses</span>
+          </div>
+
+          <p id="subclassHint" class="muted">
+            Save and select a class to define subclass options (including story-based subclasses).
+          </p>
+
+          <div id="subclassEditor" class="subclass-grid hidden">
+            <div class="subclass-list">
+              <div class="table-wrap hidden" id="subclassTableWrap">
+                <table class="class-table subclass-table">
+                  <thead>
+                    <tr>
+                      <th>Subclass</th>
+                      <th>Story-based</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody id="subclassRows"></tbody>
+                </table>
+              </div>
+              <p id="subclassListHint" class="muted">No subclasses yet for this class.</p>
+            </div>
+
+            <form id="subclassForm" class="subclass-form" novalidate>
+              <div class="panel-head">
+                <h3 id="subclassFormTitle">Add Subclass</h3>
+                <span id="subclassEditingBadge" class="pill hidden">Editing</span>
+              </div>
+
+              <label class="field">
+                <span>Subclass Name</span>
+                <input
+                  id="subclassName"
+                  type="text"
+                  maxlength="140"
+                  required
+                  placeholder="e.g. Spellblade"
+                />
+              </label>
+
+              <label class="field field-checkbox">
+                <span>Story-based Subclass</span>
+                <input id="subclassStoryBased" type="checkbox" />
+              </label>
+
+              <label class="field">
+                <span>Description</span>
+                <textarea
+                  id="subclassDescription"
+                  rows="4"
+                  placeholder="Describe subclass identity and when it becomes available."
+                ></textarea>
+              </label>
+
+              <div class="actions">
+                <button type="submit" class="btn btn-primary" id="subclassSaveBtn">
+                  Save Subclass
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  id="subclassDeleteBtn"
+                  disabled
+                >
+                  Delete Subclass
+                </button>
+                <button type="button" class="btn btn-ghost" id="subclassResetBtn">
+                  Reset Subclass Form
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section class="progression-section">
+          <div class="panel-head">
+            <h2>Abilities &amp; Progression</h2>
+            <span id="progressionCount" class="pill">0 abilities</span>
+          </div>
+
+          <p id="progressionHint" class="muted">
+            Save and select a class to define level-by-level abilities.
+          </p>
+
+          <div id="progressionEditor" class="progression-grid hidden">
+            <div class="progression-list">
+              <div class="table-wrap hidden" id="progressionTableWrap">
+                <table class="class-table progression-table">
+                  <thead>
+                    <tr>
+                      <th>Lvl</th>
+                      <th>Ability</th>
+                      <th>Scope</th>
+                      <th>Type</th>
+                    </tr>
+                  </thead>
+                  <tbody id="progressionRows"></tbody>
+                </table>
+              </div>
+              <p id="progressionListHint" class="muted">No abilities yet for this class.</p>
+            </div>
+
+            <form id="progressionForm" class="progression-form" novalidate>
+              <div class="panel-head">
+                <h3 id="progressionFormTitle">Add Ability</h3>
+                <span id="progressionEditingBadge" class="pill hidden">Editing</span>
+              </div>
+
+              <div class="form-grid three-col">
+                <label class="field">
+                  <span>Level</span>
+                  <select id="progressionLevel" required></select>
+                </label>
+
+                <label class="field">
+                  <span>Scope</span>
+                  <select id="progressionSubclass"></select>
+                </label>
+
+                <label class="field">
+                  <span>Type</span>
+                  <select id="progressionFeatureType" required></select>
+                </label>
+              </div>
+
+              <div class="form-grid two-col">
+                <label class="field">
+                  <span>Ability Name</span>
+                  <input
+                    id="progressionName"
+                    type="text"
+                    maxlength="140"
+                    required
+                    placeholder="e.g. Quick Shot"
+                  />
+                </label>
+
+                <label class="field">
+                  <span>Order Within Level</span>
+                  <input id="progressionDisplayOrder" type="number" min="0" step="1" required />
+                </label>
+              </div>
+
+              <label class="field">
+                <span>Description</span>
+                <textarea
+                  id="progressionDescription"
+                  rows="4"
+                  placeholder="Describe the ability's gameplay effect."
+                ></textarea>
+              </label>
+
+              <label class="field">
+                <span>Combat Usage Notes</span>
+                <textarea
+                  id="progressionCombatUsageNotes"
+                  rows="4"
+                  placeholder="Practical combat guidance and tactical examples."
+                ></textarea>
+              </label>
+
+              <div class="actions">
+                <button type="submit" class="btn btn-primary" id="progressionSaveBtn">
+                  Save Ability
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  id="progressionDeleteBtn"
+                  disabled
+                >
+                  Delete Ability
+                </button>
+                <button type="button" class="btn btn-ghost" id="progressionResetBtn">
+                  Reset Ability Form
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section class="choice-section">
+          <div class="panel-head">
+            <h2>Ability Option Sets</h2>
+            <span id="choiceGroupCount" class="pill">0 groups</span>
+          </div>
+
+          <p id="choiceGroupHint" class="muted">
+            Save and select a class to define optional ability collections (for example, Savage Arsenal).
+          </p>
+
+          <div id="choiceGroupEditor" class="choice-grid hidden">
+            <div class="choice-column">
+              <div class="table-wrap hidden" id="choiceGroupTableWrap">
+                <table class="class-table choice-table">
+                  <thead>
+                    <tr>
+                      <th>Group</th>
+                      <th>Scope</th>
+                      <th>Max</th>
+                      <th>Respec</th>
+                    </tr>
+                  </thead>
+                  <tbody id="choiceGroupRows"></tbody>
+                </table>
+              </div>
+              <p id="choiceGroupListHint" class="muted">No option groups yet for this class.</p>
+
+              <form id="choiceGroupForm" class="choice-form" novalidate>
+                <div class="panel-head">
+                  <h3 id="choiceGroupFormTitle">Add Option Group</h3>
+                  <span id="choiceGroupEditingBadge" class="pill hidden">Editing</span>
+                </div>
+
+                <div class="form-grid two-col">
+                  <label class="field">
+                    <span>Group Name</span>
+                    <input
+                      id="choiceGroupName"
+                      type="text"
+                      maxlength="140"
+                      required
+                      placeholder="e.g. Savage Arsenal"
+                    />
+                  </label>
+
+                  <label class="field">
+                    <span>Scope</span>
+                    <select id="choiceGroupSubclass"></select>
+                  </label>
+                </div>
+
+                <div class="form-grid two-col">
+                  <label class="field">
+                    <span>Max Choices</span>
+                    <input id="choiceGroupMaxChoices" type="number" min="1" step="1" required />
+                  </label>
+
+                  <label class="field">
+                    <span>Respec Rule</span>
+                    <select id="choiceGroupRespecRule" required></select>
+                  </label>
+                </div>
+
+                <label class="field">
+                  <span>Description</span>
+                  <textarea
+                    id="choiceGroupDescription"
+                    rows="3"
+                    placeholder="Describe when and how this option set is used."
+                  ></textarea>
+                </label>
+
+                <div class="actions">
+                  <button type="submit" class="btn btn-primary" id="choiceGroupSaveBtn">
+                    Save Group
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-danger"
+                    id="choiceGroupDeleteBtn"
+                    disabled
+                  >
+                    Delete Group
+                  </button>
+                  <button type="button" class="btn btn-ghost" id="choiceGroupResetBtn">
+                    Reset Group Form
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <div class="choice-column">
+              <div class="panel-head">
+                <h3>Group Options</h3>
+                <span id="choiceOptionCount" class="pill">0 options</span>
+              </div>
+
+              <p id="choiceOptionHint" class="muted">
+                Select an option group to add individual selectable abilities.
+              </p>
+
+              <div id="choiceOptionEditor" class="hidden">
+                <div class="table-wrap hidden" id="choiceOptionTableWrap">
+                  <table class="class-table choice-table">
+                    <thead>
+                      <tr>
+                        <th>Option</th>
+                        <th>Order</th>
+                      </tr>
+                    </thead>
+                    <tbody id="choiceOptionRows"></tbody>
+                  </table>
+                </div>
+                <p id="choiceOptionListHint" class="muted">No options yet for this group.</p>
+
+                <form id="choiceOptionForm" class="choice-form" novalidate>
+                  <div class="panel-head">
+                    <h3 id="choiceOptionFormTitle">Add Option</h3>
+                    <span id="choiceOptionEditingBadge" class="pill hidden">Editing</span>
+                  </div>
+
+                  <div class="form-grid two-col">
+                    <label class="field">
+                      <span>Option Name</span>
+                      <input
+                        id="choiceOptionName"
+                        type="text"
+                        maxlength="160"
+                        required
+                        placeholder="e.g. Sweeping Strike"
+                      />
+                    </label>
+
+                    <label class="field">
+                      <span>Display Order</span>
+                      <input id="choiceOptionDisplayOrder" type="number" min="0" step="1" required />
+                    </label>
+                  </div>
+
+                  <label class="field">
+                    <span>Description</span>
+                    <textarea
+                      id="choiceOptionDescription"
+                      rows="3"
+                      placeholder="Describe the option effect."
+                    ></textarea>
+                  </label>
+
+                  <label class="field">
+                    <span>Combat Usage Notes</span>
+                    <textarea
+                      id="choiceOptionCombatUsageNotes"
+                      rows="3"
+                      placeholder="How and when to use this option in combat."
+                    ></textarea>
+                  </label>
+
+                  <div class="form-grid two-col">
+                    <label class="field">
+                      <span>Prerequisites (JSON or plain text)</span>
+                      <textarea
+                        id="choiceOptionPrereqJson"
+                        rows="4"
+                        placeholder='{"level": 6}'
+                      ></textarea>
+                    </label>
+
+                    <label class="field">
+                      <span>Effects (JSON or plain text)</span>
+                      <textarea
+                        id="choiceOptionEffectsJson"
+                        rows="4"
+                        placeholder='{"damage_bonus": 2}'
+                      ></textarea>
+                    </label>
+                  </div>
+
+                  <div class="actions">
+                    <button type="submit" class="btn btn-primary" id="choiceOptionSaveBtn">
+                      Save Option
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      id="choiceOptionDeleteBtn"
+                      disabled
+                    >
+                      Delete Option
+                    </button>
+                    <button type="button" class="btn btn-ghost" id="choiceOptionResetBtn">
+                      Reset Option Form
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <dialog id="rulesetDialog">
+      <form method="dialog" id="rulesetForm" class="dialog-content">
+        <h3>Create Ruleset</h3>
+        <p class="muted">Needed before creating classes.</p>
+
+        <label class="field">
+          <span>Name</span>
+          <input id="rulesetName" type="text" required placeholder="Nimble 5e" />
+        </label>
+
+        <label class="field">
+          <span>Version</span>
+          <input id="rulesetVersion" type="text" required placeholder="v1" />
+        </label>
+
+        <label class="field">
+          <span>Source Book</span>
+          <input id="rulesetSourceBook" type="text" placeholder="Core Rules + Heroes Core Book" />
+        </label>
+
+        <label class="field">
+          <span>Source Page Ref</span>
+          <input id="rulesetSourcePageRef" type="text" placeholder="pp. 12-38" />
+        </label>
+
+        <div class="actions">
+          <button type="submit" class="btn btn-primary">Create Ruleset</button>
+          <button type="button" class="btn btn-ghost" id="cancelRulesetBtn">Cancel</button>
+        </div>
+      </form>
+    </dialog>
+
+    <div id="toast" class="toast hidden"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

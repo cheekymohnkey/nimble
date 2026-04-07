@@ -1,0 +1,916 @@
+{
+  "source": {
+    "pdf": "official_books/Nimble 5e TTRPG Heroes Core Book -- Evan Diaz -- 41845a084350bb7daa48eb313815b1f9 -- Anna’s Archive.pdf",
+    "pages": [
+      26,
+      27,
+      28,
+      29,
+      30
+    ]
+  },
+  "ruleset": {
+    "name": "Nimble 5e 2nd Edition",
+    "version": "v1",
+    "sourceBook": "Core Rules",
+    "sourcePageRef": "All"
+  },
+  "class": {
+    "name": "Hunter",
+    "description": "Respect the forest and her children, and she will bestow upon you many gifts. Hunters are relentless trackers and masters of the wild.",
+    "hitDie": 8,
+    "startingHp": 13,
+    "keyStat1": "DEX",
+    "keyStat2": "WIL",
+    "saveAdvStat": "DEX",
+    "saveDisadvStat": "INT",
+    "armorProficiencies": [
+      "Leather Armor"
+    ],
+    "weaponProficiencies": [
+      "DEX Weapons"
+    ],
+    "startingGear": [
+      "Shortbow",
+      "Cheap Hides",
+      "Dagger",
+      "Hunting Trap"
+    ]
+  },
+  "subclasses": [
+    {
+      "name": "SHADOWPATH",
+      "isStoryBased": false,
+      "description": null
+    },
+    {
+      "name": "WILD HEART",
+      "isStoryBased": false,
+      "description": null
+    }
+  ],
+  "progression": [
+    {
+      "level": 1,
+      "scopeSubclass": null,
+      "name": "Hunter's Mark",
+      "featureType": "other",
+      "displayOrder": 0,
+      "description": "Action: Mark a visible quarry for 1 day; it cannot be hidden from you and attacks gain advantage or +LVL damage.",
+      "combatUsageNotes": "Plan your action economy around this; use it on turns where its payoff beats a standard attack."
+    },
+    {
+      "level": 1,
+      "scopeSubclass": null,
+      "name": "Forager",
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "Gain advantage on checks to find food and water in the wild.",
+      "combatUsageNotes": "Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
+    },
+    {
+      "level": 2,
+      "scopeSubclass": null,
+      "name": "Thrill of the Hunt",
+      "featureType": "choice_grant",
+      "displayOrder": 0,
+      "description": "Choose 2 Thrill of the Hunt abilities.",
+      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+    },
+    {
+      "level": 2,
+      "scopeSubclass": null,
+      "name": "Roll & Strike",
+      "featureType": "other",
+      "displayOrder": 1,
+      "description": "Action: If you have no TotH charges, move up to speed toward your quarry and attack for free if adjacent.",
+      "combatUsageNotes": "Plan your action economy around this; use it on turns where its payoff beats a standard attack."
+    },
+    {
+      "level": 2,
+      "scopeSubclass": null,
+      "name": "Remember the Wild",
+      "featureType": "passive",
+      "displayOrder": 2,
+      "description": "During wilderness Safe Rest, you may choose different Hunter options available to you.",
+      "combatUsageNotes": "Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
+    },
+    {
+      "level": 3,
+      "scopeSubclass": null,
+      "name": "Subclass",
+      "featureType": "choice_grant",
+      "displayOrder": 0,
+      "description": "Choose a Hunter subclass.",
+      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+    },
+    {
+      "level": 3,
+      "scopeSubclass": null,
+      "name": "Tracker's Intuition",
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "Discern details of prior encounters from tracks and environmental clues.",
+      "combatUsageNotes": "Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
+    },
+    {
+      "level": 4,
+      "scopeSubclass": null,
+      "name": "Thrill of the Hunt (2)",
+      "featureType": "choice_grant",
+      "displayOrder": 0,
+      "description": "Choose a 3rd Thrill of the Hunt ability.",
+      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+    },
+    {
+      "level": 4,
+      "scopeSubclass": null,
+      "name": "Key Stat Increase",
+      "featureType": "stat_increase",
+      "displayOrder": 1,
+      "description": "+1 DEX or WIL.",
+      "combatUsageNotes": "Take the stat that supports your core combat loop and your most frequent checks/attack scaling."
+    },
+    {
+      "level": 4,
+      "scopeSubclass": null,
+      "name": "Explorer of the Wilds",
+      "featureType": "passive",
+      "displayOrder": 2,
+      "description": "+2 speed and gain a climbing speed.",
+      "combatUsageNotes": "Use this for positioning: engage priority targets, escape danger, or set up advantage before attacking."
+    },
+    {
+      "level": 5,
+      "scopeSubclass": null,
+      "name": "Hunter's Resolve",
+      "featureType": "passive",
+      "displayOrder": 0,
+      "description": "When you have no TotH charges, treat all creatures as quarry for movement and melee attacks until end of turn.",
+      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value."
+    },
+    {
+      "level": 5,
+      "scopeSubclass": null,
+      "name": "Final Takedown",
+      "featureType": "other",
+      "displayOrder": 1,
+      "description": "Action: Spend 1 TotH charge to crit a melee attack against Bloodied quarry and double Hunter's Mark damage.",
+      "combatUsageNotes": "Plan your action economy around this; use it on turns where its payoff beats a standard attack."
+    },
+    {
+      "level": 5,
+      "scopeSubclass": null,
+      "name": "Secondary Stat Increase",
+      "featureType": "stat_increase",
+      "displayOrder": 2,
+      "description": "+1 STR or INT.",
+      "combatUsageNotes": "Take the stat that supports your core combat loop and your most frequent checks/attack scaling."
+    },
+    {
+      "level": 6,
+      "scopeSubclass": null,
+      "name": "Versatile Bowmaster",
+      "featureType": "passive",
+      "displayOrder": 0,
+      "description": "Longbow may roll 2d4 instead of 1d8; Crossbow may roll 2d8 instead of 4d4.",
+      "combatUsageNotes": "Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
+    },
+    {
+      "level": 6,
+      "scopeSubclass": null,
+      "name": "Thrill of the Hunt (3)",
+      "featureType": "choice_grant",
+      "displayOrder": 1,
+      "description": "Choose a 4th Thrill of the Hunt ability.",
+      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+    },
+    {
+      "level": 7,
+      "scopeSubclass": null,
+      "name": "Subclass",
+      "featureType": "choice_grant",
+      "displayOrder": 0,
+      "description": "Gain your Hunter subclass feature.",
+      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+    },
+    {
+      "level": 8,
+      "scopeSubclass": null,
+      "name": "Thrill of the Hunt (4)",
+      "featureType": "choice_grant",
+      "displayOrder": 0,
+      "description": "Choose a 5th Thrill of the Hunt ability.",
+      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+    },
+    {
+      "level": 8,
+      "scopeSubclass": null,
+      "name": "Key Stat Increase",
+      "featureType": "stat_increase",
+      "displayOrder": 1,
+      "description": "+1 DEX or WIL.",
+      "combatUsageNotes": "Take the stat that supports your core combat loop and your most frequent checks/attack scaling."
+    },
+    {
+      "level": 9,
+      "scopeSubclass": null,
+      "name": "No Escape",
+      "featureType": "passive",
+      "displayOrder": 0,
+      "description": "When allies make opportunity attacks you may make a ranged opportunity attack against same target.",
+      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value."
+    },
+    {
+      "level": 9,
+      "scopeSubclass": null,
+      "name": "Secondary Stat Increase",
+      "featureType": "stat_increase",
+      "displayOrder": 1,
+      "description": "+1 STR or INT.",
+      "combatUsageNotes": "Take the stat that supports your core combat loop and your most frequent checks/attack scaling."
+    },
+    {
+      "level": 10,
+      "scopeSubclass": null,
+      "name": "Veteran Stalker",
+      "featureType": "resource_change",
+      "displayOrder": 0,
+      "description": "Gain a TotH charge when first Bloodied in an encounter and for every Wound gained.",
+      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value."
+    },
+    {
+      "level": 10,
+      "scopeSubclass": null,
+      "name": "Keen Eye, Steady Hand",
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "Add WIL to ranged weapon damage.",
+      "combatUsageNotes": "Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
+    },
+    {
+      "level": 11,
+      "scopeSubclass": null,
+      "name": "Subclass",
+      "featureType": "choice_grant",
+      "displayOrder": 0,
+      "description": "Gain your Hunter subclass feature.",
+      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+    },
+    {
+      "level": 12,
+      "scopeSubclass": null,
+      "name": "Thrill of the Hunt (5)",
+      "featureType": "choice_grant",
+      "displayOrder": 0,
+      "description": "Choose a 6th Thrill of the Hunt ability.",
+      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+    },
+    {
+      "level": 12,
+      "scopeSubclass": null,
+      "name": "Key Stat Increase",
+      "featureType": "stat_increase",
+      "displayOrder": 1,
+      "description": "+1 DEX or WIL.",
+      "combatUsageNotes": "Take the stat that supports your core combat loop and your most frequent checks/attack scaling."
+    },
+    {
+      "level": 13,
+      "scopeSubclass": null,
+      "name": "Keen Sight",
+      "featureType": "passive",
+      "displayOrder": 0,
+      "description": "Advantage on Perception checks.",
+      "combatUsageNotes": "Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
+    },
+    {
+      "level": 13,
+      "scopeSubclass": null,
+      "name": "Secondary Stat Increase",
+      "featureType": "stat_increase",
+      "displayOrder": 1,
+      "description": "+1 STR or INT.",
+      "combatUsageNotes": "Take the stat that supports your core combat loop and your most frequent checks/attack scaling."
+    },
+    {
+      "level": 14,
+      "scopeSubclass": null,
+      "name": "Thrill of the Hunt (6)",
+      "featureType": "choice_grant",
+      "displayOrder": 0,
+      "description": "Choose a 7th Thrill of the Hunt ability.",
+      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+    },
+    {
+      "level": 15,
+      "scopeSubclass": null,
+      "name": "Subclass",
+      "featureType": "choice_grant",
+      "displayOrder": 0,
+      "description": "Gain your Hunter subclass feature.",
+      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+    },
+    {
+      "level": 16,
+      "scopeSubclass": null,
+      "name": "Key Stat Increase",
+      "featureType": "stat_increase",
+      "displayOrder": 0,
+      "description": "+1 DEX or WIL.",
+      "combatUsageNotes": "Take the stat that supports your core combat loop and your most frequent checks/attack scaling."
+    },
+    {
+      "level": 17,
+      "scopeSubclass": null,
+      "name": "Peerless Hunter",
+      "featureType": "passive",
+      "displayOrder": 0,
+      "description": "You can Defend against your quarry for free.",
+      "combatUsageNotes": "Save this for enemy spike turns; it is strongest when it prevents a big tempo or survivability loss."
+    },
+    {
+      "level": 17,
+      "scopeSubclass": null,
+      "name": "Secondary Stat Increase",
+      "featureType": "stat_increase",
+      "displayOrder": 1,
+      "description": "+1 STR or INT.",
+      "combatUsageNotes": "Take the stat that supports your core combat loop and your most frequent checks/attack scaling."
+    },
+    {
+      "level": 18,
+      "scopeSubclass": null,
+      "name": "Wild Endurance",
+      "featureType": "resource_change",
+      "displayOrder": 0,
+      "description": "Gain 1 Thrill of the Hunt charge at start of your turns.",
+      "combatUsageNotes": "Track this resource every turn and spend it proactively instead of ending encounters with unused value."
+    },
+    {
+      "level": 19,
+      "scopeSubclass": null,
+      "name": "Epic Boon",
+      "featureType": "choice_grant",
+      "displayOrder": 0,
+      "description": "Choose an Epic Boon (see pg. 23 of the GM's Guide).",
+      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+    },
+    {
+      "level": 20,
+      "scopeSubclass": null,
+      "name": "Nemesis",
+      "featureType": "other",
+      "displayOrder": 0,
+      "description": "+1 to any 2 stats. Hunter's Mark can target any number of creatures simultaneously.",
+      "combatUsageNotes": "Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
+    },
+    {
+      "level": 3,
+      "scopeSubclass": "SHADOWPATH",
+      "name": "Ambusher",
+      "featureType": "other",
+      "displayOrder": 0,
+      "description": "On initiative, may use Hunter's Mark for free; gain advantage on first attack each encounter.",
+      "combatUsageNotes": "Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
+    },
+    {
+      "level": 3,
+      "scopeSubclass": "SHADOWPATH",
+      "name": "Skilled Tracker",
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "Advantage on checks to track creatures.",
+      "combatUsageNotes": "Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
+    },
+    {
+      "level": 3,
+      "scopeSubclass": "SHADOWPATH",
+      "name": "Skilled Navigator",
+      "featureType": "passive",
+      "displayOrder": 2,
+      "description": "Cannot become lost by nonmagical means.",
+      "combatUsageNotes": "Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
+    },
+    {
+      "level": 7,
+      "scopeSubclass": "SHADOWPATH",
+      "name": "Primal Predator",
+      "featureType": "other",
+      "displayOrder": 0,
+      "description": "(1/encounter) Weapon attacks ignore cover and armor this turn.",
+      "combatUsageNotes": "Save this for enemy spike turns; it is strongest when it prevents a big tempo or survivability loss. Budget around its 1/ENCOUNTER limit so it lands in the highest-impact window."
+    },
+    {
+      "level": 11,
+      "scopeSubclass": "SHADOWPATH",
+      "name": "Pack Hunter",
+      "featureType": "other",
+      "displayOrder": 0,
+      "description": "Whenever you mark a creature, may also mark another within 6 spaces for free.",
+      "combatUsageNotes": "Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
+    },
+    {
+      "level": 15,
+      "scopeSubclass": "SHADOWPATH",
+      "name": "Apex Predator",
+      "featureType": "resource_change",
+      "displayOrder": 0,
+      "description": "Use Primal Predator twice per encounter; gain 1 TotH charge on initiative.",
+      "combatUsageNotes": "Track this resource every turn and spend it proactively instead of ending encounters with unused value."
+    },
+    {
+      "level": 3,
+      "scopeSubclass": "WILD HEART",
+      "name": "Impressive Form",
+      "featureType": "stat_increase",
+      "displayOrder": 0,
+      "description": "+5 max HP. Upgrade Hit Dice to d10s.",
+      "combatUsageNotes": "Use this to stabilize momentum mid-fight, ideally before allies are forced into defensive turns."
+    },
+    {
+      "level": 3,
+      "scopeSubclass": "WILD HEART",
+      "name": "I Have the High Ground",
+      "featureType": "other",
+      "displayOrder": 1,
+      "description": "On initiative or when gaining TotH charges, move up to half speed for free ignoring difficult terrain.",
+      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value."
+    },
+    {
+      "level": 7,
+      "scopeSubclass": "WILD HEART",
+      "name": "Resourceful Herbalist",
+      "featureType": "other",
+      "displayOrder": 0,
+      "description": "During suitable Safe Rest, craft Healing Salves equal to WIL.",
+      "combatUsageNotes": "Use this to stabilize momentum mid-fight, ideally before allies are forced into defensive turns."
+    },
+    {
+      "level": 7,
+      "scopeSubclass": "WILD HEART",
+      "name": "Healing Salve",
+      "featureType": "other",
+      "displayOrder": 1,
+      "description": "Action: Heal self or adjacent creature WIL d6 HP; salves expire on Safe Rest.",
+      "combatUsageNotes": "Plan your action economy around this; use it on turns where its payoff beats a standard attack."
+    },
+    {
+      "level": 11,
+      "scopeSubclass": "WILD HEART",
+      "name": "Ha! I'm Over Here!",
+      "featureType": "other",
+      "displayOrder": 0,
+      "description": "(1/Safe Rest) If an attack would drop you to 0 HP, move away up to speed and take no damage.",
+      "combatUsageNotes": "Use this for positioning: engage priority targets, escape danger, or set up advantage before attacking. Budget around its 1/SAFE REST limit so it lands in the highest-impact window."
+    },
+    {
+      "level": 15,
+      "scopeSubclass": "WILD HEART",
+      "name": "Unparalleled Survivalist",
+      "featureType": "other",
+      "displayOrder": 0,
+      "description": "Gain +WIL armor. When attacking with ranged weapon, may first move half speed for free.",
+      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value."
+    }
+  ],
+  "choiceGroups": [
+    {
+      "scopeSubclass": null,
+      "name": "Thrill of the Hunt",
+      "maxChoices": 7,
+      "respecRule": "anytime",
+      "description": "Hunter charge-based combat options."
+    },
+    {
+      "scopeSubclass": "SHADOWPATH",
+      "name": "SHADOWPATH",
+      "maxChoices": 6,
+      "respecRule": "never",
+      "description": null
+    },
+    {
+      "scopeSubclass": "WILD HEART",
+      "name": "WILD HEART",
+      "maxChoices": 6,
+      "respecRule": "never",
+      "description": null
+    }
+  ],
+  "choiceOptions": [
+    {
+      "groupName": "Thrill of the Hunt",
+      "scopeSubclass": null,
+      "name": "Addling Arrow",
+      "displayOrder": 0,
+      "description": "Action: Ranged attack; target's next attack must target nearest other creature at random.",
+      "prereq": null,
+      "effects": [
+        {
+          "type": "toth_option",
+          "slug": "addling_arrow"
+        }
+      ],
+      "combatUsageNotes": "Plan your action economy around this; use it on turns where its payoff beats a standard attack."
+    },
+    {
+      "groupName": "Thrill of the Hunt",
+      "scopeSubclass": null,
+      "name": "Come Get Some!",
+      "displayOrder": 1,
+      "description": "Action: Attack a target; it is Taunted by you until end of its next turn.",
+      "prereq": null,
+      "effects": [
+        {
+          "type": "toth_option",
+          "slug": "come_get_some"
+        }
+      ],
+      "combatUsageNotes": "Plan your action economy around this; use it on turns where its payoff beats a standard attack."
+    },
+    {
+      "groupName": "Thrill of the Hunt",
+      "scopeSubclass": null,
+      "name": "Decoy",
+      "displayOrder": 2,
+      "description": "When you Defend: attack misses instead and you may move up to half speed away.",
+      "prereq": null,
+      "effects": [
+        {
+          "type": "toth_option",
+          "slug": "decoy"
+        }
+      ],
+      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value."
+    },
+    {
+      "groupName": "Thrill of the Hunt",
+      "scopeSubclass": null,
+      "name": "Fleet Feet",
+      "displayOrder": 3,
+      "description": "Move up to your speed for free, ignoring difficult terrain.",
+      "prereq": null,
+      "effects": [
+        {
+          "type": "toth_option",
+          "slug": "fleet_feet"
+        }
+      ],
+      "combatUsageNotes": "Use this for positioning: engage priority targets, escape danger, or set up advantage before attacking."
+    },
+    {
+      "groupName": "Thrill of the Hunt",
+      "scopeSubclass": null,
+      "name": "Grease Trap",
+      "displayOrder": 4,
+      "description": "(1/encounter) Reaction when enemy moves adjacent to you/ally within 6: target falls prone and gains fire vulnerability.",
+      "prereq": null,
+      "effects": [
+        {
+          "type": "toth_option",
+          "slug": "grease_trap"
+        }
+      ],
+      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value. Budget around its 1/ENCOUNTER limit so it lands in the highest-impact window."
+    },
+    {
+      "groupName": "Thrill of the Hunt",
+      "scopeSubclass": null,
+      "name": "Hail of Arrows",
+      "displayOrder": 5,
+      "description": "(Half range) 2 actions: shoot all creatures in 3x3 area; speed halved until end of next turn.",
+      "prereq": null,
+      "effects": [
+        {
+          "type": "toth_option",
+          "slug": "hail_of_arrows"
+        }
+      ],
+      "combatUsageNotes": "Plan your action economy around this; use it on turns where its payoff beats a standard attack."
+    },
+    {
+      "groupName": "Thrill of the Hunt",
+      "scopeSubclass": null,
+      "name": "Heavy Shot",
+      "displayOrder": 6,
+      "description": "(Half range) Action: ranged attack and push target by size.",
+      "prereq": null,
+      "effects": [
+        {
+          "type": "toth_option",
+          "slug": "heavy_shot"
+        }
+      ],
+      "combatUsageNotes": "Plan your action economy around this; use it on turns where its payoff beats a standard attack."
+    },
+    {
+      "groupName": "Thrill of the Hunt",
+      "scopeSubclass": null,
+      "name": "Incendiary Shot",
+      "displayOrder": 7,
+      "description": "(Half range) Action: ranged attack; add WIL d8 fire damage.",
+      "prereq": null,
+      "effects": [
+        {
+          "type": "toth_option",
+          "slug": "incendiary_shot"
+        }
+      ],
+      "combatUsageNotes": "Plan your action economy around this; use it on turns where its payoff beats a standard attack."
+    },
+    {
+      "groupName": "Thrill of the Hunt",
+      "scopeSubclass": null,
+      "name": "Multishot",
+      "displayOrder": 8,
+      "description": "(Half range) Action: attack quarry; second target within 2 spaces takes same damage.",
+      "prereq": null,
+      "effects": [
+        {
+          "type": "toth_option",
+          "slug": "multishot"
+        }
+      ],
+      "combatUsageNotes": "Plan your action economy around this; use it on turns where its payoff beats a standard attack."
+    },
+    {
+      "groupName": "Thrill of the Hunt",
+      "scopeSubclass": null,
+      "name": "Pinning Shot",
+      "displayOrder": 9,
+      "description": "Spend 3 actions shooting quarry; it is Restrained until escape (DC 10+WIL).",
+      "prereq": null,
+      "effects": [
+        {
+          "type": "toth_option",
+          "slug": "pinning_shot"
+        }
+      ],
+      "combatUsageNotes": "Plan your action economy around this; use it on turns where its payoff beats a standard attack."
+    },
+    {
+      "groupName": "Thrill of the Hunt",
+      "scopeSubclass": null,
+      "name": "Snare Trap",
+      "displayOrder": 10,
+      "description": "(1/encounter) Reaction when enemy moves adjacent to you/ally within 6: move back 1 and Restrained (DC 10+WIL).",
+      "prereq": null,
+      "effects": [
+        {
+          "type": "toth_option",
+          "slug": "snare_trap"
+        }
+      ],
+      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value. Budget around its 1/ENCOUNTER limit so it lands in the highest-impact window."
+    },
+    {
+      "groupName": "Thrill of the Hunt",
+      "scopeSubclass": null,
+      "name": "Sharpshooter",
+      "displayOrder": 11,
+      "description": "Action: if unmoved this turn and quarry is 4+ spaces away, attack for double damage.",
+      "prereq": null,
+      "effects": [
+        {
+          "type": "toth_option",
+          "slug": "sharpshooter"
+        }
+      ],
+      "combatUsageNotes": "Plan your action economy around this; use it on turns where its payoff beats a standard attack."
+    },
+    {
+      "groupName": "Thrill of the Hunt",
+      "scopeSubclass": null,
+      "name": "Vital Shot",
+      "displayOrder": 12,
+      "description": "(Half range) Action: against Hampered quarry ranged attacks ignore armor; if unarmored, double Hunter's Mark bonus damage.",
+      "prereq": null,
+      "effects": [
+        {
+          "type": "toth_option",
+          "slug": "vital_shot"
+        }
+      ],
+      "combatUsageNotes": "Plan your action economy around this; use it on turns where its payoff beats a standard attack."
+    },
+    {
+      "groupName": "Thrill of the Hunt",
+      "scopeSubclass": null,
+      "name": "Wild Instinct",
+      "displayOrder": 13,
+      "description": "(1/round) If you have no TotH charges, assess for free with advantage.",
+      "prereq": null,
+      "effects": [
+        {
+          "type": "toth_option",
+          "slug": "wild_instinct"
+        }
+      ],
+      "combatUsageNotes": "Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value. Budget around its 1/ROUND limit so it lands in the highest-impact window."
+    },
+    {
+      "groupName": "SHADOWPATH",
+      "scopeSubclass": "SHADOWPATH",
+      "name": "Ambusher",
+      "displayOrder": 0,
+      "description": "On initiative, may use Hunter's Mark for free; gain advantage on first attack each encounter.",
+      "prereq": {
+        "level": 3
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "ambusher"
+        }
+      ],
+      "combatUsageNotes": "Unlocks at level 3. Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
+    },
+    {
+      "groupName": "SHADOWPATH",
+      "scopeSubclass": "SHADOWPATH",
+      "name": "Skilled Tracker",
+      "displayOrder": 1,
+      "description": "Advantage on checks to track creatures.",
+      "prereq": {
+        "level": 3
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "skilled_tracker"
+        }
+      ],
+      "combatUsageNotes": "Unlocks at level 3. Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
+    },
+    {
+      "groupName": "SHADOWPATH",
+      "scopeSubclass": "SHADOWPATH",
+      "name": "Skilled Navigator",
+      "displayOrder": 2,
+      "description": "Cannot become lost by nonmagical means.",
+      "prereq": {
+        "level": 3
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "skilled_navigator"
+        }
+      ],
+      "combatUsageNotes": "Unlocks at level 3. Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
+    },
+    {
+      "groupName": "SHADOWPATH",
+      "scopeSubclass": "SHADOWPATH",
+      "name": "Primal Predator",
+      "displayOrder": 3,
+      "description": "(1/encounter) Weapon attacks ignore cover and armor this turn.",
+      "prereq": {
+        "level": 7
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "primal_predator"
+        }
+      ],
+      "combatUsageNotes": "Unlocks at level 7. Save this for enemy spike turns; it is strongest when it prevents a big tempo or survivability loss. Budget around its 1/ENCOUNTER limit so it lands in the highest-impact window."
+    },
+    {
+      "groupName": "SHADOWPATH",
+      "scopeSubclass": "SHADOWPATH",
+      "name": "Pack Hunter",
+      "displayOrder": 4,
+      "description": "Whenever you mark a creature, may also mark another within 6 spaces for free.",
+      "prereq": {
+        "level": 11
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "pack_hunter"
+        }
+      ],
+      "combatUsageNotes": "Unlocks at level 11. Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
+    },
+    {
+      "groupName": "SHADOWPATH",
+      "scopeSubclass": "SHADOWPATH",
+      "name": "Apex Predator",
+      "displayOrder": 5,
+      "description": "Use Primal Predator twice per encounter; gain 1 TotH charge on initiative.",
+      "prereq": {
+        "level": 15
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "apex_predator"
+        }
+      ],
+      "combatUsageNotes": "Unlocks at level 15. Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
+    },
+    {
+      "groupName": "WILD HEART",
+      "scopeSubclass": "WILD HEART",
+      "name": "Impressive Form",
+      "displayOrder": 0,
+      "description": "+5 max HP. Upgrade Hit Dice to d10s.",
+      "prereq": {
+        "level": 3
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "impressive_form"
+        }
+      ],
+      "combatUsageNotes": "Unlocks at level 3. Use this to stabilize momentum mid-fight, ideally before allies are forced into defensive turns."
+    },
+    {
+      "groupName": "WILD HEART",
+      "scopeSubclass": "WILD HEART",
+      "name": "I Have the High Ground",
+      "displayOrder": 1,
+      "description": "On initiative or when gaining TotH charges, move up to half speed for free ignoring difficult terrain.",
+      "prereq": {
+        "level": 3
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "high_ground"
+        }
+      ],
+      "combatUsageNotes": "Unlocks at level 3. Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value."
+    },
+    {
+      "groupName": "WILD HEART",
+      "scopeSubclass": "WILD HEART",
+      "name": "Resourceful Herbalist",
+      "displayOrder": 2,
+      "description": "During suitable Safe Rest, craft Healing Salves equal to WIL.",
+      "prereq": {
+        "level": 7
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "resourceful_herbalist"
+        }
+      ],
+      "combatUsageNotes": "Unlocks at level 7. Use this to stabilize momentum mid-fight, ideally before allies are forced into defensive turns."
+    },
+    {
+      "groupName": "WILD HEART",
+      "scopeSubclass": "WILD HEART",
+      "name": "Healing Salve",
+      "displayOrder": 3,
+      "description": "Action: Heal self or adjacent creature WIL d6 HP; salves expire on Safe Rest.",
+      "prereq": {
+        "level": 7
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "healing_salve"
+        }
+      ],
+      "combatUsageNotes": "Unlocks at level 7. Plan your action economy around this; use it on turns where its payoff beats a standard attack."
+    },
+    {
+      "groupName": "WILD HEART",
+      "scopeSubclass": "WILD HEART",
+      "name": "Ha! I'm Over Here!",
+      "displayOrder": 4,
+      "description": "(1/Safe Rest) If an attack would drop you to 0 HP, move away up to speed and take no damage.",
+      "prereq": {
+        "level": 11
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "over_here"
+        }
+      ],
+      "combatUsageNotes": "Unlocks at level 11. Use this for positioning: engage priority targets, escape danger, or set up advantage before attacking. Budget around its 1/SAFE REST limit so it lands in the highest-impact window."
+    },
+    {
+      "groupName": "WILD HEART",
+      "scopeSubclass": "WILD HEART",
+      "name": "Unparalleled Survivalist",
+      "displayOrder": 5,
+      "description": "Gain +WIL armor. When attacking with ranged weapon, may first move half speed for free.",
+      "prereq": {
+        "level": 15
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "unparalleled_survivalist"
+        }
+      ],
+      "combatUsageNotes": "Unlocks at level 15. Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value."
+    }
+  ]
+}

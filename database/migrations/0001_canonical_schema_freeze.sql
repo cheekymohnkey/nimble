@@ -63,6 +63,7 @@ CREATE TABLE class_level_feature (
     level INTEGER NOT NULL CHECK (level BETWEEN 1 AND 20),
     name TEXT NOT NULL,
     description TEXT,
+    combat_usage_notes TEXT,
     feature_type TEXT NOT NULL CHECK (
         feature_type IN (
             'auto',
@@ -129,6 +130,7 @@ CREATE TABLE feature_choice_option (
     choice_group_id INTEGER NOT NULL,
     name TEXT NOT NULL,
     description TEXT,
+    combat_usage_notes TEXT,
     prereq_json TEXT,
     effects_json TEXT,
     display_order INTEGER NOT NULL DEFAULT 0 CHECK (display_order >= 0),
