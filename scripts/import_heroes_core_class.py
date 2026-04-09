@@ -23,6 +23,7 @@ DEFAULT_PDF = (
     "41845a084350bb7daa48eb313815b1f9 -- Anna’s Archive.pdf"
 )
 DEFAULT_REFERENCE = "database/seed_data/v1/berserker_heroes_core_reference.json"
+REFERENCE_SUFFIX = "_heroes_core_reference.json"
 
 
 def _import_pypdf() -> Any:
@@ -67,6 +68,67 @@ def ensure_reference_shape(reference: dict[str, Any]) -> None:
         joined = ", ".join(missing)
         raise RuntimeError(f"Reference JSON missing required key(s): {joined}")
 
+    source = reference.get("source")
+    if not isinstance(source, dict):
+        raise RuntimeError("Reference JSON missing required object: source")
+    has_provenance = any(
+        isinstance(source.get(key), str) and source.get(key, "").strip()
+        for key in ("book", "pdf", "file")
+    )
+    if not has_provenance:
+        raise RuntimeError(
+            "Reference JSON must include a source provenance field: source.book, source.pdf, or source.file",
+        )
+    pages = source.get("pages")
+    if not isinstance(pages, list) or not pages:
+        raise RuntimeError("Reference JSON missing required non-empty array: source.pages")
+
+
+def normalize_choice_structure(reference: dict[str, Any]) -> None:
+    """Allow simplified JSON by materializing missing subclass-scoped groups.
+
+    The schema stores options through `feature_choice_group`, so if input JSON
+    provides `choiceOptions` scoped to a subclass but omits the corresponding
+    subclass-scoped `choiceGroups`, synthesize those groups deterministically.
+    """
+    subclass_names = {str(row["name"]) for row in reference["subclasses"]}
+    normalized_groups: list[dict[str, Any]] = []
+    group_keys: set[tuple[str | None, str]] = set()
+
+    for row in reference["choiceGroups"]:
+        scope = row.get("scopeSubclass")
+        if scope is not None and scope not in subclass_names:
+            raise RuntimeError(f"choiceGroups references unknown scopeSubclass: {scope}")
+        key = (scope, str(row["name"]))
+        if key in group_keys:
+            continue
+        group_keys.add(key)
+        normalized_groups.append(row)
+
+    for row in reference["choiceOptions"]:
+        scope = row.get("scopeSubclass")
+        group_name = str(row["groupName"])
+        if scope is not None and scope not in subclass_names:
+            raise RuntimeError(f"choiceOptions references unknown scopeSubclass: {scope}")
+        key = (scope, group_name)
+        if key not in group_keys:
+            group_keys.add(key)
+            normalized_groups.append(
+                {
+                    "scopeSubclass": scope,
+                    "name": group_name,
+                    "maxChoices": 1,
+                    "respecRule": "never",
+                    "description": None,
+                }
+            )
+
+    for row in normalized_groups:
+        row["respecRule"] = str(row.get("respecRule", "never"))
+        row["maxChoices"] = int(row.get("maxChoices", 1))
+
+    reference["choiceGroups"] = normalized_groups
+
 
 def collect_anchors(reference: dict[str, Any]) -> list[str]:
     cls = reference["class"]
@@ -100,10 +162,11 @@ def collect_anchors(reference: dict[str, Any]) -> list[str]:
 
 def validate_reference_against_pdf(reference: dict[str, Any], pdf_text: str) -> None:
     haystack = normalize_for_match(pdf_text)
+    haystack_compact = re.sub(r"[^a-z0-9]+", "", haystack)
     missing: list[str] = []
     for anchor in collect_anchors(reference):
         needle = normalize_for_match(anchor)
-        if needle and needle not in haystack:
+        if needle and needle not in haystack and re.sub(r"[^a-z0-9]+", "", needle) not in haystack_compact:
             missing.append(anchor)
     if missing:
         sample = ", ".join(missing[:12])
@@ -267,7 +330,7 @@ def upsert_class_from_reference(
                 int(row["level"]),
                 row["name"],
                 row.get("description"),
-                row.get("combatUsageNotes"),
+                None,
                 row["featureType"],
                 int(row.get("displayOrder", 0)),
             ),
@@ -308,7 +371,7 @@ def upsert_class_from_reference(
                 group_id,
                 row["name"],
                 row.get("description"),
-                row.get("combatUsageNotes"),
+                None,
                 to_json_text(row.get("prereq")),
                 to_json_text(row.get("effects")),
                 int(row.get("displayOrder", 0)),
@@ -347,17 +410,21 @@ def main() -> None:
         raise SystemExit(f"DB not found: {db_path}")
     if not ref_path.exists():
         raise SystemExit(f"Reference payload not found: {ref_path}")
+    if not ref_path.name.endswith(REFERENCE_SUFFIX):
+        raise SystemExit(
+            "Reference payload must be an extracted Heroes Core reference file "
+            f"ending with {REFERENCE_SUFFIX}: {ref_path}",
+        )
     if not args.skip_pdf_validation and not pdf_path.exists():
         raise SystemExit(f"PDF not found: {pdf_path}")
 
     reference = json.loads(ref_path.read_text(encoding="utf-8"))
     ensure_reference_shape(reference)
+    normalize_choice_structure(reference)
 
     if not args.skip_pdf_validation:
-        source = reference.get("source", {})
-        pages = source.get("pages")
-        if not isinstance(pages, list) or not pages:
-            raise RuntimeError("Reference JSON must include source.pages for PDF validation")
+        source = reference["source"]
+        pages = source["pages"]
         pdf_text = load_pdf_text(pdf_path, [int(p) for p in pages])
         validate_reference_against_pdf(reference, pdf_text)
 

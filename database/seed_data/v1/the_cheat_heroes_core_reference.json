@@ -1,6 +1,6 @@
 {
   "source": {
-    "pdf": "official_books/Nimble 5e TTRPG Heroes Core Book -- Evan Diaz -- 41845a084350bb7daa48eb313815b1f9 -- Anna’s Archive.pdf",
+    "pdf": "official_books/Nimble 5e TTRPG Heroes Core Book -- Evan Diaz -- 41845a084350bb7daa48eb313815b1f9 -- Anna\u2019s Archive.pdf",
     "pages": [
       14,
       15,
@@ -17,7 +17,7 @@
   },
   "class": {
     "name": "The Cheat",
-    "description": "Cloak and dagger... and dagger. The common Cheat does not call herself a Cheat, of course-rather, a streetsmart rogue, a survivalist, or a liberator of unused goods. They are masters of stealth, pickpocketing, and smooth talking. Some of the more vicious ilk are masters of death-dealing as well.\nCheats can be found in every city and byway under countless different names, but they all believe something similar: It is a cruel, merciless world, and those who aim to survive do not have time for silly things like morals or honor. Those are luxuries of the rich and powerful. Honor gets you killed-survival is about taking what you want, when you can.",
+    "description": "Cloak and dagger\u2026 and dagger. The common Cheat doesn\u2019t call herself a Cheat, of course\u2014rather, a streetsmart rogue, a survivalist, or a liberator of unused goods. They are masters of stealth, pickpocketing, and smooth talking. Some of the more vicious ilk are masters of death-dealing as well. Cheats can be found in every city and byway under countless different names, but they all believe something similar: It\u2019s a cruel, merciless world, and those who aim to survive don\u2019t have time for silly things like \u201cmorals\u201d or \u201chonor.\u201d Those are luxuries of the rich and powerful. Honor gets you killed\u2014survival is about taking what you want, when you can. As The Cheat, you can: \u2022Break the rules! You can change the dice you roll to whatever numbers suit you best! \u2022Sneak in and backstab enemies with devastating critical hits, taking down even huge, heavily\u2013armored foes with a single blow! \u2022Fight dirty with pocket sand, low blows, and vicious blades. When things get out of hand, disappear into the night, and live to cheat another day!",
     "hitDie": 6,
     "startingHp": 10,
     "keyStat1": "DEX",
@@ -54,136 +54,97 @@
       "level": 1,
       "scopeSubclass": null,
       "name": "Sneak Attack",
-      "featureType": "resource_change",
-      "displayOrder": 0,
-      "description": "(1/turn) When you crit, deal +1d6 damage.",
-      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value. Budget around its 1/TURN limit so it lands in the highest-impact window."
+      "featureType": "stat_increase",
+      "displayOrder": 1,
+      "description": "(1/turn) When you crit, deal +1d6 damage."
     },
     {
       "level": 1,
       "scopeSubclass": null,
       "name": "Vicious Opportunist",
-      "featureType": "other",
-      "displayOrder": 1,
-      "description": "(1/turn) When you hit a Distracted target with a melee attack, you may change the Primary Die roll to whatever you like (changing it to the max value counts as a crit). A target is Distracted if it is adjacent to or Taunted by an ally, or if it cannot see you.",
-      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value. Budget around its 1/TURN limit so it lands in the highest-impact window."
+      "featureType": "passive",
+      "displayOrder": 2,
+      "description": "(1/turn) When you hit a Distracted target with a melee attack, you may change the Primary Die roll to whatever you like (changing it to the max value counts as a crit)."
+    },
+    {
+      "level": 1,
+      "scopeSubclass": null,
+      "name": "Distracted",
+      "featureType": "passive",
+      "displayOrder": 3,
+      "description": "A target is Distracted if it is adjacent to or Taunted by an ally, or if it cannot see you."
     },
     {
       "level": 2,
       "scopeSubclass": null,
       "name": "Cheat",
       "featureType": "passive",
-      "displayOrder": 0,
-      "description": "You are a well-rounded cheater: (1/round) move or hide for free; (1/day) change any skill check to 10+INT; if you roll less than 10 on initiative, change it to 10; gain advantage on game, competition, and wager skill checks.",
-      "combatUsageNotes": "Use this for positioning: engage priority targets, escape danger, or set up advantage before attacking. Budget around its 1/ROUND limit so it lands in the highest-impact window."
+      "displayOrder": 1,
+      "description": "You\u2019re a well\u2013rounded cheater. Gain the following abilities: \u2022 (1/round) You may either Move or Hide for free. \u2022 (1/day) You may change any skill check to 10+INT. \u2022 If you roll less than 10 on Initiative, you may change it to 10 instead. \u2022 You may gain advantage on skill checks while playing any games, competitions, or placing wagers. If you\u2019re caught though\u2026"
+    },
+    {
+      "level": 2,
+      "scopeSubclass": null,
+      "name": "Magic?",
+      "featureType": "passive",
+      "displayOrder": 2,
+      "description": "Magic? The Cheat has some abilities that look magical\u2014they might be, but don\u2019t have to be. You have your ways, okay? No need to explain how you did that, not even to the GM!"
     },
     {
       "level": 3,
       "scopeSubclass": null,
       "name": "Subclass",
       "featureType": "choice_grant",
-      "displayOrder": 0,
-      "description": "Choose a Cheat subclass.",
-      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+      "displayOrder": 1,
+      "description": "Choose a Cheat subclass."
     },
     {
       "level": 3,
       "scopeSubclass": null,
       "name": "Sneak Attack (2)",
-      "featureType": "resource_change",
-      "displayOrder": 1,
-      "description": "Your Sneak Attack becomes 1d8.",
-      "combatUsageNotes": "Track this resource every turn and spend it proactively instead of ending encounters with unused value."
+      "featureType": "passive",
+      "displayOrder": 2,
+      "description": "Your Sneak Attack becomes 1d8."
     },
     {
       "level": 3,
       "scopeSubclass": null,
-      "name": "Thieves' Cant",
+      "name": "Thieves\u2019 Cant",
       "featureType": "passive",
-      "displayOrder": 2,
-      "description": "You learn the secret language of rogues and scoundrels.",
-      "combatUsageNotes": "Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
-    },
-    {
-      "level": 3,
-      "scopeSubclass": "TOOLS OF THE SCOUNDREL",
-      "name": "Low Blow",
-      "featureType": "other",
-      "displayOrder": 0,
-      "description": "When you Sneak Attack, you may spend 2 additional actions to Incapacitate your target for their next turn on a failed STR save (DC 10+INT). Save or fail, they are Taunted by you until you drop to 0 HP.",
-      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value."
-    },
-    {
-      "level": 3,
-      "scopeSubclass": "TOOLS OF THE SCOUNDREL",
-      "name": "Sweet Talk",
-      "featureType": "passive",
-      "displayOrder": 1,
-      "description": "You may gain advantage on all Influence checks with NPCs you have just met for the first time. This lasts until you fail an Influence check with them or until you meet a second time. You have disadvantage on Influence checks with them after you use this ability (until you get back on their good side).",
-      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value."
-    },
-    {
-      "level": 3,
-      "scopeSubclass": "TOOLS OF THE SILENT BLADE",
-      "name": "Amidst All This Commotion...",
-      "featureType": "passive",
-      "displayOrder": 0,
-      "description": "If a creature dies while you Sneak Attack them, you may turn Invisible until you attack again or until the beginning of your next turn.",
-      "combatUsageNotes": "Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
-    },
-    {
-      "level": 3,
-      "scopeSubclass": "TOOLS OF THE SILENT BLADE",
-      "name": "Leave No Trace",
-      "featureType": "passive",
-      "displayOrder": 1,
-      "description": "Advantage on Stealth checks when you are at full health.",
-      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value."
+      "displayOrder": 3,
+      "description": "You learn the secret language of rogues and scoundrels."
     },
     {
       "level": 4,
       "scopeSubclass": null,
       "name": "Key Stat Increase",
       "featureType": "stat_increase",
-      "displayOrder": 0,
-      "description": "+1 DEX or INT.",
-      "combatUsageNotes": "Take the stat that supports your core combat loop and your most frequent checks/attack scaling."
+      "displayOrder": 1,
+      "description": "+1 DEX or INT."
     },
     {
       "level": 4,
       "scopeSubclass": null,
       "name": "Underhanded Ability",
       "featureType": "choice_grant",
-      "displayOrder": 1,
-      "description": "Choose an Underhanded Ability.",
-      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+      "displayOrder": 2,
+      "description": "Choose an Underhanded Ability."
     },
     {
       "level": 4,
       "scopeSubclass": null,
       "name": "Trade Secrets",
       "featureType": "passive",
-      "displayOrder": 2,
-      "description": "Whenever you spend a night talking shop with other roguish types during a Safe Rest, you may choose different Cheat options available to you.",
-      "combatUsageNotes": "Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
+      "displayOrder": 3,
+      "description": "Whenever you spend a night talking shop with other roguish types during a Safe Rest, you may choose different Cheat options available to you."
     },
     {
       "level": 5,
       "scopeSubclass": null,
       "name": "Twist the Blade",
-      "featureType": "other",
-      "displayOrder": 0,
-      "description": "Action: Change one of your Sneak Attack dice to whatever you like.",
-      "combatUsageNotes": "Plan your action economy around this; use it on turns where its payoff beats a standard attack."
-    },
-    {
-      "level": 5,
-      "scopeSubclass": null,
-      "name": "Quick Read",
-      "featureType": "other",
+      "featureType": "passive",
       "displayOrder": 1,
-      "description": "(1/encounter) Gain advantage on an Assess check. (1/day) Gain advantage on an Examination check.",
-      "combatUsageNotes": "Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value. Budget around its 1/ENCOUNTER limit so it lands in the highest-impact window."
+      "description": "Action: Change one of your Sneak Attack dice to whatever you like. Quick Read. \u2022 (1/encounter) Gain advantage on an Assess check. \u2022 (1/day) Gain advantage on an Examination check."
     },
     {
       "level": 5,
@@ -191,297 +152,290 @@
       "name": "Secondary Stat Increase",
       "featureType": "stat_increase",
       "displayOrder": 2,
-      "description": "+1 WIL or STR.",
-      "combatUsageNotes": "Take the stat that supports your core combat loop and your most frequent checks/attack scaling."
+      "description": "+1 WIL or STR."
     },
     {
       "level": 6,
       "scopeSubclass": null,
       "name": "Underhanded Ability (2)",
       "featureType": "choice_grant",
-      "displayOrder": 0,
-      "description": "Choose a 2nd Underhanded Ability.",
-      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+      "displayOrder": 1,
+      "description": "Choose a 2nd Underhanded Ability."
     },
     {
       "level": 6,
       "scopeSubclass": null,
       "name": "THAT'S Not What Happened!",
-      "featureType": "other",
-      "displayOrder": 1,
-      "description": "(1/Safe Rest) Action: After a Distracted enemy attacks you, you may change the Primary Die roll to whatever you like (changing the die to the minimum value counts as a miss).",
-      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value. Budget around its 1/SAFE REST limit so it lands in the highest-impact window."
+      "featureType": "passive",
+      "displayOrder": 2,
+      "description": "THAT'S Not What Happened! (1/Safe Rest) Action: After a Distracted enemy attacks you, you may change the Primary Die roll to whatever you like (changing the die to the minimum value counts as a miss)."
     },
     {
       "level": 7,
       "scopeSubclass": null,
       "name": "Subclass",
-      "featureType": "choice_grant",
-      "displayOrder": 0,
-      "description": "Gain your Cheat subclass feature.",
-      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "Gain your Cheat subclass feature."
     },
     {
       "level": 7,
       "scopeSubclass": null,
       "name": "Sneak Attack (3)",
-      "featureType": "resource_change",
-      "displayOrder": 1,
-      "description": "Your Sneak Attack becomes 2d8.",
-      "combatUsageNotes": "Track this resource every turn and spend it proactively instead of ending encounters with unused value."
-    },
-    {
-      "level": 7,
-      "scopeSubclass": "TOOLS OF THE SCOUNDREL",
-      "name": "Pocket Sand",
-      "featureType": "other",
-      "displayOrder": 0,
-      "description": "(2/encounter) When you Defend against a melee attack, Blind the attacker until the start of their next turn and force them to reroll the attack (Blinded creatures attack with disadvantage).",
-      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value. Budget around its 2/ENCOUNTER limit so it lands in the highest-impact window."
-    },
-    {
-      "level": 7,
-      "scopeSubclass": "TOOLS OF THE SILENT BLADE",
-      "name": "Cunning Strike",
-      "featureType": "other",
-      "displayOrder": 0,
-      "description": "(2/encounter) When you land a Sneak Attack, you may force the target to make a STR save (DC 10+INT). On a failure, instead of rolling your Sneak Attack dice, they deal the maximum amount of damage (if your target saves, regain 1 use).",
-      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value. Budget around its 2/ENCOUNTER limit so it lands in the highest-impact window."
+      "featureType": "passive",
+      "displayOrder": 2,
+      "description": "Your Sneak Attack becomes 2d8."
     },
     {
       "level": 8,
       "scopeSubclass": null,
       "name": "Underhanded Ability (3)",
       "featureType": "choice_grant",
-      "displayOrder": 0,
-      "description": "Choose a 3rd Underhanded Ability.",
-      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+      "displayOrder": 1,
+      "description": "Choose a 3rd Underhanded Ability."
     },
     {
       "level": 8,
       "scopeSubclass": null,
       "name": "Key Stat Increase",
       "featureType": "stat_increase",
-      "displayOrder": 1,
-      "description": "+1 DEX or INT.",
-      "combatUsageNotes": "Take the stat that supports your core combat loop and your most frequent checks/attack scaling."
+      "displayOrder": 2,
+      "description": "+1 DEX or INT."
     },
     {
       "level": 9,
       "scopeSubclass": null,
       "name": "Sneak Attack (4)",
-      "featureType": "resource_change",
-      "displayOrder": 0,
-      "description": "Your Sneak Attack becomes 2d10.",
-      "combatUsageNotes": "Track this resource every turn and spend it proactively instead of ending encounters with unused value."
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "Your Sneak Attack becomes 2d10."
     },
     {
       "level": 9,
       "scopeSubclass": null,
       "name": "Secondary Stat Increase",
       "featureType": "stat_increase",
-      "displayOrder": 1,
-      "description": "+1 WIL or STR.",
-      "combatUsageNotes": "Take the stat that supports your core combat loop and your most frequent checks/attack scaling."
+      "displayOrder": 2,
+      "description": "+1 WIL or STR."
     },
     {
       "level": 10,
       "scopeSubclass": null,
       "name": "Underhanded Ability (4)",
       "featureType": "choice_grant",
-      "displayOrder": 0,
-      "description": "Choose a 4th Underhanded Ability.",
-      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+      "displayOrder": 1,
+      "description": "Choose a 4th Underhanded Ability."
     },
     {
       "level": 11,
       "scopeSubclass": null,
       "name": "Subclass",
-      "featureType": "choice_grant",
-      "displayOrder": 0,
-      "description": "Gain your Cheat subclass feature.",
-      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "Gain your Cheat subclass feature."
     },
     {
       "level": 11,
       "scopeSubclass": null,
       "name": "Sneak Attack (5)",
-      "featureType": "resource_change",
-      "displayOrder": 1,
-      "description": "Your Sneak Attack becomes 2d12.",
-      "combatUsageNotes": "Track this resource every turn and spend it proactively instead of ending encounters with unused value."
-    },
-    {
-      "level": 11,
-      "scopeSubclass": "TOOLS OF THE SCOUNDREL",
-      "name": "Escape Plan",
-      "featureType": "other",
-      "displayOrder": 0,
-      "description": "(1/Safe Rest) When you would drop to 0 HP or gain a Wound, you do not. Instead, you turn Invisible for 1 minute or until you attack.",
-      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value. Budget around its 1/SAFE REST limit so it lands in the highest-impact window."
-    },
-    {
-      "level": 11,
-      "scopeSubclass": "TOOLS OF THE SILENT BLADE",
-      "name": "Professional Skulker",
       "featureType": "passive",
-      "displayOrder": 0,
-      "description": "Gain a climbing speed and advantage on Stealth checks (replaces Leave No Trace).",
-      "combatUsageNotes": "Use this for positioning: engage priority targets, escape danger, or set up advantage before attacking."
+      "displayOrder": 2,
+      "description": "Your Sneak Attack becomes 2d12."
     },
     {
       "level": 12,
       "scopeSubclass": null,
       "name": "Underhanded Ability (5)",
       "featureType": "choice_grant",
-      "displayOrder": 0,
-      "description": "Choose a 5th Underhanded Ability.",
-      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+      "displayOrder": 1,
+      "description": "Choose a 5th Underhanded Ability."
     },
     {
       "level": 12,
       "scopeSubclass": null,
       "name": "Key Stat Increase",
       "featureType": "stat_increase",
-      "displayOrder": 1,
-      "description": "+1 DEX or INT.",
-      "combatUsageNotes": "Take the stat that supports your core combat loop and your most frequent checks/attack scaling."
+      "displayOrder": 2,
+      "description": "+1 DEX or INT."
     },
     {
       "level": 13,
       "scopeSubclass": null,
       "name": "Twist the Blade (2)",
-      "featureType": "other",
-      "displayOrder": 0,
-      "description": "(1/turn) You can Twist the Blade for free.",
-      "combatUsageNotes": "Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value. Budget around its 1/TURN limit so it lands in the highest-impact window."
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "(1/turn) You can Twist the Blade for free."
     },
     {
       "level": 13,
       "scopeSubclass": null,
       "name": "Secondary Stat Increase",
       "featureType": "stat_increase",
-      "displayOrder": 1,
-      "description": "+1 WIL or STR.",
-      "combatUsageNotes": "Take the stat that supports your core combat loop and your most frequent checks/attack scaling."
+      "displayOrder": 2,
+      "description": "+1 WIL or STR"
     },
     {
       "level": 14,
       "scopeSubclass": null,
       "name": "Underhanded Ability (6)",
       "featureType": "choice_grant",
-      "displayOrder": 0,
-      "description": "Choose a 6th Underhanded Ability.",
-      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+      "displayOrder": 1,
+      "description": "Choose a 6th Underhanded Ability."
     },
     {
       "level": 15,
       "scopeSubclass": null,
       "name": "Subclass",
-      "featureType": "choice_grant",
-      "displayOrder": 0,
-      "description": "Gain your Cheat subclass feature.",
-      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "Gain your Cheat subclass feature."
     },
     {
       "level": 15,
       "scopeSubclass": null,
       "name": "Sneak Attack (6)",
-      "featureType": "resource_change",
-      "displayOrder": 1,
-      "description": "Your Sneak Attack becomes 2d20.",
-      "combatUsageNotes": "Track this resource every turn and spend it proactively instead of ending encounters with unused value."
-    },
-    {
-      "level": 15,
-      "scopeSubclass": "TOOLS OF THE SCOUNDREL",
-      "name": "Heads I Win, Tails You Lose",
-      "featureType": "other",
-      "displayOrder": 0,
-      "description": "(1/encounter) Attacks you make this round do not miss, you crit on 1 less than normally needed, and you gain LVL temp HP.",
-      "combatUsageNotes": "Pair this with crit-fishing turns and high-accuracy setups to maximize burst value. Budget around its 1/ENCOUNTER limit so it lands in the highest-impact window."
-    },
-    {
-      "level": 15,
-      "scopeSubclass": "TOOLS OF THE SILENT BLADE",
-      "name": "KILL",
       "featureType": "passive",
-      "displayOrder": 0,
-      "description": "When you crit an enemy with fewer max HP than you, it dies.",
-      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value."
+      "displayOrder": 2,
+      "description": "Your Sneak Attack becomes 2d20."
     },
     {
       "level": 16,
       "scopeSubclass": null,
       "name": "Underhanded Ability (7)",
       "featureType": "choice_grant",
-      "displayOrder": 0,
-      "description": "Choose a 7th Underhanded Ability.",
-      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+      "displayOrder": 1,
+      "description": "Choose a 7th Underhanded Ability."
     },
     {
       "level": 16,
       "scopeSubclass": null,
       "name": "Key Stat Increase",
       "featureType": "stat_increase",
-      "displayOrder": 1,
-      "description": "+1 DEX or INT.",
-      "combatUsageNotes": "Take the stat that supports your core combat loop and your most frequent checks/attack scaling."
+      "displayOrder": 2,
+      "description": "+1 DEX or INT."
     },
     {
       "level": 17,
       "scopeSubclass": null,
       "name": "Sneak Attack (7)",
-      "featureType": "resource_change",
-      "displayOrder": 0,
-      "description": "Your Sneak Attack becomes 3d20.",
-      "combatUsageNotes": "Track this resource every turn and spend it proactively instead of ending encounters with unused value."
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "Your Sneak Attack becomes 3d20."
     },
     {
       "level": 17,
       "scopeSubclass": null,
       "name": "Secondary Stat Increase",
       "featureType": "stat_increase",
-      "displayOrder": 1,
-      "description": "+1 WIL or STR.",
-      "combatUsageNotes": "Take the stat that supports your core combat loop and your most frequent checks/attack scaling."
+      "displayOrder": 2,
+      "description": "+1 WIL or STR."
     },
     {
       "level": 18,
       "scopeSubclass": null,
       "name": "Underhanded Ability (8)",
       "featureType": "choice_grant",
-      "displayOrder": 0,
-      "description": "Choose an 8th Underhanded Ability.",
-      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+      "displayOrder": 1,
+      "description": "Choose an 8th Underhanded Ability."
     },
     {
       "level": 19,
       "scopeSubclass": null,
       "name": "Epic Boon",
       "featureType": "choice_grant",
-      "displayOrder": 0,
-      "description": "Choose an Epic Boon (see pg. 23 of the GM's Guide).",
-      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+      "displayOrder": 1,
+      "description": "Choose an Epic Boon (see pg. 23 of the GM's Guide)."
     },
     {
       "level": 20,
       "scopeSubclass": null,
-      "name": "Supreme Execution",
+      "name": "Supreme Execution. +1 to any 2 of your stats",
+      "featureType": "stat_increase",
+      "displayOrder": 1,
+      "description": "When you attack with a blade, you do not require targets to be Distracted to trigger Vicious Opportunist."
+    },
+    {
+      "level": 3,
+      "scopeSubclass": "TOOLS OF THE SILENT BLADE",
+      "name": "Amidst All This Commotion\u2026",
       "featureType": "passive",
-      "displayOrder": 0,
-      "description": "+1 to any 2 of your stats. When you attack with a blade, you do not require targets to be Distracted to trigger Vicious Opportunist.",
-      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value."
+      "displayOrder": 1,
+      "description": "Amidst All This Commotion\u2026 If a creature dies while you Sneak Attack them, you may turn Invisible until you attack again or until the beginning of your next turn."
+    },
+    {
+      "level": 3,
+      "scopeSubclass": "TOOLS OF THE SILENT BLADE",
+      "name": "Leave No Trace",
+      "featureType": "passive",
+      "displayOrder": 2,
+      "description": "Advantage on Stealth checks when you are at full health."
+    },
+    {
+      "level": 7,
+      "scopeSubclass": "TOOLS OF THE SILENT BLADE",
+      "name": "Cunning Strike",
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "(2/encounter) When you land a Sneak Attack, you may force the target to make a STR save (DC 10+INT). On a failure, instead of rolling your Sneak Attack dice, they deal the maximum amount of damage (if your target saves, regain 1 use)."
+    },
+    {
+      "level": 11,
+      "scopeSubclass": "TOOLS OF THE SILENT BLADE",
+      "name": "Professional Skulker",
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "Gain a climbing speed and advantage on Stealth checks (replaces Leave No Trace)."
+    },
+    {
+      "level": 15,
+      "scopeSubclass": "TOOLS OF THE SILENT BLADE",
+      "name": "KILL",
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "When you crit an enemy with fewer max HP than you, it dies."
+    },
+    {
+      "level": 3,
+      "scopeSubclass": "TOOLS OF THE SCOUNDREL",
+      "name": "Low Blow",
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "When you Sneak Attack, you may spend 2 additional actions to Incapacitate your target for their next turn on a failed STR save (DC 10+INT). Save or fail, they are Taunted by you until you drop to 0 HP."
+    },
+    {
+      "level": 3,
+      "scopeSubclass": "TOOLS OF THE SCOUNDREL",
+      "name": "Sweet Talk",
+      "featureType": "passive",
+      "displayOrder": 2,
+      "description": "You may gain advantage on all Influence checks with NPCs you\u2019ve just met for the first time. This lasts until you fail an Influence check with them or until you meet a 2nd time. You have disadvantage on Influence checks with them after you use this ability (until you get back on their good side)."
+    },
+    {
+      "level": 7,
+      "scopeSubclass": "TOOLS OF THE SCOUNDREL",
+      "name": "Pocket Sand",
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "(2/encounter\u2014you\u2019ve got to collect more sand!) When you Defend against a melee attack, Blind the attacker until the start of their next turn and force them to reroll the attack (Blinded creatures attack with disadvantage)."
+    },
+    {
+      "level": 11,
+      "scopeSubclass": "TOOLS OF THE SCOUNDREL",
+      "name": "Escape Plan",
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "(1/Safe Rest) When you would drop to 0 HP or gain a Wound, you don\u2019t. Instead, you turn Invisible for 1 minute or until you attack."
+    },
+    {
+      "level": 15,
+      "scopeSubclass": "TOOLS OF THE SCOUNDREL",
+      "name": "Heads I Win, Tails You Lose",
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "(1/encounter) Attacks you make this round don\u2019t miss, you crit on 1 less than normally needed, and you gain LVL temp HP."
     }
   ],
   "choiceGroups": [
-    {
-      "scopeSubclass": null,
-      "name": "Underhanded Abilities",
-      "maxChoices": 8,
-      "respecRule": "anytime",
-      "description": "Primary selectable ability pool for The Cheat."
-    },
     {
       "scopeSubclass": "TOOLS OF THE SILENT BLADE",
       "name": "TOOLS OF THE SILENT BLADE",
@@ -499,254 +453,20 @@
   ],
   "choiceOptions": [
     {
-      "groupName": "Underhanded Abilities",
-      "scopeSubclass": null,
-      "name": "Creative Accounting",
-      "description": "Steal up to INT actions from your next turn (gain up to INT actions now; the next time you would gain actions, subtract the number stolen). You cannot use this 2 turns in a row.",
-      "prereq": null,
-      "effects": [
-        {
-          "type": "cheat_option",
-          "slug": "creative_accounting",
-          "tags": [
-            "action_economy"
-          ],
-          "action_borrow_limit_formula": "INT",
-          "cooldown": "cannot_use_two_turns_in_a_row"
-        }
-      ],
-      "displayOrder": 0,
-      "combatUsageNotes": "Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
-    },
-    {
-      "groupName": "Underhanded Abilities",
-      "scopeSubclass": null,
-      "name": "Exploit Weakness",
-      "description": "Action: Make a contested INT check against an enemy. If you win, you can use Vicious Opportunist against them even if they are not Distracted. This lasts for 1 minute or until you use this ability against another target.",
-      "prereq": null,
-      "effects": [
-        {
-          "type": "cheat_option",
-          "slug": "exploit_weakness",
-          "tags": [
-            "debuff",
-            "vicious_opportunist"
-          ],
-          "action_cost": 1,
-          "contested_check": "INT",
-          "duration": "1_minute_or_until_new_target",
-          "override_distracted_requirement": true
-        }
-      ],
-      "displayOrder": 1,
-      "combatUsageNotes": "Plan your action economy around this; use it on turns where its payoff beats a standard attack."
-    },
-    {
-      "groupName": "Underhanded Abilities",
-      "scopeSubclass": null,
-      "name": "Feinting Attack",
-      "description": "If you miss for the 2nd time in a single round, you may change the primary die roll to any result instead.",
-      "prereq": null,
-      "effects": [
-        {
-          "type": "cheat_option",
-          "slug": "feinting_attack",
-          "tags": [
-            "accuracy"
-          ],
-          "trigger": "on_second_miss_in_round",
-          "primary_die_override": "any_result"
-        }
-      ],
-      "displayOrder": 2,
-      "combatUsageNotes": "Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
-    },
-    {
-      "groupName": "Underhanded Abilities",
-      "scopeSubclass": null,
-      "name": "How'd YOU get here?!",
-      "description": "2 actions: Teleport up to 4 spaces away, adjacent to a Distracted target, and make a melee attack against them. If you crit, you may teleport again.",
-      "prereq": null,
-      "effects": [
-        {
-          "type": "cheat_option",
-          "slug": "howd_you_get_here",
-          "tags": [
-            "mobility",
-            "offense"
-          ],
-          "action_cost": 2,
-          "teleport_spaces": 4,
-          "requires_target_state": "distracted",
-          "grants_melee_attack": true,
-          "on_crit": {
-            "teleport_again": true
-          }
-        }
-      ],
-      "displayOrder": 3,
-      "combatUsageNotes": "Plan your action economy around this; use it on turns where its payoff beats a standard attack."
-    },
-    {
-      "groupName": "Underhanded Abilities",
-      "scopeSubclass": null,
-      "name": "I'm Outta Here!",
-      "description": "When an ally within 4 spaces is crit, you may turn invisible until the end of your next turn and then move up to half your speed for free.",
-      "prereq": null,
-      "effects": [
-        {
-          "type": "cheat_option",
-          "slug": "im_outta_here",
-          "tags": [
-            "defense",
-            "mobility"
-          ],
-          "trigger": "on_ally_crit_within_4_spaces",
-          "invisible_until": "end_of_next_turn",
-          "free_move": "half_speed"
-        }
-      ],
-      "displayOrder": 4,
-      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value."
-    },
-    {
-      "groupName": "Underhanded Abilities",
-      "scopeSubclass": null,
-      "name": "Misdirection",
-      "description": "Gain INT armor. Whenever you Defend, you may halve the damage instead.",
-      "prereq": null,
-      "effects": [
-        {
-          "type": "cheat_option",
-          "slug": "misdirection",
-          "tags": [
-            "defense"
-          ],
-          "armor_bonus_formula": "INT",
-          "on_defend": {
-            "halve_damage": true
-          }
-        }
-      ],
-      "displayOrder": 5,
-      "combatUsageNotes": "Save this for enemy spike turns; it is strongest when it prevents a big tempo or survivability loss."
-    },
-    {
-      "groupName": "Underhanded Abilities",
-      "scopeSubclass": null,
-      "name": "Steal Tempo",
-      "description": "When you land a critical hit for the second time on a turn, your target loses 1 action and you gain 1 action.",
-      "prereq": null,
-      "effects": [
-        {
-          "type": "cheat_option",
-          "slug": "steal_tempo",
-          "tags": [
-            "action_economy"
-          ],
-          "trigger": "on_second_critical_hit_in_turn",
-          "target_action_delta": -1,
-          "self_action_delta": 1
-        }
-      ],
-      "displayOrder": 6,
-      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value."
-    },
-    {
-      "groupName": "Underhanded Abilities",
-      "scopeSubclass": null,
-      "name": "Sunder Armor (Medium)",
-      "description": "Action: When you crit an enemy with medium armor, sunder their armor. Until the start of your next turn, all melee attacks against that target ignore its armor.",
-      "prereq": null,
-      "effects": [
-        {
-          "type": "cheat_option",
-          "slug": "sunder_armor_medium",
-          "tags": [
-            "debuff",
-            "armor"
-          ],
-          "action_cost": 1,
-          "trigger": "on_crit_against_medium_armor",
-          "duration": "until_start_of_next_turn",
-          "target_effect": "all_melee_attacks_ignore_armor"
-        }
-      ],
-      "displayOrder": 7,
-      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value."
-    },
-    {
-      "groupName": "Underhanded Abilities",
-      "scopeSubclass": null,
-      "name": "Sunder Armor (Heavy)",
-      "description": "Req. Sunder Armor (Medium). Your Sunder Armor ability now also applies to enemies wearing heavy armor.",
-      "prereq": {
-        "requiresOption": "Sunder Armor (Medium)"
-      },
-      "effects": [
-        {
-          "type": "cheat_option",
-          "slug": "sunder_armor_heavy",
-          "tags": [
-            "debuff",
-            "armor"
-          ],
-          "extends": "sunder_armor_medium",
-          "additional_armor_types": [
-            "heavy"
-          ]
-        }
-      ],
-      "displayOrder": 8,
-      "combatUsageNotes": "Save this for enemy spike turns; it is strongest when it prevents a big tempo or survivability loss."
-    },
-    {
-      "groupName": "Underhanded Abilities",
-      "scopeSubclass": null,
-      "name": "Trickshot",
-      "description": "When you throw a dagger, it returns to your hand at the end of your turn. On a hit, it ricochets to another creature within 2 spaces, dealing half as much damage to them.",
-      "prereq": null,
-      "effects": [
-        {
-          "type": "cheat_option",
-          "slug": "trickshot",
-          "tags": [
-            "ranged",
-            "multi_target"
-          ],
-          "trigger": "on_thrown_dagger_attack",
-          "weapon_returns_end_of_turn": true,
-          "on_hit": {
-            "ricochet_range_spaces": 2,
-            "secondary_damage_multiplier": 0.5
-          }
-        }
-      ],
-      "displayOrder": 9,
-      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value."
-    },
-    {
       "groupName": "TOOLS OF THE SILENT BLADE",
       "scopeSubclass": "TOOLS OF THE SILENT BLADE",
-      "name": "Amidst All This Commotion...",
-      "description": "If a creature dies while you Sneak Attack them, you may turn Invisible until you attack again or until the beginning of your next turn.",
+      "name": "Amidst All This Commotion\u2026",
+      "description": "Amidst All This Commotion\u2026 If a creature dies while you Sneak Attack them, you may turn Invisible until you attack again or until the beginning of your next turn.",
       "prereq": {
         "level": 3
       },
       "effects": [
         {
           "type": "subclass_feature",
-          "slug": "amidst_all_this_commotion",
-          "tags": [
-            "stealth",
-            "survivability"
-          ],
-          "trigger": "on_sneak_attack_kill",
-          "invisible_until": "attack_or_beginning_of_next_turn"
+          "slug": "amidst_all_this_commotion"
         }
       ],
-      "displayOrder": 0,
-      "combatUsageNotes": "Unlocks at level 3. Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
+      "displayOrder": 0
     },
     {
       "groupName": "TOOLS OF THE SILENT BLADE",
@@ -759,18 +479,10 @@
       "effects": [
         {
           "type": "subclass_feature",
-          "slug": "leave_no_trace",
-          "tags": [
-            "stealth"
-          ],
-          "condition": "at_full_health",
-          "skill_advantage": [
-            "Stealth"
-          ]
+          "slug": "leave_no_trace"
         }
       ],
-      "displayOrder": 1,
-      "combatUsageNotes": "Unlocks at level 3. Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value."
+      "displayOrder": 1
     },
     {
       "groupName": "TOOLS OF THE SILENT BLADE",
@@ -783,26 +495,10 @@
       "effects": [
         {
           "type": "subclass_feature",
-          "slug": "cunning_strike",
-          "tags": [
-            "burst_damage"
-          ],
-          "usage_limit": "2/encounter",
-          "trigger": "on_landing_sneak_attack",
-          "save": {
-            "stat": "STR",
-            "dc_formula": "10 + INT"
-          },
-          "on_failed_save": {
-            "sneak_attack_damage": "max"
-          },
-          "on_successful_save": {
-            "refund_uses": 1
-          }
+          "slug": "cunning_strike"
         }
       ],
-      "displayOrder": 2,
-      "combatUsageNotes": "Unlocks at level 7. Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value. Budget around its 2/ENCOUNTER limit so it lands in the highest-impact window."
+      "displayOrder": 2
     },
     {
       "groupName": "TOOLS OF THE SILENT BLADE",
@@ -815,20 +511,10 @@
       "effects": [
         {
           "type": "subclass_feature",
-          "slug": "professional_skulker",
-          "tags": [
-            "movement",
-            "stealth"
-          ],
-          "gain": {
-            "climbing_speed": true,
-            "stealth_advantage": true
-          },
-          "replaces": "Leave No Trace"
+          "slug": "professional_skulker"
         }
       ],
-      "displayOrder": 3,
-      "combatUsageNotes": "Unlocks at level 11. Use this for positioning: engage priority targets, escape danger, or set up advantage before attacking."
+      "displayOrder": 3
     },
     {
       "groupName": "TOOLS OF THE SILENT BLADE",
@@ -841,17 +527,10 @@
       "effects": [
         {
           "type": "subclass_feature",
-          "slug": "kill",
-          "tags": [
-            "execute"
-          ],
-          "trigger": "on_crit",
-          "condition": "target_max_hp_less_than_yours",
-          "result": "target_dies"
+          "slug": "kill"
         }
       ],
-      "displayOrder": 4,
-      "combatUsageNotes": "Unlocks at level 15. Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value."
+      "displayOrder": 4
     },
     {
       "groupName": "TOOLS OF THE SCOUNDREL",
@@ -864,137 +543,74 @@
       "effects": [
         {
           "type": "subclass_feature",
-          "slug": "low_blow",
-          "tags": [
-            "control"
-          ],
-          "trigger": "on_sneak_attack",
-          "additional_action_cost": 2,
-          "save": {
-            "stat": "STR",
-            "dc_formula": "10 + INT"
-          },
-          "on_failed_save": {
-            "incapacitated_duration": "next_turn"
-          },
-          "always": {
-            "taunted_by_you_until": "you_drop_to_0_hp"
-          }
+          "slug": "low_blow"
         }
       ],
-      "displayOrder": 0,
-      "combatUsageNotes": "Unlocks at level 3. Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value."
+      "displayOrder": 0
     },
     {
       "groupName": "TOOLS OF THE SCOUNDREL",
       "scopeSubclass": "TOOLS OF THE SCOUNDREL",
       "name": "Sweet Talk",
-      "description": "You may gain advantage on all Influence checks with NPCs you have just met for the first time. This lasts until you fail an Influence check with them or until you meet a second time. You have disadvantage on Influence checks with them after you use this ability (until you get back on their good side).",
+      "description": "You may gain advantage on all Influence checks with NPCs you\u2019ve just met for the first time. This lasts until you fail an Influence check with them or until you meet a 2nd time. You have disadvantage on Influence checks with them after you use this ability (until you get back on their good side).",
       "prereq": {
         "level": 3
       },
       "effects": [
         {
           "type": "subclass_feature",
-          "slug": "sweet_talk",
-          "tags": [
-            "social"
-          ],
-          "first_meeting_influence": "advantage",
-          "ends_when": [
-            "you_fail_influence_with_them",
-            "you_meet_them_a_second_time"
-          ],
-          "after_use": {
-            "influence_with_them": "disadvantage_until_repaired"
-          }
+          "slug": "sweet_talk"
         }
       ],
-      "displayOrder": 1,
-      "combatUsageNotes": "Unlocks at level 3. Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value."
+      "displayOrder": 1
     },
     {
       "groupName": "TOOLS OF THE SCOUNDREL",
       "scopeSubclass": "TOOLS OF THE SCOUNDREL",
       "name": "Pocket Sand",
-      "description": "(2/encounter) When you Defend against a melee attack, Blind the attacker until the start of their next turn and force them to reroll the attack (Blinded creatures attack with disadvantage).",
+      "description": "(2/encounter\u2014you\u2019ve got to collect more sand!) When you Defend against a melee attack, Blind the attacker until the start of their next turn and force them to reroll the attack (Blinded creatures attack with disadvantage).",
       "prereq": {
         "level": 7
       },
       "effects": [
         {
           "type": "subclass_feature",
-          "slug": "pocket_sand",
-          "tags": [
-            "control",
-            "defense"
-          ],
-          "usage_limit": "2/encounter",
-          "trigger": "on_defend_against_melee_attack",
-          "attacker_effect": {
-            "blinded_until": "start_of_next_turn",
-            "reroll_attack": true
-          }
+          "slug": "pocket_sand"
         }
       ],
-      "displayOrder": 2,
-      "combatUsageNotes": "Unlocks at level 7. Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value. Budget around its 2/ENCOUNTER limit so it lands in the highest-impact window."
+      "displayOrder": 2
     },
     {
       "groupName": "TOOLS OF THE SCOUNDREL",
       "scopeSubclass": "TOOLS OF THE SCOUNDREL",
       "name": "Escape Plan",
-      "description": "(1/Safe Rest) When you would drop to 0 HP or gain a Wound, you do not. Instead, you turn Invisible for 1 minute or until you attack.",
+      "description": "(1/Safe Rest) When you would drop to 0 HP or gain a Wound, you don\u2019t. Instead, you turn Invisible for 1 minute or until you attack.",
       "prereq": {
         "level": 11
       },
       "effects": [
         {
           "type": "subclass_feature",
-          "slug": "escape_plan",
-          "tags": [
-            "survivability",
-            "stealth"
-          ],
-          "usage_limit": "1/Safe Rest",
-          "trigger": "on_would_drop_to_0_hp_or_gain_wound",
-          "prevent": [
-            "drop_to_0_hp",
-            "gain_wound"
-          ],
-          "invisible_for": "1_minute_or_until_attack"
+          "slug": "escape_plan"
         }
       ],
-      "displayOrder": 3,
-      "combatUsageNotes": "Unlocks at level 11. Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value. Budget around its 1/SAFE REST limit so it lands in the highest-impact window."
+      "displayOrder": 3
     },
     {
       "groupName": "TOOLS OF THE SCOUNDREL",
       "scopeSubclass": "TOOLS OF THE SCOUNDREL",
       "name": "Heads I Win, Tails You Lose",
-      "description": "(1/encounter) Attacks you make this round do not miss, you crit on 1 less than normally needed, and you gain LVL temp HP.",
+      "description": "(1/encounter) Attacks you make this round don\u2019t miss, you crit on 1 less than normally needed, and you gain LVL temp HP.",
       "prereq": {
         "level": 15
       },
       "effects": [
         {
           "type": "subclass_feature",
-          "slug": "heads_i_win_tails_you_lose",
-          "tags": [
-            "offense",
-            "survivability"
-          ],
-          "usage_limit": "1/encounter",
-          "duration": "this_round",
-          "attack_floor": "cannot_miss",
-          "crit_threshold_modifier": -1,
-          "gain": {
-            "temp_hp_formula": "LVL"
-          }
+          "slug": "heads_i_win_tails_you_lose"
         }
       ],
-      "displayOrder": 4,
-      "combatUsageNotes": "Unlocks at level 15. Pair this with crit-fishing turns and high-accuracy setups to maximize burst value. Budget around its 1/ENCOUNTER limit so it lands in the highest-impact window."
+      "displayOrder": 4
     }
   ]
 }

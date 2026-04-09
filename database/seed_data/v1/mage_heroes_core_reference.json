@@ -1,0 +1,804 @@
+{
+  "source": {
+    "pdf": "official_books/Nimble 5e TTRPG Heroes Core Book -- Evan Diaz -- 41845a084350bb7daa48eb313815b1f9 -- Anna\u2019s Archive.pdf",
+    "pages": [
+      32,
+      33,
+      34,
+      35,
+      36
+    ]
+  },
+  "ruleset": {
+    "name": "Nimble 5e 2nd Edition",
+    "version": "v1",
+    "sourceBook": "Core Rules",
+    "sourcePageRef": "All"
+  },
+  "class": {
+    "name": "Mage",
+    "description": "Elemental power flows through all things\u2026 find it, study it, and harness it. A mage is bestowed their first strand of the Tapestry at birth; however, true mastery eludes those who idly rest upon this innate endowment. Instead, they diligently refine their natural gifts through scholarly pursuit, with tomes and parch- ments as their companions, alongside the sage counsel of a seasoned mentor or three! Yes, this is the chosen path of those who would wield authority over the elements. Comprehending the tapestry of mana is no trivial endeavor\u2014it will yield its arcane secrets only to the earnest seeker of knowledge. Yet, once the adept learns to discern the subtleties of its intricate patterns as it unfurls and meanders into the ethereal expanse\u2014it is in that moment the apprentice truly ascends to the mantle of mage. What makes a Mage: \u2022Spellshaper. Customize the spells you cast: stretch time, gain extra-dimensional vision, or echo cast multiple spells! \u2022Elemental Mastery. Harness the power of the elements, whether raining down fire from the heavens, freezing enemies in their tracks, or striking with thunderous bolts of lightning. \u2022Chaos or Control. Will you snatch control of the frayed tapestry of mana or lean into the forces of chaos? What awaits you\u2026 Diamond Skin? Elemental Entanglement? Liquefy Legs?",
+    "hitDie": 6,
+    "startingHp": 10,
+    "keyStat1": "INT",
+    "keyStat2": "WIL",
+    "saveAdvStat": "INT",
+    "saveDisadvStat": "STR",
+    "armorProficiencies": [
+      "Cloth Armor"
+    ],
+    "weaponProficiencies": [
+      "Blades",
+      "Staves",
+      "Wands"
+    ],
+    "startingGear": [
+      "Adventurer\u2019s Garb",
+      "Staff",
+      "Soap"
+    ]
+  },
+  "subclasses": [
+    {
+      "name": "INVOKER OF CONTROL",
+      "isStoryBased": false,
+      "description": null
+    },
+    {
+      "name": "INVOKER OF CHAOS",
+      "isStoryBased": false,
+      "description": null
+    }
+  ],
+  "progression": [
+    {
+      "level": 1,
+      "scopeSubclass": null,
+      "name": "Elemental Spellcasting",
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "You know Fire, Ice, and Lightning cantrips."
+    },
+    {
+      "level": 2,
+      "scopeSubclass": null,
+      "name": "Mana and Unlock Tier 1 Spells",
+      "featureType": "spell_grant",
+      "displayOrder": 1,
+      "description": "You unlock tier 1 Fire, Ice, and Lightning spells and gain a mana pool to cast these spells. This mana pool\u2019s maximum is always equal to (INT\u00d73)+LVL and recharges on a Safe Rest."
+    },
+    {
+      "level": 2,
+      "scopeSubclass": null,
+      "name": "Talented Researcher",
+      "featureType": "passive",
+      "displayOrder": 2,
+      "description": "Gain advantage on Arcana or Lore checks when you have access to a large amount of books and time to study them."
+    },
+    {
+      "level": 3,
+      "scopeSubclass": null,
+      "name": "Subclass",
+      "featureType": "choice_grant",
+      "displayOrder": 1,
+      "description": "Choose a Mage subclass."
+    },
+    {
+      "level": 3,
+      "scopeSubclass": null,
+      "name": "Elemental Mastery",
+      "featureType": "spell_grant",
+      "displayOrder": 2,
+      "description": "Learn the Utility Spells from 1 spell school you know."
+    },
+    {
+      "level": 3,
+      "scopeSubclass": null,
+      "name": "Study!",
+      "featureType": "passive",
+      "displayOrder": 3,
+      "description": "Study! Whenever you study arcane books or are tutored by a higher level Mage during a Safe Rest, you may choose different Mage options available to you."
+    },
+    {
+      "level": 4,
+      "scopeSubclass": null,
+      "name": "Spellshaper",
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "You gain the ability to enhance your spells with powerful effects by spending additional mana. Choose 2 Spellshaper abilities."
+    },
+    {
+      "level": 4,
+      "scopeSubclass": null,
+      "name": "Tier 2 Spells",
+      "featureType": "spell_grant",
+      "displayOrder": 2,
+      "description": "You may now cast tier 2 spells and upcast spells at tier 2."
+    },
+    {
+      "level": 4,
+      "scopeSubclass": null,
+      "name": "Key Stat Increase",
+      "featureType": "stat_increase",
+      "displayOrder": 3,
+      "description": "+1 INT or WIL."
+    },
+    {
+      "level": 5,
+      "scopeSubclass": null,
+      "name": "Elemental Surge",
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "A surge of adrenaline and your attunement with the elements grants you additional power as combat begins. When you roll Initiative, regain WIL mana (this expires at the end of combat if unused)."
+    },
+    {
+      "level": 5,
+      "scopeSubclass": null,
+      "name": "Secondary Stat Increase",
+      "featureType": "stat_increase",
+      "displayOrder": 2,
+      "description": "+1 STR or DEX."
+    },
+    {
+      "level": 5,
+      "scopeSubclass": null,
+      "name": "Upgraded Cantrips",
+      "featureType": "passive",
+      "displayOrder": 3,
+      "description": "Your cantrips grow stronger."
+    },
+    {
+      "level": 6,
+      "scopeSubclass": null,
+      "name": "Tier 3 Spells",
+      "featureType": "spell_grant",
+      "displayOrder": 1,
+      "description": "You may now cast tier 3 spells and upcast spells at tier 3."
+    },
+    {
+      "level": 6,
+      "scopeSubclass": null,
+      "name": "Elemental Mastery (2)",
+      "featureType": "spell_grant",
+      "displayOrder": 2,
+      "description": "Learn the Utility Spells from a 2nd spell school you know."
+    },
+    {
+      "level": 7,
+      "scopeSubclass": null,
+      "name": "Subclass",
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "Gain your Mage subclass feature."
+    },
+    {
+      "level": 8,
+      "scopeSubclass": null,
+      "name": "Tier 4 Spells",
+      "featureType": "spell_grant",
+      "displayOrder": 1,
+      "description": "You may now cast tier 4 spells and upcast spells at tier 4."
+    },
+    {
+      "level": 8,
+      "scopeSubclass": null,
+      "name": "Key Stat Increase",
+      "featureType": "stat_increase",
+      "displayOrder": 2,
+      "description": "+1 INT or WIL."
+    },
+    {
+      "level": 9,
+      "scopeSubclass": null,
+      "name": "Spellshaper (2)",
+      "featureType": "choice_grant",
+      "displayOrder": 1,
+      "description": "Choose 1 additional Spellshaper ability."
+    },
+    {
+      "level": 9,
+      "scopeSubclass": null,
+      "name": "Secondary Stat Increase",
+      "featureType": "stat_increase",
+      "displayOrder": 2,
+      "description": "+1 STR or DEX."
+    },
+    {
+      "level": 10,
+      "scopeSubclass": null,
+      "name": "Elemental Surge (2)",
+      "featureType": "stat_increase",
+      "displayOrder": 1,
+      "description": "Your Elemental Surge ability now regains WIL+1d4 mana."
+    },
+    {
+      "level": 10,
+      "scopeSubclass": null,
+      "name": "Tier 5 Spells",
+      "featureType": "spell_grant",
+      "displayOrder": 2,
+      "description": "You may now cast tier 5 spells and upcast spells at tier 5."
+    },
+    {
+      "level": 10,
+      "scopeSubclass": null,
+      "name": "Upgraded Cantrips",
+      "featureType": "passive",
+      "displayOrder": 3,
+      "description": "Your cantrips grow stronger."
+    },
+    {
+      "level": 11,
+      "scopeSubclass": null,
+      "name": "Subclass",
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "Gain your Mage subclass feature."
+    },
+    {
+      "level": 12,
+      "scopeSubclass": null,
+      "name": "Tier 6 Spells",
+      "featureType": "spell_grant",
+      "displayOrder": 1,
+      "description": "You may now cast tier 6 spells and upcast spells at tier 6."
+    },
+    {
+      "level": 12,
+      "scopeSubclass": null,
+      "name": "Key Stat Increase",
+      "featureType": "stat_increase",
+      "displayOrder": 2,
+      "description": "+1 INT or WIL."
+    },
+    {
+      "level": 13,
+      "scopeSubclass": null,
+      "name": "Spellshaper (3)",
+      "featureType": "choice_grant",
+      "displayOrder": 1,
+      "description": "Choose 1 additional Spellshaper ability."
+    },
+    {
+      "level": 13,
+      "scopeSubclass": null,
+      "name": "Secondary Stat Increase",
+      "featureType": "stat_increase",
+      "displayOrder": 2,
+      "description": "+1 STR or DEX."
+    },
+    {
+      "level": 14,
+      "scopeSubclass": null,
+      "name": "Tier 7 Spells",
+      "featureType": "spell_grant",
+      "displayOrder": 1,
+      "description": "You may now cast tier 7 spells and upcast spells at tier 7."
+    },
+    {
+      "level": 14,
+      "scopeSubclass": null,
+      "name": "Elemental Mastery (3)",
+      "featureType": "spell_grant",
+      "displayOrder": 2,
+      "description": "Learn the Utility Spells from a 3rd spell school you know."
+    },
+    {
+      "level": 15,
+      "scopeSubclass": null,
+      "name": "Subclass",
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "Gain your Mage subclass feature."
+    },
+    {
+      "level": 15,
+      "scopeSubclass": null,
+      "name": "Upgraded Cantrips",
+      "featureType": "passive",
+      "displayOrder": 2,
+      "description": "Your cantrips grow stronger."
+    },
+    {
+      "level": 16,
+      "scopeSubclass": null,
+      "name": "Tier 8 Spells",
+      "featureType": "spell_grant",
+      "displayOrder": 1,
+      "description": "You may now cast tier 8 spells and upcast spells at tier 8."
+    },
+    {
+      "level": 16,
+      "scopeSubclass": null,
+      "name": "Key Stat Increase",
+      "featureType": "stat_increase",
+      "displayOrder": 2,
+      "description": "+1 INT or WIL."
+    },
+    {
+      "level": 17,
+      "scopeSubclass": null,
+      "name": "Elemental Surge (3)",
+      "featureType": "resource_change",
+      "displayOrder": 1,
+      "description": "Your Elemental Surge ability now regains WIL+2d4 mana."
+    },
+    {
+      "level": 17,
+      "scopeSubclass": null,
+      "name": "Secondary Stat Increase",
+      "featureType": "stat_increase",
+      "displayOrder": 2,
+      "description": "+1 STR or DEX."
+    },
+    {
+      "level": 18,
+      "scopeSubclass": null,
+      "name": "Tier 9 Spells",
+      "featureType": "spell_grant",
+      "displayOrder": 1,
+      "description": "You may now cast tier 9 spells and upcast spells at tier 9."
+    },
+    {
+      "level": 19,
+      "scopeSubclass": null,
+      "name": "Epic Boon",
+      "featureType": "choice_grant",
+      "displayOrder": 1,
+      "description": "Choose an Epic Boon (see pg. 23 of the GM's Guide)."
+    },
+    {
+      "level": 20,
+      "scopeSubclass": null,
+      "name": "Archmage",
+      "featureType": "spell_grant",
+      "displayOrder": 1,
+      "description": "+1 to any 2 of your stats. The first tiered spell you cast each encounter costs 1 action less and 5 fewer mana."
+    },
+    {
+      "level": 20,
+      "scopeSubclass": null,
+      "name": "Upgraded Cantrips",
+      "featureType": "passive",
+      "displayOrder": 2,
+      "description": "Your cantrips grow stronger."
+    },
+    {
+      "level": 3,
+      "scopeSubclass": "INVOKER OF CONTROL",
+      "name": "Force of Will",
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "(1/round) On your turn, you may Demand Control: Choose 1 option from the Control Table which you haven't chosen yet; resets when you roll Initiative, or when you have chosen all options once."
+    },
+    {
+      "level": 3,
+      "scopeSubclass": "INVOKER OF CONTROL",
+      "name": "Deny Fate",
+      "featureType": "passive",
+      "displayOrder": 2,
+      "description": "Whenever you miss with a spell or an effect you cause is saved against, you MUST Demand Control."
+    },
+    {
+      "level": 7,
+      "scopeSubclass": "INVOKER OF CONTROL",
+      "name": "At Any Cost",
+      "featureType": "spell_grant",
+      "displayOrder": 1,
+      "description": "Learn 1 cantrip and 1 tiered spell from the Necrotic school."
+    },
+    {
+      "level": 7,
+      "scopeSubclass": "INVOKER OF CONTROL",
+      "name": "Nullify",
+      "featureType": "passive",
+      "displayOrder": 2,
+      "description": "(1/encounter) Ignore all disadvantage and other negative effects on your next action this turn, then Demand Control."
+    },
+    {
+      "level": 11,
+      "scopeSubclass": "INVOKER OF CONTROL",
+      "name": "Steel Will",
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "(1/Safe Rest) Whenever you would fail a save, you may succeed instead. Whenever you roll a 1 on an Elemental Surge die, you may reroll it once."
+    },
+    {
+      "level": 15,
+      "scopeSubclass": "INVOKER OF CONTROL",
+      "name": "Supreme Control",
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "Whenever you Demand Control, you may choose to trigger the selected option twice. You may Demand Control as a Reaction."
+    },
+    {
+      "level": 3,
+      "scopeSubclass": "INVOKER OF CHAOS",
+      "name": "Force of Chaos",
+      "featureType": "resource_change",
+      "displayOrder": 1,
+      "description": "Whenever you cast a spell, you can choose to spend 1 less mana. Whenever you do this and whenever you crit, Invoke Chaos: Roll on the Chaos Table."
+    },
+    {
+      "level": 3,
+      "scopeSubclass": "INVOKER OF CHAOS",
+      "name": "Where's the Chaos Table?",
+      "featureType": "passive",
+      "displayOrder": 2,
+      "description": "Where's the Chaos Table? It's a secret for the GM only! Suffice it to say, rolling a 1 is really bad, but rolling a 20 is AWESOME\u2014but if you\u2019re sure you want to spoil it, you can find it on the back inside cover of the GM's Guide. Let chaos reign!"
+    },
+    {
+      "level": 7,
+      "scopeSubclass": "INVOKER OF CHAOS",
+      "name": "Tempest Mage",
+      "featureType": "spell_grant",
+      "displayOrder": 1,
+      "description": "Learn 1 cantrip and 1 tiered spell from the Wind school."
+    },
+    {
+      "level": 7,
+      "scopeSubclass": "INVOKER OF CHAOS",
+      "name": "Chaos Lash",
+      "featureType": "passive",
+      "displayOrder": 2,
+      "description": "(1/encounter) Reaction (when an enemy moves adjacent to you): They are pushed back 2 spaces, and on a failed WIL save, knocked Prone as well. Invoke Chaos."
+    },
+    {
+      "level": 11,
+      "scopeSubclass": "INVOKER OF CHAOS",
+      "name": "Thrive in Chaos",
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "Whenever you Invoke Chaos, you may roll twice and cause both effects. (1/ Safe Rest) You may choose which roll to use instead."
+    },
+    {
+      "level": 15,
+      "scopeSubclass": "INVOKER OF CHAOS",
+      "name": "Master of Chaos",
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "Whenever you Invoke Chaos, roll with advantage."
+    }
+  ],
+  "choiceGroups": [
+    {
+      "scopeSubclass": null,
+      "name": "Spellshaper",
+      "maxChoices": 2,
+      "respecRule": "never",
+      "description": null
+    },
+    {
+      "scopeSubclass": "INVOKER OF CONTROL",
+      "name": "Control Table",
+      "maxChoices": 1,
+      "respecRule": "never",
+      "description": null
+    },
+    {
+      "scopeSubclass": "INVOKER OF CONTROL",
+      "name": "INVOKER OF CONTROL",
+      "maxChoices": 6,
+      "respecRule": "never",
+      "description": null
+    },
+    {
+      "scopeSubclass": "INVOKER OF CHAOS",
+      "name": "INVOKER OF CHAOS",
+      "maxChoices": 6,
+      "respecRule": "never",
+      "description": null
+    }
+  ],
+  "choiceOptions": [
+    {
+      "groupName": "Spellshaper",
+      "scopeSubclass": null,
+      "name": "Dimensional Compression",
+      "description": "(1 or more mana) +4 range to a spell for each additional mana spent.",
+      "prereq": {},
+      "effects": {},
+      "displayOrder": 1
+    },
+    {
+      "groupName": "Spellshaper",
+      "scopeSubclass": null,
+      "name": "Echo Casting",
+      "description": "(2\u00d7mana, min. 1 mana) When you cast a tiered, single-target spell, you may cast a copy of that spell on a 2nd target for free.",
+      "prereq": {},
+      "effects": {},
+      "displayOrder": 2
+    },
+    {
+      "groupName": "Spellshaper",
+      "scopeSubclass": null,
+      "name": "Elemental Destruction",
+      "description": "(1 or more mana) After you hit with a spell, you may spend 1 or more mana (up to your WIL) to reroll 1 die per mana spent.",
+      "prereq": {},
+      "effects": {},
+      "displayOrder": 3
+    },
+    {
+      "groupName": "Spellshaper",
+      "scopeSubclass": null,
+      "name": "Elemental Transmutation",
+      "description": "(1 mana) Change the damage type of a spell to: Fire, Ice, Lightning, Necrotic, or Radiant.",
+      "prereq": {},
+      "effects": {},
+      "displayOrder": 4
+    },
+    {
+      "groupName": "Spellshaper",
+      "scopeSubclass": null,
+      "name": "Extra-Dimensional Vision",
+      "description": "(2 mana) You may ignore the line of sight requirement of a spell. Your spell will phase though barriers and obstacles to reach a target you know of within range.",
+      "prereq": {},
+      "effects": {},
+      "displayOrder": 5
+    },
+    {
+      "groupName": "Spellshaper",
+      "scopeSubclass": null,
+      "name": "Methodical Spellweaver",
+      "description": "(\u20132 mana) Spend 1 additional action to reduce the mana cost of a spell by 2 (min 1).",
+      "prereq": {},
+      "effects": {},
+      "displayOrder": 6
+    },
+    {
+      "groupName": "Spellshaper",
+      "scopeSubclass": null,
+      "name": "Precise Casting",
+      "description": "(1+ mana) Choose 1 creature per mana spent to be unaffected by a spell you cast.",
+      "prereq": {},
+      "effects": {},
+      "displayOrder": 7
+    },
+    {
+      "groupName": "Spellshaper",
+      "scopeSubclass": null,
+      "name": "Stretch Time",
+      "description": "(2 mana) Reduce the action cost of a spell by 1 (min 1).",
+      "prereq": {},
+      "effects": {},
+      "displayOrder": 8
+    },
+    {
+      "groupName": "Control Table",
+      "scopeSubclass": "INVOKER OF CONTROL",
+      "name": "Magic is Dangerous",
+      "description": "You can stitch its fraying edges together to your own benefit\u2026 for a time.",
+      "prereq": {},
+      "effects": {},
+      "displayOrder": 0
+    },
+    {
+      "groupName": "Control Table",
+      "scopeSubclass": "INVOKER OF CONTROL",
+      "name": "I INSIST",
+      "description": "Cast a cantrip for free, ignoring all disadvantage; it cannot miss.",
+      "prereq": {},
+      "effects": {},
+      "displayOrder": 1
+    },
+    {
+      "groupName": "Control Table",
+      "scopeSubclass": "INVOKER OF CONTROL",
+      "name": "ELEMENTAL AFFLICTION",
+      "description": "A creature of your choice within 12 spaces gains the Charged, Smoldering, or Slowed condition.",
+      "prereq": {},
+      "effects": {},
+      "displayOrder": 2
+    },
+    {
+      "groupName": "Control Table",
+      "scopeSubclass": "INVOKER OF CONTROL",
+      "name": "NO",
+      "description": "Choose a creature; it cannot harm a creature of your choice during its next turn.",
+      "prereq": {},
+      "effects": {},
+      "displayOrder": 3
+    },
+    {
+      "groupName": "Control Table",
+      "scopeSubclass": "INVOKER OF CONTROL",
+      "name": "LOSE CONTROL",
+      "description": "Do ALL of the above, but the GM chooses each time.",
+      "prereq": {},
+      "effects": {},
+      "displayOrder": 4
+    },
+    {
+      "groupName": "INVOKER OF CONTROL",
+      "scopeSubclass": "INVOKER OF CONTROL",
+      "name": "Force of Will",
+      "description": "(1/round) On your turn, you may Demand Control: Choose 1 option from the Control Table which you haven't chosen yet; resets when you roll Initiative, or when you have chosen all options once.",
+      "prereq": {
+        "level": 3
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "force_of_will"
+        }
+      ],
+      "displayOrder": 5
+    },
+    {
+      "groupName": "INVOKER OF CONTROL",
+      "scopeSubclass": "INVOKER OF CONTROL",
+      "name": "Deny Fate",
+      "description": "Whenever you miss with a spell or an effect you cause is saved against, you MUST Demand Control.",
+      "prereq": {
+        "level": 3
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "deny_fate"
+        }
+      ],
+      "displayOrder": 6
+    },
+    {
+      "groupName": "INVOKER OF CONTROL",
+      "scopeSubclass": "INVOKER OF CONTROL",
+      "name": "At Any Cost",
+      "description": "Learn 1 cantrip and 1 tiered spell from the Necrotic school.",
+      "prereq": {
+        "level": 7
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "at_any_cost"
+        }
+      ],
+      "displayOrder": 7
+    },
+    {
+      "groupName": "INVOKER OF CONTROL",
+      "scopeSubclass": "INVOKER OF CONTROL",
+      "name": "Nullify",
+      "description": "(1/encounter) Ignore all disadvantage and other negative effects on your next action this turn, then Demand Control.",
+      "prereq": {
+        "level": 7
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "nullify"
+        }
+      ],
+      "displayOrder": 8
+    },
+    {
+      "groupName": "INVOKER OF CONTROL",
+      "scopeSubclass": "INVOKER OF CONTROL",
+      "name": "Steel Will",
+      "description": "(1/Safe Rest) Whenever you would fail a save, you may succeed instead. Whenever you roll a 1 on an Elemental Surge die, you may reroll it once.",
+      "prereq": {
+        "level": 11
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "steel_will"
+        }
+      ],
+      "displayOrder": 9
+    },
+    {
+      "groupName": "INVOKER OF CONTROL",
+      "scopeSubclass": "INVOKER OF CONTROL",
+      "name": "Supreme Control",
+      "description": "Whenever you Demand Control, you may choose to trigger the selected option twice. You may Demand Control as a Reaction.",
+      "prereq": {
+        "level": 15
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "supreme_control"
+        }
+      ],
+      "displayOrder": 10
+    },
+    {
+      "groupName": "INVOKER OF CHAOS",
+      "scopeSubclass": "INVOKER OF CHAOS",
+      "name": "Force of Chaos",
+      "description": "Whenever you cast a spell, you can choose to spend 1 less mana. Whenever you do this and whenever you crit, Invoke Chaos: Roll on the Chaos Table.",
+      "prereq": {
+        "level": 3
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "force_of_chaos"
+        }
+      ],
+      "displayOrder": 0
+    },
+    {
+      "groupName": "INVOKER OF CHAOS",
+      "scopeSubclass": "INVOKER OF CHAOS",
+      "name": "Where's the Chaos Table?",
+      "description": "Where's the Chaos Table? It's a secret for the GM only! Suffice it to say, rolling a 1 is really bad, but rolling a 20 is AWESOME\u2014but if you\u2019re sure you want to spoil it, you can find it on the back inside cover of the GM's Guide. Let chaos reign!",
+      "prereq": {
+        "level": 3
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "where_s_the_chaos_table"
+        }
+      ],
+      "displayOrder": 1
+    },
+    {
+      "groupName": "INVOKER OF CHAOS",
+      "scopeSubclass": "INVOKER OF CHAOS",
+      "name": "Tempest Mage",
+      "description": "Learn 1 cantrip and 1 tiered spell from the Wind school.",
+      "prereq": {
+        "level": 7
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "tempest_mage"
+        }
+      ],
+      "displayOrder": 2
+    },
+    {
+      "groupName": "INVOKER OF CHAOS",
+      "scopeSubclass": "INVOKER OF CHAOS",
+      "name": "Chaos Lash",
+      "description": "(1/encounter) Reaction (when an enemy moves adjacent to you): They are pushed back 2 spaces, and on a failed WIL save, knocked Prone as well. Invoke Chaos.",
+      "prereq": {
+        "level": 7
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "chaos_lash"
+        }
+      ],
+      "displayOrder": 3
+    },
+    {
+      "groupName": "INVOKER OF CHAOS",
+      "scopeSubclass": "INVOKER OF CHAOS",
+      "name": "Thrive in Chaos",
+      "description": "Whenever you Invoke Chaos, you may roll twice and cause both effects. (1/ Safe Rest) You may choose which roll to use instead.",
+      "prereq": {
+        "level": 11
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "thrive_in_chaos"
+        }
+      ],
+      "displayOrder": 4
+    },
+    {
+      "groupName": "INVOKER OF CHAOS",
+      "scopeSubclass": "INVOKER OF CHAOS",
+      "name": "Master of Chaos",
+      "description": "Whenever you Invoke Chaos, roll with advantage.",
+      "prereq": {
+        "level": 15
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "master_of_chaos"
+        }
+      ],
+      "displayOrder": 5
+    }
+  ]
+}

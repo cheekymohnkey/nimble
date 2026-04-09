@@ -23,6 +23,29 @@ DEFAULT_PDF = (
     "41845a084350bb7daa48eb313815b1f9 -- Anna’s Archive.pdf"
 )
 DEFAULT_REFERENCE = "database/seed_data/v1/berserker_heroes_core_reference.json"
+REFERENCE_SUFFIX = "_heroes_core_reference.json"
+
+
+def ensure_reference_shape(reference: dict[str, Any]) -> None:
+    required = ["source", "ruleset", "class", "subclasses", "progression", "choiceGroups", "choiceOptions"]
+    missing = [key for key in required if key not in reference]
+    if missing:
+        joined = ", ".join(missing)
+        raise RuntimeError(f"Reference JSON missing required key(s): {joined}")
+    source = reference.get("source")
+    if not isinstance(source, dict):
+        raise RuntimeError("Reference JSON missing required object: source")
+    has_provenance = any(
+        isinstance(source.get(key), str) and source.get(key, "").strip()
+        for key in ("book", "pdf", "file")
+    )
+    if not has_provenance:
+        raise RuntimeError(
+            "Reference JSON must include a source provenance field: source.book, source.pdf, or source.file",
+        )
+    pages = source.get("pages")
+    if not isinstance(pages, list) or not pages:
+        raise RuntimeError("Reference JSON missing required non-empty array: source.pages")
 
 
 def _import_pypdf() -> Any:
@@ -90,10 +113,11 @@ def collect_anchors(reference: dict[str, Any]) -> list[str]:
 
 def validate_reference_against_pdf(reference: dict[str, Any], pdf_text: str) -> None:
     haystack = normalize_for_match(pdf_text)
+    haystack_compact = re.sub(r"[^a-z0-9]+", "", haystack)
     missing: list[str] = []
     for anchor in collect_anchors(reference):
         needle = normalize_for_match(anchor)
-        if needle and needle not in haystack:
+        if needle and needle not in haystack and re.sub(r"[^a-z0-9]+", "", needle) not in haystack_compact:
             missing.append(anchor)
     if missing:
         sample = ", ".join(missing[:12])
@@ -316,10 +340,16 @@ def main() -> None:
         raise SystemExit(f"DB not found: {db_path}")
     if not ref_path.exists():
         raise SystemExit(f"Reference payload not found: {ref_path}")
+    if not ref_path.name.endswith(REFERENCE_SUFFIX):
+        raise SystemExit(
+            "Reference payload must be an extracted Heroes Core reference file "
+            f"ending with {REFERENCE_SUFFIX}: {ref_path}",
+        )
     if not args.skip_pdf_validation and not pdf_path.exists():
         raise SystemExit(f"PDF not found: {pdf_path}")
 
     reference = json.loads(ref_path.read_text(encoding="utf-8"))
+    ensure_reference_shape(reference)
 
     if not args.skip_pdf_validation:
         pdf_text = load_pdf_text(pdf_path, reference["source"]["pages"])

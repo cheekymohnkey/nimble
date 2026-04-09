@@ -1,6 +1,6 @@
 {
   "source": {
-    "pdf": "official_books/Nimble 5e TTRPG Heroes Core Book -- Evan Diaz -- 41845a084350bb7daa48eb313815b1f9 -- Anna’s Archive.pdf",
+    "pdf": "official_books/Nimble 5e TTRPG Heroes Core Book -- Evan Diaz -- 41845a084350bb7daa48eb313815b1f9 -- Anna\u2019s Archive.pdf",
     "pages": [
       8,
       9,
@@ -17,7 +17,7 @@
   },
   "class": {
     "name": "Berserker",
-    "description": "Wrath and ruin. Berserkers are relentless front-line destroyers who build and spend Fury to overwhelm enemies through sustained aggression.",
+    "description": "Wrath and Ruin. The Berserker is destruction. He knows not fatigue nor caution\u2014both surely driven away from him in a relentless fury. Those of barbaric nature are said to eat only the dust of war and drink naught but the blood of those felled by their own hand. Death is no stranger, for it is said that even death fears to take a Berserker before his battle Rage is satiated. Once a Berserker has begun to fight, he only grows stronger, fueled by battle-lust and an unending Rage. The deadliest among them is not the well- rested, but those who are pushed to the brink through combat. It matters not what a Berserker takes up, be it axe or sword; flesh will be hewn from bone and heads from shoulders. Many have caved under the Berserker\u2019s primal might\u2014sword and spell are but straw in the wake of unbridled Rage. As a Berserker, you can: \u2022Become a raging, damage-dealing machine. Greet death as an old friend and keep on fighting! \u2022Increase your damage to unbelievable levels. The longer a fight goes on, the more your Rage intensifies, allowing you to deal out incredible amounts of brutality. \u2022Use your Savage Arsenal. Choose abilities to crush your foes and laugh in the face of death!",
     "hitDie": 12,
     "startingHp": 20,
     "keyStat1": "STR",
@@ -28,10 +28,10 @@
       "None"
     ],
     "weaponProficiencies": [
-      "All STR Weapons"
+      "all STR weapons"
     ],
     "startingGear": [
-      "Battle Axe",
+      "Battleaxe",
       "Rations (meat)",
       "Rope (50 ft.)"
     ]
@@ -53,136 +53,129 @@
       "level": 1,
       "scopeSubclass": null,
       "name": "Rage",
-      "featureType": "resource_change",
-      "displayOrder": 0,
-      "description": "(1/turn) Action: Roll a Fury Die (1d4) and set it aside. Add it to every STR attack you make. You can have a max of KEY (your highest key stat value) Fury Dice; they are lost when your Rage ends.",
-      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value. Budget around its 1/TURN limit so it lands in the highest-impact window."
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "(1/turn) Action: Roll a Fury Die (1d4) and set it aside. Add it to every STR attack you make. You can have a max of KEY Fury Dice; they are lost when your Rage ends. That all you got?! When you are attacked, you may expend 1 or more Fury Dice to reduce the damage taken by STR+DEX for each die spent."
     },
     {
       "level": 1,
       "scopeSubclass": null,
-      "name": "That all you got?!",
-      "featureType": "other",
-      "displayOrder": 1,
-      "description": "When you are attacked, you may expend 1 or more Fury Dice to reduce the damage taken by STR+DEX for each die spent.",
-      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value."
+      "name": "Your Rage Ends...",
+      "featureType": "passive",
+      "displayOrder": 2,
+      "description": "Your Rage Ends... If you leave combat, drop to 0 HP, or go 1 round without attacking or Raging."
+    },
+    {
+      "level": 1,
+      "scopeSubclass": null,
+      "name": "Yes!",
+      "featureType": "passive",
+      "displayOrder": 3,
+      "description": "Yes! You can Rage and gain another Fury Die even if you are already Raging. If you are already at your max, roll as normal and decide which ones to keep. Your Fury Dice are dice when calculating damage for monster armor."
     },
     {
       "level": 2,
       "scopeSubclass": null,
       "name": "Intensifying Fury",
-      "featureType": "resource_change",
-      "displayOrder": 0,
-      "description": "If you are Raging at the beginning of your turn, roll 1 Fury Die for free.",
-      "combatUsageNotes": "Track this resource every turn and spend it proactively instead of ending encounters with unused value."
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "If you are Raging at the beginning of your turn, roll 1 Fury Die for free."
     },
     {
       "level": 2,
       "scopeSubclass": null,
       "name": "One with the Ancients",
-      "featureType": "other",
-      "displayOrder": 1,
-      "description": "(1/Safe Rest) When faced with a decision about which direction\nor course of action to take, you can call upon your ancestors to guide you toward the most\ndangerous or challenging path.",
-      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value. Budget around its 1/SAFE REST limit so it lands in the highest-impact window."
+      "featureType": "passive",
+      "displayOrder": 2,
+      "description": "(1/Safe Rest) When faced with a decision about which direction or course of action to take, you can call upon your ancestors to guide you toward the most dangerous or challenging path."
     },
     {
       "level": 3,
       "scopeSubclass": null,
       "name": "Subclass",
       "featureType": "choice_grant",
-      "displayOrder": 0,
-      "description": "Choose a Berserker subclass.",
-      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+      "displayOrder": 1,
+      "description": "Choose a Berserker subclass."
     },
     {
       "level": 3,
       "scopeSubclass": null,
       "name": "Bloodlust",
-      "featureType": "other",
-      "displayOrder": 1,
-      "description": "Expend 1 or more Fury Dice on your turn, move DEX spaces per die spent for free.",
-      "combatUsageNotes": "Use this for positioning: engage priority targets, escape danger, or set up advantage before attacking."
+      "featureType": "passive",
+      "displayOrder": 2,
+      "description": "Expend 1 or more Fury Dice on your turn, move DEX spaces per die spent for free."
     },
     {
       "level": 4,
       "scopeSubclass": null,
       "name": "Enduring Rage",
       "featureType": "passive",
-      "displayOrder": 0,
-      "description": "While Dying, you Rage automatically for free at the beginning of your turn, have a max of 2 actions instead of 1, and ignore the STR saves to make attacks.",
-      "combatUsageNotes": "Plan your action economy around this; use it on turns where its payoff beats a standard attack."
+      "displayOrder": 1,
+      "description": "While Dying, you Rage automatically for free at the beginning of your turn, have a max of 2 actions instead of 1, and ignore the STR saves to make attacks."
     },
     {
       "level": 4,
       "scopeSubclass": null,
       "name": "Key Stat Increase",
       "featureType": "stat_increase",
-      "displayOrder": 1,
-      "description": "+1 STR or DEX.",
-      "combatUsageNotes": "Take the stat that supports your core combat loop and your most frequent checks/attack scaling."
+      "displayOrder": 2,
+      "description": "+1 STR or DEX."
     },
     {
       "level": 4,
       "scopeSubclass": null,
       "name": "Savage Arsenal",
       "featureType": "choice_grant",
-      "displayOrder": 2,
-      "description": "Choose 1 ability from the Savage Arsenal.",
-      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+      "displayOrder": 3,
+      "description": "Choose 1 ability from the Savage Arsenal."
+    },
+    {
+      "level": 4,
+      "scopeSubclass": null,
+      "name": "Wrath & Ruin",
+      "featureType": "passive",
+      "displayOrder": 4,
+      "description": "Whenever you perform a notable act of destruction or feat of strength during a Safe Rest, you may choose different Berserker options available to you."
     },
     {
       "level": 5,
       "scopeSubclass": null,
       "name": "Rage (2)",
-      "featureType": "resource_change",
-      "displayOrder": 0,
-      "description": "Whenever you Rage, gain 2 Fury Dice instead.",
-      "combatUsageNotes": "Track this resource every turn and spend it proactively instead of ending encounters with unused value."
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "Whenever you Rage, gain 2 Fury Dice instead."
     },
     {
       "level": 5,
       "scopeSubclass": null,
       "name": "Secondary Stat Increase",
       "featureType": "stat_increase",
-      "displayOrder": 1,
-      "description": "+1 INT or WIL.",
-      "combatUsageNotes": "Take the stat that supports your core combat loop and your most frequent checks/attack scaling."
+      "displayOrder": 2,
+      "description": "+1 INT or WIL."
     },
     {
       "level": 6,
       "scopeSubclass": null,
       "name": "Savage Arsenal (2)",
       "featureType": "choice_grant",
-      "displayOrder": 0,
-      "description": "Choose a 2nd Savage Arsenal ability.",
-      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+      "displayOrder": 1,
+      "description": "Choose a 2nd Savage Arsenal ability."
     },
     {
       "level": 6,
       "scopeSubclass": null,
       "name": "Intensifying Fury (2)",
-      "featureType": "resource_change",
-      "displayOrder": 1,
-      "description": "Your Fury Dice are now d6s.",
-      "combatUsageNotes": "Track this resource every turn and spend it proactively instead of ending encounters with unused value."
+      "featureType": "passive",
+      "displayOrder": 2,
+      "description": "Your Fury Dice are now d6s."
     },
     {
       "level": 7,
       "scopeSubclass": null,
       "name": "Subclass",
-      "featureType": "choice_grant",
-      "displayOrder": 0,
-      "description": "Gain your Berserker subclass feature.",
-      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
-    },
-    {
-      "level": 8,
-      "scopeSubclass": null,
-      "name": "Key Stat Increase",
-      "featureType": "stat_increase",
-      "displayOrder": 0,
-      "description": "+1 STR or DEX.",
-      "combatUsageNotes": "Take the stat that supports your core combat loop and your most frequent checks/attack scaling."
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "Gain your Berserker subclass feature."
     },
     {
       "level": 8,
@@ -190,175 +183,245 @@
       "name": "Savage Arsenal (3)",
       "featureType": "choice_grant",
       "displayOrder": 1,
-      "description": "Choose a 3rd Savage Arsenal ability.",
-      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+      "description": "Choose a 3rd Savage Arsenal ability."
+    },
+    {
+      "level": 8,
+      "scopeSubclass": null,
+      "name": "Key Stat Increase",
+      "featureType": "stat_increase",
+      "displayOrder": 2,
+      "description": "+1 STR or DEX."
     },
     {
       "level": 9,
       "scopeSubclass": null,
       "name": "Intensifying Fury (3)",
-      "featureType": "resource_change",
-      "displayOrder": 0,
-      "description": "Your Fury Dice are now d8s.",
-      "combatUsageNotes": "Track this resource every turn and spend it proactively instead of ending encounters with unused value."
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "Your Fury Dice are now d8s."
     },
     {
       "level": 9,
       "scopeSubclass": null,
       "name": "Secondary Stat Increase",
       "featureType": "stat_increase",
-      "displayOrder": 1,
-      "description": "+1 INT or WIL.",
-      "combatUsageNotes": "Take the stat that supports your core combat loop and your most frequent checks/attack scaling."
+      "displayOrder": 2,
+      "description": "+1 INT or WIL."
     },
     {
       "level": 10,
       "scopeSubclass": null,
       "name": "Savage Arsenal (4)",
       "featureType": "choice_grant",
-      "displayOrder": 0,
-      "description": "Choose a 4th Savage Arsenal ability.",
-      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+      "displayOrder": 1,
+      "description": "Choose a 4th Savage Arsenal ability."
     },
     {
       "level": 11,
       "scopeSubclass": null,
       "name": "Subclass",
-      "featureType": "choice_grant",
-      "displayOrder": 0,
-      "description": "Gain your Berserker subclass feature.",
-      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "Gain your Berserker subclass feature."
     },
     {
       "level": 12,
       "scopeSubclass": null,
       "name": "Savage Arsenal (5)",
       "featureType": "choice_grant",
-      "displayOrder": 0,
-      "description": "Choose a 5th Savage Arsenal ability.",
-      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+      "displayOrder": 1,
+      "description": "Choose a 5th Savage Arsenal ability."
     },
     {
       "level": 12,
       "scopeSubclass": null,
       "name": "Key Stat Increase",
       "featureType": "stat_increase",
-      "displayOrder": 1,
-      "description": "+1 STR or DEX.",
-      "combatUsageNotes": "Take the stat that supports your core combat loop and your most frequent checks/attack scaling."
+      "displayOrder": 2,
+      "description": "+1 STR or DEX."
     },
     {
       "level": 13,
       "scopeSubclass": null,
       "name": "Intensifying Fury (4)",
-      "featureType": "resource_change",
-      "displayOrder": 0,
-      "description": "Your Fury Dice are now d10s.",
-      "combatUsageNotes": "Track this resource every turn and spend it proactively instead of ending encounters with unused value."
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "Your Fury Dice are now d10s."
     },
     {
       "level": 13,
       "scopeSubclass": null,
       "name": "Secondary Stat Increase",
       "featureType": "stat_increase",
-      "displayOrder": 1,
-      "description": "+1 INT or WIL.",
-      "combatUsageNotes": "Take the stat that supports your core combat loop and your most frequent checks/attack scaling."
+      "displayOrder": 2,
+      "description": "+1 INT or WIL."
     },
     {
       "level": 14,
       "scopeSubclass": null,
       "name": "Savage Arsenal (6)",
       "featureType": "choice_grant",
-      "displayOrder": 0,
-      "description": "Choose a 6th Savage Arsenal ability.",
-      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+      "displayOrder": 1,
+      "description": "Choose a 6th Savage Arsenal ability."
     },
     {
       "level": 15,
       "scopeSubclass": null,
       "name": "Subclass",
-      "featureType": "choice_grant",
-      "displayOrder": 0,
-      "description": "Gain your Berserker subclass feature.",
-      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "Gain your Berserker subclass feature."
     },
     {
       "level": 16,
       "scopeSubclass": null,
       "name": "Savage Arsenal (7)",
       "featureType": "choice_grant",
-      "displayOrder": 0,
-      "description": "Choose a 7th Savage Arsenal ability.",
-      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+      "displayOrder": 1,
+      "description": "Choose a 7th Savage Arsenal ability."
     },
     {
       "level": 16,
       "scopeSubclass": null,
       "name": "Key Stat Increase",
       "featureType": "stat_increase",
-      "displayOrder": 1,
-      "description": "+1 STR or DEX.",
-      "combatUsageNotes": "Take the stat that supports your core combat loop and your most frequent checks/attack scaling."
+      "displayOrder": 2,
+      "description": "+1 STR or DEX."
     },
     {
       "level": 17,
       "scopeSubclass": null,
       "name": "Intensifying Fury (5)",
-      "featureType": "resource_change",
-      "displayOrder": 0,
-      "description": "Your Fury Dice are now d12s.",
-      "combatUsageNotes": "Track this resource every turn and spend it proactively instead of ending encounters with unused value."
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "Your Fury Dice are now d12s."
     },
     {
       "level": 17,
       "scopeSubclass": null,
       "name": "Secondary Stat Increase",
       "featureType": "stat_increase",
-      "displayOrder": 1,
-      "description": "+1 INT or WIL.",
-      "combatUsageNotes": "Take the stat that supports your core combat loop and your most frequent checks/attack scaling."
+      "displayOrder": 2,
+      "description": "+1 INT or WIL."
     },
     {
       "level": 18,
       "scopeSubclass": null,
       "name": "DEEP RAGE",
-      "featureType": "resource_change",
-      "displayOrder": 0,
-      "description": "Dropping to 0 HP does not cause your Rage to end.",
-      "combatUsageNotes": "Use this to stabilize momentum mid-fight, ideally before allies are forced into defensive turns."
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "Dropping to 0 HP does not cause your Rage to end."
     },
     {
       "level": 19,
       "scopeSubclass": null,
       "name": "Epic Boon",
       "featureType": "choice_grant",
-      "displayOrder": 0,
-      "description": "Choose an Epic Boon (see pg. 23 of the GM's Guide).",
-      "combatUsageNotes": "Pick options that support your current build plan; favor synergy over isolated power."
+      "displayOrder": 1,
+      "description": "Choose an Epic Boon (see pg. 23 of the GM's Guide)."
     },
     {
       "level": 20,
       "scopeSubclass": null,
       "name": "BOUNDLESS RAGE",
-      "featureType": "resource_change",
-      "displayOrder": 0,
-      "description": "+1 to any 2 of your stats. Anytime you roll less than 6 on a Fury Die,\nchange it to 6 instead.",
-      "combatUsageNotes": "Track this resource every turn and spend it proactively instead of ending encounters with unused value."
+      "featureType": "stat_increase",
+      "displayOrder": 1,
+      "description": "+1 to any 2 of your stats. Anytime you roll less than 6 on a Fury Die, change it to 6 instead."
+    },
+    {
+      "level": 3,
+      "scopeSubclass": "PATH OF THE MOUNTAINHEART",
+      "name": "Stone\u2019s Resilience",
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "Whenever you expend Fury Dice to reduce incoming damage, add the value of the die to the amount reduced."
+    },
+    {
+      "level": 3,
+      "scopeSubclass": "PATH OF THE MOUNTAINHEART",
+      "name": "Mountainous Tenacity",
+      "featureType": "passive",
+      "displayOrder": 2,
+      "description": "Whenever you expend your Hit Dice to recover HP, for every 10 HP you would recover, you may heal 1 Wound instead."
+    },
+    {
+      "level": 7,
+      "scopeSubclass": "PATH OF THE MOUNTAINHEART",
+      "name": "Unbreakable",
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "(1/encounter) While Raging, if you would suffer your last Wound or other negative condition of your choice, you don\u2019t."
+    },
+    {
+      "level": 11,
+      "scopeSubclass": "PATH OF THE MOUNTAINHEART",
+      "name": "Titan\u2019s Fury",
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "After you miss an attack or are crit by an enemy, Rage for free."
+    },
+    {
+      "level": 15,
+      "scopeSubclass": "PATH OF THE MOUNTAINHEART",
+      "name": "Mountain\u2019s Endurance",
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "While Dying, if an attack against you would be a crit, the attack is rerolled instead (when-crit abilities, such as Titan\u2019s Fury, still trigger)."
+    },
+    {
+      "level": 3,
+      "scopeSubclass": "PATH OF THE RED MIST",
+      "name": "Blood Frenzy",
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "(1/turn) While Raging, whenever you crit or kill an enemy, change 1 Fury Die to the maximum."
+    },
+    {
+      "level": 3,
+      "scopeSubclass": "PATH OF THE RED MIST",
+      "name": "Savage Awareness",
+      "featureType": "passive",
+      "displayOrder": 2,
+      "description": "Advantage on Perception checks to notice or track down blood. Blindsight 2 while Raging: you ignore the Blinded condition and can see through darkness and Invisibility within that Range."
+    },
+    {
+      "level": 7,
+      "scopeSubclass": "PATH OF THE RED MIST",
+      "name": "Unstoppable Brutality",
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "While Raging, you may gain 1 Wound to reroll any attack or save."
+    },
+    {
+      "level": 11,
+      "scopeSubclass": "PATH OF THE RED MIST",
+      "name": "Opportunistic Frenzy",
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "While Raging, you can make opportunity attacks without disad- vantage, and you may make them whenever an enemy enters your melee weapon\u2019s reach."
+    },
+    {
+      "level": 15,
+      "scopeSubclass": "PATH OF THE RED MIST",
+      "name": "Onslaught",
+      "featureType": "passive",
+      "displayOrder": 1,
+      "description": "While Raging, gain +2 speed. (1/round) you may move for free."
     }
   ],
   "choiceGroups": [
     {
       "scopeSubclass": null,
       "name": "Savage Arsenal",
-      "maxChoices": 7,
+      "maxChoices": 1,
       "respecRule": "never",
       "description": null
     },
     {
       "scopeSubclass": "PATH OF THE MOUNTAINHEART",
       "name": "PATH OF THE MOUNTAINHEART",
-      "maxChoices": 4,
+      "maxChoices": 5,
       "respecRule": "never",
       "description": null
     },
@@ -375,319 +438,116 @@
       "groupName": "Savage Arsenal",
       "scopeSubclass": null,
       "name": "Death Blow",
-      "description": "After you deal damage from a crit, you\nmay expend any number of Fury Dice. Sum the dice and deal double that amount of damage.",
-      "prereq": null,
-      "effects": [
-        {
-          "type": "berserker_option",
-          "slug": "death_blow",
-          "tags": [
-            "damage",
-            "critical",
-            "fury_dice"
-          ]
-        }
-      ],
-      "displayOrder": 0,
-      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value."
+      "description": "After you deal damage from a crit, you may expend any number of Fury Dice. Sum the dice and deal double that amount of damage.",
+      "prereq": {},
+      "effects": {},
+      "displayOrder": 1
     },
     {
       "groupName": "Savage Arsenal",
       "scopeSubclass": null,
       "name": "Deathless Rage",
       "description": "(1/turn) While Dying, you may suffer 1 Wound to gain 1 action.",
-      "prereq": null,
-      "effects": [
-        {
-          "type": "berserker_option",
-          "slug": "deathless_rage",
-          "tags": [
-            "survivability",
-            "action_economy"
-          ]
-        }
-      ],
-      "displayOrder": 1,
-      "combatUsageNotes": "Save this for enemy spike turns; it is strongest when it prevents a big tempo or survivability loss. Budget around its 1/TURN limit so it lands in the highest-impact window."
+      "prereq": {},
+      "effects": {},
+      "displayOrder": 2
     },
     {
       "groupName": "Savage Arsenal",
       "scopeSubclass": null,
       "name": "Eager for Battle",
-      "description": "Gain advantage on Initiative. Move 2×DEX spaces for free on your first turn each encounter.",
-      "prereq": null,
-      "effects": [
-        {
-          "type": "berserker_option",
-          "slug": "eager_for_battle",
-          "tags": [
-            "initiative",
-            "movement"
-          ]
-        }
-      ],
-      "displayOrder": 2,
-      "combatUsageNotes": "Use this for positioning: engage priority targets, escape danger, or set up advantage before attacking."
+      "description": "Gain advantage on Initiative. Move 2\u00d7DEX spaces for free on your first turn each encounter.",
+      "prereq": {},
+      "effects": {},
+      "displayOrder": 3
     },
     {
       "groupName": "Savage Arsenal",
       "scopeSubclass": null,
       "name": "Into the Fray",
-      "description": "Action: Leap up to 2×DEX spaces toward an enemy. If you land adjacent to at least 2 enemies, make an attack against 1 of them for free.",
-      "prereq": null,
-      "effects": [
-        {
-          "type": "berserker_option",
-          "slug": "into_the_fray",
-          "tags": [
-            "mobility",
-            "offense"
-          ]
-        }
-      ],
-      "displayOrder": 3,
-      "combatUsageNotes": "Plan your action economy around this; use it on turns where its payoff beats a standard attack."
+      "description": "Action: Leap up to 2\u00d7DEX spaces toward an enemy. If you land adjacent to at least 2 enemies, make an attack against 1 of them for free.",
+      "prereq": {},
+      "effects": {},
+      "displayOrder": 4
     },
     {
       "groupName": "Savage Arsenal",
       "scopeSubclass": null,
       "name": "Mighty Endurance",
       "description": "You can now survive an additional 4 Wounds before death.",
-      "prereq": null,
-      "effects": [
-        {
-          "type": "berserker_option",
-          "slug": "mighty_endurance",
-          "tags": [
-            "survivability"
-          ]
-        }
-      ],
-      "displayOrder": 4,
-      "combatUsageNotes": "Save this for enemy spike turns; it is strongest when it prevents a big tempo or survivability loss."
+      "prereq": {},
+      "effects": {},
+      "displayOrder": 5
     },
     {
       "groupName": "Savage Arsenal",
       "scopeSubclass": null,
       "name": "MORE BLOOD!",
-      "description": "Whenever an enemy crits you, gain\n1 Fury Die.",
-      "prereq": null,
-      "effects": [
-        {
-          "type": "berserker_option",
-          "slug": "more_blood",
-          "tags": [
-            "resource_gain",
-            "fury_dice"
-          ]
-        }
-      ],
-      "displayOrder": 5,
-      "combatUsageNotes": "Pair this with crit-fishing turns and high-accuracy setups to maximize burst value."
+      "description": "Whenever an enemy crits you, gain 1 Fury Die.",
+      "prereq": {},
+      "effects": {},
+      "displayOrder": 6
     },
     {
       "groupName": "Savage Arsenal",
       "scopeSubclass": null,
       "name": "Rampage",
-      "description": "(1/ turn) After you land a hit, you may\ntreat your next attack this turn as if you rolled that same amount instead of rolling again.",
-      "prereq": null,
-      "effects": [
-        {
-          "type": "berserker_option",
-          "slug": "rampage",
-          "tags": [
-            "offense",
-            "action_economy"
-          ]
-        }
-      ],
-      "displayOrder": 6,
-      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value."
+      "description": "(1/ turn) After you land a hit, you may treat your next attack this turn as if you rolled that same amount instead of rolling again.",
+      "prereq": {},
+      "effects": {},
+      "displayOrder": 7
     },
     {
       "groupName": "Savage Arsenal",
       "scopeSubclass": null,
       "name": "Swift Fury",
-      "description": "Whenever you gain one or more Fury\nDice, move up to DEX spaces for free, ignoring difficult terrain.",
-      "prereq": null,
-      "effects": [
-        {
-          "type": "berserker_option",
-          "slug": "swift_fury",
-          "tags": [
-            "mobility",
-            "fury_dice"
-          ]
-        }
-      ],
-      "displayOrder": 7,
-      "combatUsageNotes": "Use this for positioning: engage priority targets, escape danger, or set up advantage before attacking."
+      "description": "Whenever you gain one or more Fury Dice, move up to DEX spaces for free, ignoring difficult terrain.",
+      "prereq": {},
+      "effects": {},
+      "displayOrder": 8
     },
     {
       "groupName": "Savage Arsenal",
       "scopeSubclass": null,
       "name": "Thunderous Steps",
-      "description": "After moving at least 4 spaces\nwhile Raging, you may deal STR Bludgeoning damage to all adjacent creatures where you stop.",
-      "prereq": null,
-      "effects": [
-        {
-          "type": "berserker_option",
-          "slug": "thunderous_steps",
-          "tags": [
-            "aoe",
-            "damage",
-            "rage"
-          ]
-        }
-      ],
-      "displayOrder": 8,
-      "combatUsageNotes": "Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value."
+      "description": "After moving at least 4 spaces while Raging, you may deal STR Bludgeoning damage to all adjacent creatures where you stop.",
+      "prereq": {},
+      "effects": {},
+      "displayOrder": 9
     },
     {
       "groupName": "Savage Arsenal",
       "scopeSubclass": null,
       "name": "Unstoppable Force",
       "description": "While Dying and Raging, taking damage causes 1 Wound (instead of 2) and critical hits inflict 2 Wounds (instead of 3).",
-      "prereq": null,
-      "effects": [
-        {
-          "type": "berserker_option",
-          "slug": "unstoppable_force",
-          "tags": [
-            "survivability",
-            "rage",
-            "dying"
-          ]
-        }
-      ],
-      "displayOrder": 9,
-      "combatUsageNotes": "Pair this with crit-fishing turns and high-accuracy setups to maximize burst value."
+      "prereq": {},
+      "effects": {},
+      "displayOrder": 10
     },
     {
       "groupName": "Savage Arsenal",
       "scopeSubclass": null,
       "name": "Whirlwind",
-      "description": "2 actions: Attack ALL targets within\nyour melee weapon’s reach.",
-      "prereq": null,
-      "effects": [
-        {
-          "type": "berserker_option",
-          "slug": "whirlwind",
-          "tags": [
-            "aoe",
-            "attack"
-          ]
-        }
-      ],
-      "displayOrder": 10,
-      "combatUsageNotes": "Plan your action economy around this; use it on turns where its payoff beats a standard attack."
-    },
-    {
-      "groupName": "Savage Arsenal",
-      "scopeSubclass": null,
-      "name": "You’re Next!",
-      "description": "Action: While Raging, you can make\na Might skill check to demoralize an enemy within Reach 12 (DC: their current HP). On a success, they immediately flee the battle.",
-      "prereq": null,
-      "effects": [
-        {
-          "type": "berserker_option",
-          "slug": "youre_next",
-          "tags": [
-            "control",
-            "rage",
-            "skill_check"
-          ]
-        }
-      ],
-      "displayOrder": 11,
-      "combatUsageNotes": "Plan your action economy around this; use it on turns where its payoff beats a standard attack."
+      "description": "2 actions: Attack ALL targets within your melee weapon\u2019s reach.",
+      "prereq": {},
+      "effects": {},
+      "displayOrder": 11
     },
     {
       "groupName": "PATH OF THE MOUNTAINHEART",
       "scopeSubclass": "PATH OF THE MOUNTAINHEART",
-      "name": "Mountain’s Endurance",
-      "description": "While Dying, if an attack against you would be a crit, the attack is rerolled instead (when-crit abilities, such as Titan’s Fury, still trigger).",
-      "prereq": {
-        "level": 15
-      },
-      "effects": [
-        {
-          "type": "berserker_subclass_option",
-          "slug": "mountains_endurance",
-          "tags": [
-            "defense",
-            "critical_mitigation",
-            "dying"
-          ]
-        }
-      ],
-      "displayOrder": 0,
-      "combatUsageNotes": "Unlocks at level 15. Pair this with crit-fishing turns and high-accuracy setups to maximize burst value."
-    },
-    {
-      "groupName": "PATH OF THE MOUNTAINHEART",
-      "scopeSubclass": "PATH OF THE MOUNTAINHEART",
-      "name": "Stone’s Resilience",
+      "name": "Stone\u2019s Resilience",
       "description": "Whenever you expend Fury Dice to reduce incoming damage, add the value of the die to the amount reduced.",
       "prereq": {
         "level": 3
       },
       "effects": [
         {
-          "type": "berserker_subclass_option",
-          "slug": "stones_resilience",
-          "tags": [
-            "defense",
-            "damage_reduction",
-            "fury_dice"
-          ]
+          "type": "subclass_feature",
+          "slug": "stone_s_resilience"
         }
       ],
-      "displayOrder": 0,
-      "combatUsageNotes": "Unlocks at level 3. Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
-    },
-    {
-      "groupName": "PATH OF THE MOUNTAINHEART",
-      "scopeSubclass": "PATH OF THE MOUNTAINHEART",
-      "name": "Titan’s Fury",
-      "description": "After you miss an attack or are crit by an enemy, Rage for free.",
-      "prereq": {
-        "level": 11
-      },
-      "effects": [
-        {
-          "type": "berserker_subclass_option",
-          "slug": "titans_fury",
-          "tags": [
-            "rage",
-            "triggered_activation"
-          ]
-        }
-      ],
-      "displayOrder": 0,
-      "combatUsageNotes": "Unlocks at level 11. Treat this as a trigger-based tool: hold it until the stated condition happens, then fire it for swing value."
-    },
-    {
-      "groupName": "PATH OF THE MOUNTAINHEART",
-      "scopeSubclass": "PATH OF THE MOUNTAINHEART",
-      "name": "Unbreakable",
-      "description": "(1/encounter) While Raging, if you would suffer your last Wound or other\nnegative condition of your choice, you don’t.",
-      "prereq": {
-        "level": 7
-      },
-      "effects": [
-        {
-          "type": "berserker_subclass_option",
-          "slug": "unbreakable",
-          "tags": [
-            "survivability",
-            "condition_prevention",
-            "rage"
-          ]
-        }
-      ],
-      "displayOrder": 0,
-      "combatUsageNotes": "Unlocks at level 7. Save this for enemy spike turns; it is strongest when it prevents a big tempo or survivability loss. Budget around its 1/ENCOUNTER limit so it lands in the highest-impact window."
+      "displayOrder": 0
     },
     {
       "groupName": "PATH OF THE MOUNTAINHEART",
@@ -699,17 +559,59 @@
       },
       "effects": [
         {
-          "type": "berserker_subclass_option",
-          "slug": "mountainous_tenacity",
-          "tags": [
-            "healing",
-            "wounds",
-            "hit_dice"
-          ]
+          "type": "subclass_feature",
+          "slug": "mountainous_tenacity"
         }
       ],
-      "displayOrder": 1,
-      "combatUsageNotes": "Unlocks at level 3. Save this for enemy spike turns; it is strongest when it prevents a big tempo or survivability loss."
+      "displayOrder": 1
+    },
+    {
+      "groupName": "PATH OF THE MOUNTAINHEART",
+      "scopeSubclass": "PATH OF THE MOUNTAINHEART",
+      "name": "Unbreakable",
+      "description": "(1/encounter) While Raging, if you would suffer your last Wound or other negative condition of your choice, you don\u2019t.",
+      "prereq": {
+        "level": 7
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "unbreakable"
+        }
+      ],
+      "displayOrder": 2
+    },
+    {
+      "groupName": "PATH OF THE MOUNTAINHEART",
+      "scopeSubclass": "PATH OF THE MOUNTAINHEART",
+      "name": "Titan\u2019s Fury",
+      "description": "After you miss an attack or are crit by an enemy, Rage for free.",
+      "prereq": {
+        "level": 11
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "titan_s_fury"
+        }
+      ],
+      "displayOrder": 3
+    },
+    {
+      "groupName": "PATH OF THE MOUNTAINHEART",
+      "scopeSubclass": "PATH OF THE MOUNTAINHEART",
+      "name": "Mountain\u2019s Endurance",
+      "description": "While Dying, if an attack against you would be a crit, the attack is rerolled instead (when-crit abilities, such as Titan\u2019s Fury, still trigger).",
+      "prereq": {
+        "level": 15
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "mountain_s_endurance"
+        }
+      ],
+      "displayOrder": 4
     },
     {
       "groupName": "PATH OF THE RED MIST",
@@ -721,107 +623,75 @@
       },
       "effects": [
         {
-          "type": "berserker_subclass_option",
-          "slug": "blood_frenzy",
-          "tags": [
-            "rage",
-            "fury_dice",
-            "critical",
-            "kill_trigger"
-          ]
+          "type": "subclass_feature",
+          "slug": "blood_frenzy"
         }
       ],
-      "displayOrder": 0,
-      "combatUsageNotes": "Unlocks at level 3. Pair this with crit-fishing turns and high-accuracy setups to maximize burst value. Budget around its 1/TURN limit so it lands in the highest-impact window."
-    },
-    {
-      "groupName": "PATH OF THE RED MIST",
-      "scopeSubclass": "PATH OF THE RED MIST",
-      "name": "Onslaught",
-      "description": "While Raging, gain +2 speed. (1/per round) you may move for free.",
-      "prereq": {
-        "level": 15
-      },
-      "effects": [
-        {
-          "type": "berserker_subclass_option",
-          "slug": "onslaught",
-          "tags": [
-            "rage",
-            "speed",
-            "movement"
-          ]
-        }
-      ],
-      "displayOrder": 0,
-      "combatUsageNotes": "Unlocks at level 15. Use this for positioning: engage priority targets, escape danger, or set up advantage before attacking."
-    },
-    {
-      "groupName": "PATH OF THE RED MIST",
-      "scopeSubclass": "PATH OF THE RED MIST",
-      "name": "Opportunistic Frenzy",
-      "description": "While Raging, you can make opportunity attacks without disadvantage, and you may make them whenever an enemy enters your melee weapon's reach.",
-      "prereq": {
-        "level": 11
-      },
-      "effects": [
-        {
-          "type": "berserker_subclass_option",
-          "slug": "opportunistic_frenzy",
-          "tags": [
-            "rage",
-            "opportunity_attack",
-            "reaction"
-          ]
-        }
-      ],
-      "displayOrder": 0,
-      "combatUsageNotes": "Unlocks at level 11. Use this in the rounds where its trigger/conditions are easiest to satisfy for reliable combat value."
+      "displayOrder": 0
     },
     {
       "groupName": "PATH OF THE RED MIST",
       "scopeSubclass": "PATH OF THE RED MIST",
       "name": "Savage Awareness",
-      "description": "Advantage on Perception checks to notice or track down blood. Blindsight 2 while raging. You ignore the Blinded condition and can see through darkness and Invisibility within that Range.",
+      "description": "Advantage on Perception checks to notice or track down blood. Blindsight 2 while Raging: you ignore the Blinded condition and can see through darkness and Invisibility within that Range.",
       "prereq": {
         "level": 3
       },
       "effects": [
         {
-          "type": "berserker_subclass_option",
-          "slug": "savage_awareness",
-          "tags": [
-            "perception",
-            "tracking",
-            "senses",
-            "rage"
-          ]
+          "type": "subclass_feature",
+          "slug": "savage_awareness"
         }
       ],
-      "displayOrder": 0,
-      "combatUsageNotes": "Unlocks at level 3. Use this to control enemy behavior and create safer turns for your team focus-fire."
+      "displayOrder": 1
     },
     {
       "groupName": "PATH OF THE RED MIST",
       "scopeSubclass": "PATH OF THE RED MIST",
       "name": "Unstoppable Brutality",
-      "description": "While Raging, you may gain 1 wound to reroll any attack or save.",
+      "description": "While Raging, you may gain 1 Wound to reroll any attack or save.",
       "prereq": {
         "level": 7
       },
       "effects": [
         {
-          "type": "berserker_subclass_option",
-          "slug": "unstoppable_brutality",
-          "tags": [
-            "rage",
-            "reroll",
-            "wound_cost"
-          ]
+          "type": "subclass_feature",
+          "slug": "unstoppable_brutality"
         }
       ],
-      "displayOrder": 0,
-      "combatUsageNotes": "Unlocks at level 7. Save this for enemy spike turns; it is strongest when it prevents a big tempo or survivability loss."
+      "displayOrder": 2
+    },
+    {
+      "groupName": "PATH OF THE RED MIST",
+      "scopeSubclass": "PATH OF THE RED MIST",
+      "name": "Opportunistic Frenzy",
+      "description": "While Raging, you can make opportunity attacks without disad- vantage, and you may make them whenever an enemy enters your melee weapon\u2019s reach.",
+      "prereq": {
+        "level": 11
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "opportunistic_frenzy"
+        }
+      ],
+      "displayOrder": 3
+    },
+    {
+      "groupName": "PATH OF THE RED MIST",
+      "scopeSubclass": "PATH OF THE RED MIST",
+      "name": "Onslaught",
+      "description": "While Raging, gain +2 speed. (1/round) you may move for free.",
+      "prereq": {
+        "level": 15
+      },
+      "effects": [
+        {
+          "type": "subclass_feature",
+          "slug": "onslaught"
+        }
+      ],
+      "displayOrder": 4
     }
   ]
 }
